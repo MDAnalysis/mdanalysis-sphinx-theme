@@ -1,8 +1,0 @@
-include LICENSE
-recursive-include mdanalysis_sphinx_theme *.conf
-recursive-include mdanalysis_sphinx_theme *.css
-recursive-include mdanalysis_sphinx_theme *.html
-recursive-include mdanalysis_sphinx_theme *.js
-include setup.cfg
-include versioneer.py
-include mdanalysis_sphinx_theme/_version.py
