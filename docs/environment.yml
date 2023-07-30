@@ -4,9 +4,6 @@ channels:
 dependencies:
   - python >= 3.9
   - pip
-  - openff-qcsubmit
-  - openff-toolkit
-  - openff-qcsubmit
   - numpy>=1.16
   - pandas
   - matplotlib
@@ -22,6 +19,7 @@ dependencies:
   - wheel
   - sphinx-autobuild
   - sphinx>=6.2.1,<7
+  - sphinx_rtd_theme
   - pip:
     - readthedocs-sphinx-search
     - git+https://github.com/Yoshanuikabundi/MyST-NB.git@upgrade-to-1
