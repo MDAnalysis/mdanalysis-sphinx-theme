@@ -34,4 +34,9 @@ setup(
         'Topic :: Software Development :: Documentation',
     ],
     install_requires=['sphinx_rtd_theme'],
+    entry_points = {
+        'sphinx.html_themes': [
+            'mdanalysis_sphinx_theme = mdanalysis_sphinx_theme',
+        ]
+    }
 )

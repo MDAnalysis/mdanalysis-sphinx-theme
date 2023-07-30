@@ -106,7 +106,7 @@ html_sidebars = {
 html_theme_options = {
     "base_url": "https://mdanalysis.org/mdanalysis-sphinx-theme/",
     "repo_url": "https://github.com/lilyminium/mdanalysis-sphinx-theme/",
-    "repo_name": "mdanalysis_sphinx_theme",
+    "repo_name": "mdanalysis-sphinx-theme",
     "html_minify": False,
     "css_minify": False,
     "globaltoc_depth": 3,

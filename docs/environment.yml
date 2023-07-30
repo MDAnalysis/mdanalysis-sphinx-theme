@@ -1,4 +1,4 @@
-name: docs
+name: mdanalysis-sphinx-theme-dev
 channels:
   - conda-forge
 dependencies:
@@ -22,5 +22,4 @@ dependencies:
   - sphinx_rtd_theme
   - pip:
     - readthedocs-sphinx-search
-    - git+https://github.com/Yoshanuikabundi/MyST-NB.git@upgrade-to-1
 
