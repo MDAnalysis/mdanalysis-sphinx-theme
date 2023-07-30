@@ -9,8 +9,8 @@
 
 # -- Project information -----------------------------------------------------
 
-project = "OpenFF Sphinx theme"
-html_title = "OpenFF Sphinx theme"
+project = "MDAnalysis Sphinx theme"
+html_title = "MDAnalysis Sphinx theme"
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
@@ -21,8 +21,8 @@ import sys
 sys.path.insert(0, os.path.abspath("."))
 # from distutils.version import LooseVersion
 
-copyright = "2021, Open Force Field Initiative"
-author = "Open Force Field Initiative"
+copyright = "2023, MDAnalysis"
+author = "MDAnalysis"
 
 # -- General configuration ---------------------------------------------------
 
@@ -39,10 +39,8 @@ extensions = [
     "sphinx.ext.todo",
     "sphinx.ext.mathjax",
     "sphinx.ext.viewcode",
-    # "nbsphinx",
-    # "myst_parser",
-    "myst_nb",
-    "openff_sphinx_theme",
+    "nbsphinx",
+    "mdanalysis_sphinx_theme",
     "sphinxcontrib.autodoc_pydantic",
     "sphinx_search.extension",
 ]
@@ -87,7 +85,7 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = "openff_sphinx_theme"
+html_theme = "mdanalysis_sphinx_theme"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -106,9 +104,9 @@ html_sidebars = {
 
 # material theme options (see theme.conf for more information)
 html_theme_options = {
-    "base_url": "http://openforcefield.github.io/openff-sphinx-theme/",
-    "repo_url": "https://github.com/openforcefield/openff-sphinx-theme/",
-    "repo_name": "openff-sphinx-theme",
+    "base_url": "https://mdanalysis.org/mdanalysis-sphinx-theme/",
+    "repo_url": "https://github.com/lilyminium/mdanalysis-sphinx-theme/",
+    "repo_name": "mdanalysis-sphinx-theme",
     "html_minify": False,
     "css_minify": False,
     "globaltoc_depth": 3,
@@ -194,13 +192,3 @@ extlinks = {
         "%s",
     ),
 }
-
-# Extensions for the myst parser
-myst_enable_extensions = [
-    "dollarmath",
-    "colon_fence",
-    "smartquotes",
-    "replacements",
-    "deflist",
-]
-myst_update_mathjax = False

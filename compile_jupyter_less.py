@@ -23,5 +23,5 @@ subprocess.check_call([
     '--clean-css',
     '--include-path="./notebook/static"',
     'notebook/static/style/style.less',
-    '../msmb_theme/static/css/jupyter.min.css'
+    '../mdanalysis_sphinx_theme/static/css/jupyter.min.css'
 ])

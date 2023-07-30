@@ -1,12 +1,9 @@
-name: docs
+name: mdanalysis-sphinx-theme-dev
 channels:
   - conda-forge
 dependencies:
   - python >= 3.9
   - pip
-  - openff-qcsubmit
-  - openff-toolkit
-  - openff-qcsubmit
   - numpy>=1.16
   - pandas
   - matplotlib
@@ -22,7 +19,14 @@ dependencies:
   - wheel
   - sphinx-autobuild
   - sphinx>=6.2.1,<7
+  - sphinx_rtd_theme
   - pip:
     - readthedocs-sphinx-search
-    - git+https://github.com/Yoshanuikabundi/MyST-NB.git@upgrade-to-1
+    - beautifulsoup4
+    - python-slugify[unidecode]
+    - css_html_js_minify
+    - lxml
+    - libsass
+
+
 

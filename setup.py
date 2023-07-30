@@ -1,27 +1,20 @@
 # -*- coding: utf-8 -*-
 
-"""`msmb_theme` is a slight modification of `sphinx_rtd_theme`
-    
-    `sphinx_rtd_theme` lives on `Github`_.
-
-.. _github: https://www.github.com/snide/sphinx_rtd_theme
-
-"""
 from setuptools import setup
 import versioneer
 
 setup(
-    name='msmb_theme',
+    name='mdanalysis_sphinx_theme',
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
-    url='https://github.com/msmbuilder/msmb_theme/',
+    url='https://github.com/lilyminium/mdanalysis-sphinx-theme/',
     license='MIT',
-    author='Matthew Harrigan',
-    author_email='matthew.harrigan@outlook.com',
+    author='MDAnalysis',
+    author_email='mdanalysis@numfocus.org',
     description='Modification to sphinx_rtd_theme',
     zip_safe=False,
-    packages=['msmb_theme'],
-    package_data={'msmb_theme': [
+    packages=['mdanalysis_sphinx_theme'],
+    package_data={'mdanalysis_sphinx_theme': [
         'theme.conf',
         '*.html',
         'static/css/*.css',
@@ -41,4 +34,9 @@ setup(
         'Topic :: Software Development :: Documentation',
     ],
     install_requires=['sphinx_rtd_theme'],
+    entry_points = {
+        'sphinx.html_themes': [
+            'mdanalysis_sphinx_theme = mdanalysis_sphinx_theme',
+        ]
+    }
 )
