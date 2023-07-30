@@ -37,8 +37,8 @@ def get_config():
     cfg.VCS = "git"
     cfg.style = "pep440"
     cfg.tag_prefix = ""
-    cfg.parentdir_prefix = "msmb_theme-"
-    cfg.versionfile_source = "msmb_theme/_version.py"
+    cfg.parentdir_prefix = "mdanalysis_sphinx_theme-"
+    cfg.versionfile_source = "mdanalysis_sphinx_theme/_version.py"
     cfg.verbose = False
     return cfg
 

@@ -1,8 +1,8 @@
 include LICENSE
-recursive-include msmb_theme *.conf
-recursive-include msmb_theme *.css
-recursive-include msmb_theme *.html
-recursive-include msmb_theme *.js
+recursive-include mdanalysis_sphinx_theme *.conf
+recursive-include mdanalysis_sphinx_theme *.css
+recursive-include mdanalysis_sphinx_theme *.html
+recursive-include mdanalysis_sphinx_theme *.js
 include setup.cfg
 include versioneer.py
-include msmb_theme/_version.py
+include mdanalysis_sphinx_theme/_version.py
