@@ -4,7 +4,7 @@
 This builds on [msmb_theme](https://github.com/msmbuilder/msmb_theme) to apply slight modifications to
 `sphinx_rtd_theme`. It needs the forementioned theme to be installed.
 
-[See example docs on RTD here:](https://mdanalysis-sphinx-theme.readthedocs.io/en/latest/)
+[See example docs on RTD here](https://mdanalysis-sphinx-theme.readthedocs.io/en/latest/)
 
 ### Modifications
 
