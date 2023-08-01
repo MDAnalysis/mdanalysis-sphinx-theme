@@ -1,0 +1,88 @@
+.wy-nav-content-wrap {
+    background: #fcfcfc;
+}
+.wy-side-nav-search {
+    background-color: $mdanalysis-white;
+
+    > a {
+        color: $readthedocs-dark-gray;
+    }
+
+    > div.version {
+        color: $mdanalysis-gray;
+    }
+
+    input[type="text"] {
+        border-color: $mdanalysis-gray;
+    }
+}
+
+.wy-menu {
+    overflow-wrap: break-word;
+    white-space: inherit;
+
+    .caption-text {
+        color: $mdanalysis-orange;
+    }
+
+    a:hover, a:hover:not(.is-active) code {
+        color: $mdanalysis-orange;
+    }
+}
+
+code {
+    white-space: inherit;
+}
+
+
+html.writer-html4 .rst-content dl:not(.docutils) > dt, html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dt {
+    // override theme.css
+    background: $mdanalysis-orange-light;
+    border-top: 3px solid $mdanalysis-code-orange;
+    color: $readthedocs-dark-gray;
+}
+
+.rst-content {
+    .viewcode-link, .viewcode-back {
+        color: $mdanalysis-gray;
+    }
+
+    .guilabel {
+        background: $mdanalysis-orange-light;
+        border: 1px solid $mdanalysis-gray;
+    }
+
+    .seealso {
+        background: $mdanalysis-gray-light;
+        p.admonition-title {
+            background: $mdanalysis-gray;
+        }
+    }
+
+    .error, .warning {
+        background: $mdanalysis-red-light;
+        p.admonition-title {
+            background: $mdanalysis-orange-red;
+        }
+    }
+
+    .caution, .note, .important {
+        background: $mdanalysis-orange-light;
+        p.admonition-title {
+            background: $mdanalysis-orange;
+        }
+    }
+
+    code.literal {
+        color: $mdanalysis-code-orange;
+        background-color: $mdanalysis-white;
+
+        
+    }
+
+    dt {
+        code.literal {
+            font-weight: 700;
+        }
+    }
+}

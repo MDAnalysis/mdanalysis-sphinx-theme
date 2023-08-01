@@ -31,7 +31,7 @@ The theme uses pygments for ``inline code text`` and
 
 Here's an included example with line numbers.
 
-.. literalinclude:: ../openff_sphinx_theme/__init__.py
+.. literalinclude:: ../mdanalysis_sphinx_theme/__init__.py
    :linenos:
 
 It also works with existing Sphinx highlighting:
