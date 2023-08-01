@@ -197,7 +197,7 @@ reStructuredText used to create these examples.</p>
 <span class="linenos"> 28</span>
 <span class="linenos"> 29</span><span class="k">def</span> <span class="nf">setup</span><span class="p">(</span><span class="n">app</span><span class="p">):</span>
 <span class="linenos"> 30</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Setup connects events to the sitemap builder&quot;&quot;&quot;</span>
-<span class="linenos"> 31</span>    <span class="c1"># app.connect(&quot;build-finished&quot;, compile_css)</span>
+<span class="linenos"> 31</span>    <span class="n">app</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s2">&quot;build-finished&quot;</span><span class="p">,</span> <span class="n">compile_css</span><span class="p">)</span>
 <span class="linenos"> 32</span>
 <span class="linenos"> 33</span>    <span class="n">app</span><span class="o">.</span><span class="n">site_pages</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="linenos"> 34</span>    <span class="n">app</span><span class="o">.</span><span class="n">add_html_theme</span><span class="p">(</span>
