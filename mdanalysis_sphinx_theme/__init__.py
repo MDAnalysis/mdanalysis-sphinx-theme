@@ -28,7 +28,7 @@ ROOT_SUFFIX = "--page-root"
 
 def setup(app):
     """Setup connects events to the sitemap builder"""
-    app.connect("build-finished", compile_css)
+    # app.connect("build-finished", compile_css)
 
     app.site_pages = []
     app.add_html_theme(
