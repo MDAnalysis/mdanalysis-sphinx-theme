@@ -104,7 +104,7 @@ html_sidebars = {
 
 # material theme options (see theme.conf for more information)
 html_theme_options = {
-    "base_url": "https://mdanalysis.org/mdanalysis-sphinx-theme/",
+    "base_url": "https://minium.com.au/mdanalysis-sphinx-theme/",
     "repo_url": "https://github.com/lilyminium/mdanalysis-sphinx-theme/",
     "repo_name": "mdanalysis-sphinx-theme",
     "html_minify": False,
