@@ -19,6 +19,7 @@ setup(
         '*.html',
         'static/css/*.css',
         'static/js/*.js',
+        'sass/*'
     ]},
     include_package_data=True,
     classifiers=[
