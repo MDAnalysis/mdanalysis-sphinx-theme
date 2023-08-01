@@ -107,65 +107,7 @@ html_theme_options = {
     "base_url": "https://mdanalysis.org/mdanalysis-sphinx-theme/",
     "repo_url": "https://github.com/lilyminium/mdanalysis-sphinx-theme/",
     "repo_name": "mdanalysis-sphinx-theme",
-    "html_minify": False,
-    "css_minify": False,
-    "globaltoc_depth": 3,
-    "globaltoc_include_local": True,
-    "color_accent": "mdanalysis-orange",
-    "html_hyphenate_and_justify": True,
-    "nav_links": [
-        {
-            "href": "https://squidfunk.github.io/mkdocs-material/",
-            "internal": False,
-            "title": "Material for MkDocs",
-        },
-        {
-            "href": "https://bashtage.github.io/sphinx-material/",
-            "internal": False,
-            "title": "Material for Sphinx",
-        },
-        {
-            "href": "https://openforcefield.org",
-            "internal": False,
-            "title": "The OpenFF Initiative",
-        },
-        {
-            "href": "https://github.com/openforcefield/openff-sphinx-theme/",
-            "internal": False,
-            "title": "openff-sphinx-theme on GitHub",
-        },
-    ],
-    "heroes": {
-        "index": "A responsive Material Design theme for Sphinx sites.",
-        "customization": "Configuration options to personalize your site.",
-    },
-    "socials": [
-        {
-            "href": "https://zenodo.org/communities/openforcefield/",
-            "title": "OpenFF on Zenodo",
-            "icon_classes": "ai ai-zenodo",
-        },
-        {
-            "href": "https://www.youtube.com/channel/UCh0aJSUm_sYr7nuTzhW806g",
-            "title": "OpenFF on YouTube",
-            "icon_classes": "fab fa-youtube",
-        },
-        {
-            "href": "https://github.com/openforcefield",
-            "title": "OpenFF on GitHub",
-            "icon_classes": "fab fa-github",
-        },
-        {
-            "href": "https://twitter.com/openforcefield",
-            "title": "OpenFF on Twitter",
-            "icon_classes": "fab fa-twitter",
-        },
-        {
-            "href": "https://www.linkedin.com/company/openforcefield/",
-            "title": "OpenFF on LinkedIn",
-            "icon_classes": "fab fa-linkedin",
-        },
-    ],
+
 }
 
 # If HTML theme settings isn't lines 90-160, remember to change customization.rst

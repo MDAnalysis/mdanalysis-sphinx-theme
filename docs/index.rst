@@ -13,7 +13,7 @@ Install from git
 
 .. code-block:: shell-session
 
-   $ pip install git+https://github.com/openforcefield/openff-sphinx-theme.git@main
+   $ pip install git+https://github.com/lilyminium/mdanalysis-sphinx-theme.git@main
 
 Or, add to your ReadTheDocs environment.yml
 
@@ -26,14 +26,14 @@ Or, add to your ReadTheDocs environment.yml
         - <conda dependency>
         # --- snip --- #
         - pip:
-            - git+https://github.com/openforcefield/openff-sphinx-theme.git@main
+            - git+https://github.com/lilyminium/mdanalysis-sphinx-theme.git@main
 
 Update your ``conf.py`` with the required changes:
 
 .. code-block:: python
 
-    extensions.append("openff_sphinx_theme")
-    html_theme = "openff_sphinx_theme"
+    extensions.append("mdanalysis_sphinx_theme")
+    html_theme = "mdanalysis_sphinx_theme"
     html_sidebars = {"**": ["globaltoc.html", "localtoc.html", "searchbox.html"]}
 
 
@@ -43,8 +43,8 @@ or ``theme.conf`` for more details.
 .. code-block:: python
 
     # Enable the theme itself
-    extensions.append("openff_sphinx_theme")
-    html_theme = "openff_sphinx_theme"
+    extensions.append("mdanalysis_sphinx_theme")
+    html_theme = "mdanalysis_sphinx_theme"
 
     # (Optional) Logo in PNG format.
     # If not provided, will default to the generic OpenFF logo with text
@@ -103,10 +103,8 @@ or ``theme.conf`` for more details.
     numpydoc
     pydantic
     notebook.ipynb
-    markdown.md
     rst-cheatsheet/rst-cheatsheet
     primer
-    expanded-tables
 
 .. toctree::
     :caption: Changes and License
