@@ -14,12 +14,12 @@ setup(
     description='Modification to sphinx_rtd_theme',
     zip_safe=False,
     packages=['mdanalysis_sphinx_theme'],
-    # package_data={'mdanalysis_sphinx_theme': [
-    #     'theme.conf',
-    #     '*.html',
-    #     'static/css/*.css',
-    #     'static/js/*.js',
-    # ]},
+    package_data={'mdanalysis_sphinx_theme': [
+        'theme.conf',
+        '*.html',
+        'static/css/*.css',
+        'static/js/*.js',
+    ]},
     include_package_data=True,
     classifiers=[
         'Development Status :: 5 - Production/Stable',
