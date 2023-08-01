@@ -1,14 +1,14 @@
 // The Numpydoc API layout
 
 $api-name-color: $primary;
-$api-property-color: darken($green, 10);
+$api-property-color: darken($mdanalysis-code-orange, 10);
 $api-path-color: $grey;
-$api-bg-color: rgba($openff-toolkit-blue, 0.1);
-$api-param-symbol-color: $openff-evaluator-orange;
-$api-param-name-color: $openff-toolkit-blue;
+$api-bg-color: rgba($mdanalysis-orange, 0.1);
+$api-param-symbol-color: $mdanalysis-orange;
+$api-param-name-color: $readthedocs-dark-gray;
 $api-param-value-color: $grey-dark;
 $api-type-color: $grey-dark;
-$api-source-link-color: $openff-evaluator-orange;
+$api-source-link-color: $mdanalysis-orange;
 
 $api-header-font-size: 1.1rem;
 $api-header-padding: 1 * $api-header-font-size;
@@ -23,11 +23,11 @@ $api-arguments-indent: 2 * $api-header-font-size;
 dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] {
     // Give ourselves some more room on big screens
     @media screen and (min-width: $widescreen) and (max-width: $fullhd - 1) {
-        margin-left: calc(-0.5 * (#{$api-widescreen-width} - #{$para-width}));
+        // margin-left: calc(-0.5 * (#{$api-widescreen-width} - #{$para-width}));
         width: $api-widescreen-width;
     }
     @media screen and (min-width: $fullhd) {
-        margin-left: -0.5 * ($api-fullhd-width - $para-width);
+        // margin-left: -0.5 * ($api-fullhd-width - $para-width);
         width: $api-fullhd-width;
     }
     padding-bottom: 0.5em;
@@ -51,9 +51,9 @@ dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list)
 
         // Indent the argument list
         padding-left: $api-header-padding + $api-arguments-indent;
-        > :first-child {
-            margin-left: -$api-arguments-indent;
-        }
+        // > :first-child {
+        //     margin-left: -$api-arguments-indent;
+        // }
 
         // Text specifying class, function, method, pydantic model, etc. Not always present, eg for plain functions
         > .property .pre {
@@ -123,10 +123,10 @@ dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list)
                 color: $api-param-value-color;
             }
             // After each parameter, newline
-            &::before {
-                content: "\a";
-                white-space: pre;
-            }
+            // &::before {
+            //     content: "\a";
+            //     white-space: pre;
+            // }
             // Links
             a {
                 font-weight: 550;
@@ -139,28 +139,28 @@ dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list)
         }
         // Brackets [] denoting optional arguments
         // This is redundant information and I am displeased to have to support it
-        > .optional {
-            // Put optional [] brackets on their own lines
-            &::before {
-                content: "\a";
-                white-space: pre;
-            }
-            // Optional parameters need extra indentation
-            ~ .sig-param::before {
-                content: "\a    ";
-            }
-        }
+        // > .optional {
+        //     // Put optional [] brackets on their own lines
+        //     &::before {
+        //         content: "\a";
+        //         white-space: pre;
+        //     }
+        //     // Optional parameters need extra indentation
+        //     ~ .sig-param::before {
+        //         content: "\a    ";
+        //     }
+        // }
         // Closing parenthesis
         .sig-param, .optional {
             + .sig-paren {
-                &::before {
-                    content: "\a";
-                    white-space: pre;
-                }
+                // &::before {
+                //     content: "\a";
+                //     white-space: pre;
+                // }
 
                 // Unindent closing paren, and everything following (except source link)
                 position: relative;
-                left: -$api-arguments-indent;
+                // left: -$api-arguments-indent;
                 ~*:not(a.reference.internal, .headerlink) {
                     position: relative;
                     left: -$api-arguments-indent;
@@ -169,7 +169,7 @@ dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list)
                     vertical-align: top;
                 }
                 ~ .headerlink {
-                    position: absolute;
+                    // position: absolute;
                     bottom: $api-header-padding;
                     right: $api-header-padding;
                 }
@@ -189,7 +189,7 @@ dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list)
                 }
             }
             ~ .headerlink {
-                position: absolute;
+                // position: absolute;
                 bottom: $api-header-padding;
                 right: $api-header-padding;
             }

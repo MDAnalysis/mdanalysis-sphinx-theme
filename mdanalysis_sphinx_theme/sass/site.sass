@@ -6,26 +6,31 @@
     font-family: 'PT Sans', Helvetica, Arial, 'sans-serif'
 
 
-
 @import "bulma/sass/utilities/functions.sass"
 @import "utilities/_convert"
 @import "utilities/_z-depth"
 @import "css/theme.css"
 @import "css/jupyter.min.css"
 
-$openff-blue: rgb(1, 84, 128)
-$openff-toolkit-blue: rgb(47, 158, 210)
-$openff-dataset-yellow: rgb(240, 133, 33)
-$openff-evaluator-orange: rgb(240, 58, 33)
-$openff-green: rgb(9, 188, 138)
+$mdanalysis-orange: #FF9200
+$mdanalysis-gray: #808080
+$mdanalysis-white: #FFFFFF
+$mdanalysis-black: #000000
+$mdanalysis-orange-light: #FFEBD0
+$mdanalysis-code-orange: #ca6500
+$readthedocs-dark-gray: #343131
+$readthedocs-light-gray: #e6e6e6
+$mdanalysis-yellow: #e7cb00
+$mdanalysis-blue: #008790
+$mdanalysis-green: #01a901
 
-$primary: $openff-blue
-$accent: accent_color()
+$primary: $mdanalysis-orange
+$accent: $mdanalysis-code-orange
 $text: rgba(0,0,0,.87)
-$green: $openff-green
-$blue: $openff-blue
-$yellow: $openff-dataset-yellow
-$orange: $openff-evaluator-orange
+$green: $mdanalysis-green
+$blue: $mdanalysis-blue
+$yellow: $mdanalysis-yellow
+$orange: $mdanalysis-orange
 
 $link: $primary
 $link-hover: $accent
@@ -59,7 +64,7 @@ $accent-dark: findDarkColor($accent)
 $footer-color: findColorInvert($footer-background-color)
 
 $family-sans-serif: 'PT Sans', Helvetica, Arial, 'sans-serif'
-$family-monospace: Cousine, monospace
+$family-monospace: Menlo, Monaco, 'Courier New', monospace
 
 $navbar-height: 4rem
 $below-navbar-spacing: 0.5rem
@@ -78,8 +83,6 @@ $api-fullhd-width: 46.2rem
 $expanded-table-widescreen-width: 66vw
 $expanded-table-fullhd-width: 58rem
 
-// @import "bulma/bulma.sass"
-// Important that we exclude the .section class, as it clashes with Sphinx 4+
 @import "bulma/sass/utilities/_all.sass"
 @import "bulma/sass/base/_all.sass"
 @import "bulma/sass/grid/columns.sass"
@@ -96,6 +99,7 @@ $expanded-table-fullhd-width: 58rem
 @import "bulma/sass/layout/footer.sass"
 @import "bulma/sass/layout/hero.sass"
 
+@import "mdanalysis-sphinx.scss"
 
 $breadcrumb-item-color-light: findColorInvert($breadcrumb-item-color)
 $breadcrumb-item-hover-color-light: $accent-light
@@ -112,7 +116,8 @@ $breadcrumb-item-separator-color-light: findColorInvert($breadcrumb-item-separat
 html
     scroll-padding-top: $navbar-height + $below-navbar-spacing
 
-.content
+
+.rst-content
     @import "material-content.scss"
     @import "sphinx-content.scss"
     @import "admonitions.sass"
@@ -129,6 +134,7 @@ html
     @media screen and (min-width: $desktop)
       max-width: $para-width
       margin: auto
+
 
 header, .navbar.is-primary.has-shadow
     box-shadow: 0 2px 3px 0 $primary
@@ -252,6 +258,8 @@ body
     min-height: 100vh
     display: flex
     flex-direction: column
+    font-family: 'PT Sans', Helvetica, Arial, 'sans-serif'
+
 header
     z-index: 1
     background-color: $primary

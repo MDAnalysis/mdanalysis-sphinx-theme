@@ -54,10 +54,10 @@ def compile_css(app, exception):
         return
 
     accent_color = app.config["html_theme_options"].get(
-        "color_accent", "openff-toolkit-blue"
+        "color_accent", "mdanalysis-orange"
     )
     accent_color = {
-        "openff-blue": (1, 84, 128),
+        "mdanalysis-orange": (255, 146, 0),
         "openff-toolkit-blue": (47, 158, 210),
         "openff-dataset-yellow": (240, 133, 33),
         "openff-evaluator-orange": (240, 58, 33),

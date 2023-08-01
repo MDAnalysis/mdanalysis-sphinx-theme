@@ -111,7 +111,7 @@ html_theme_options = {
     "css_minify": False,
     "globaltoc_depth": 3,
     "globaltoc_include_local": True,
-    "color_accent": "openff-toolkit-blue",
+    "color_accent": "mdanalysis-orange",
     "html_hyphenate_and_justify": True,
     "nav_links": [
         {
