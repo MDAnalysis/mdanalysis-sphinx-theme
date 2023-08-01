@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>pydantic_example &mdash; MDAnalysis Sphinx theme</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/site.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/rtd_sphinx_search.min.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/js/rtd_search_config.js"></script>
+        <script src="../_static/js/rtd_sphinx_search.min.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script src="../_static/js/versions.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Basic Use</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../customization.html">Customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../specimen.html">Specimen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../additional_samples.html"><code class="docutils literal notranslate"><span class="pre">additional_samples_with_very_long_name</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../subpage/index.html"><code class="docutils literal notranslate"><span class="pre">Level</span> <span class="pre">1</span></code> page</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Other Examples and Uses</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pymethod.html">Python Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../numpydoc_example.html">NumPy Docstrings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../autodoc_pydantic_example.html">autodoc_pydantic API Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../numpydoc.html">Openff-toolkit example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pydantic.html">Pydantic API docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebook.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rst-cheatsheet/rst-cheatsheet.html">rst Cheatsheet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../primer.html">reStructuredText Primer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Changes and License</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../change-log.html">Change Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MDAnalysis Sphinx theme</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Module code</a></li>
+      <li class="breadcrumb-item active">pydantic_example</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for pydantic_example</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseSettings</span><span class="p">,</span> <span class="n">Field</span><span class="p">,</span> <span class="n">validator</span>
+
+
+<div class="viewcode-block" id="ExampleSettings"><a class="viewcode-back" href="../autodoc_pydantic_example.html#pydantic_example.ExampleSettings">[docs]</a><span class="k">class</span> <span class="nc">ExampleSettings</span><span class="p">(</span><span class="n">BaseSettings</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Document your project settings very conveniently. Applies like wise</span>
+<span class="sd">    to pydantic models.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">field_plain_with_validator</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Show standard field with type annotation.&quot;&quot;&quot;</span>
+
+    <span class="n">field_plain</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Show standard field without type annotation.&quot;&quot;&quot;</span>
+
+    <span class="n">field_with_validator_and_alias</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="s2">&quot;FooBar&quot;</span><span class="p">,</span> <span class="n">alias</span><span class="o">=</span><span class="s2">&quot;BarFoo&quot;</span><span class="p">,</span> <span class="n">env</span><span class="o">=</span><span class="s2">&quot;BarFoo&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Shows corresponding validator with link/anchor.&quot;&quot;&quot;</span>
+
+    <span class="n">field_with_validator_and_alias_typeless</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="s2">&quot;FooBar&quot;</span><span class="p">,</span> <span class="n">alias</span><span class="o">=</span><span class="s2">&quot;BarFoo&quot;</span><span class="p">,</span> <span class="n">env</span><span class="o">=</span><span class="s2">&quot;BarFoo&quot;</span>
+    <span class="p">)</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Shows corresponding validator with link/anchor but without type annotation.&quot;&quot;&quot;</span>
+
+    <span class="n">field_with_constraints_and_description</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="n">default</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">ge</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">le</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Shows constraints within doc string.&quot;</span>
+    <span class="p">)</span>
+
+<div class="viewcode-block" id="ExampleSettings.check_max_length_ten"><a class="viewcode-back" href="../autodoc_pydantic_example.html#pydantic_example.ExampleSettings.check_max_length_ten">[docs]</a>    <span class="nd">@validator</span><span class="p">(</span><span class="s2">&quot;field_with_validator_and_alias&quot;</span><span class="p">,</span> <span class="s2">&quot;field_plain_with_validator&quot;</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">check_max_length_ten</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Show corresponding field with link/anchor.&quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">len</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;No more than 10 characters allowed&quot;</span><span class="p">)</span></div>
+
+    <span class="k">class</span> <span class="nc">Config</span><span class="p">:</span>
+        <span class="n">env_prefix</span> <span class="o">=</span> <span class="s2">&quot;foo_&quot;</span>
+        <span class="n">allow_mutation</span> <span class="o">=</span> <span class="kc">True</span>
+
+<div class="viewcode-block" id="ExampleSettings.method_without_sig"><a class="viewcode-back" href="../autodoc_pydantic_example.html#pydantic_example.ExampleSettings.method_without_sig">[docs]</a>    <span class="k">def</span> <span class="nf">method_without_sig</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">BaseSettings</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">BaseSettings</span><span class="p">()</span></div></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, MDAnalysis.
+      <span class="lastupdated">Last updated on Aug 01, 2023.
+      </span></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+    var versions_json_url = ''
+</script>
+
+<div class="rst-versions" data-toggle="rst-versions" role="note"
+     aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"></span>
+        
+      <span class="fa fa-caret-down"></span>
+    </span>
+
+    <div class="rst-other-versions">
+        <dl id="versionselector">
+            <dt>Other Versions</dt>
+        </dl>
+
+    </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
