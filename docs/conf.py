@@ -19,7 +19,6 @@ import os
 import sys
 
 sys.path.insert(0, os.path.abspath("."))
-# from distutils.version import LooseVersion
 
 copyright = "2023, MDAnalysis"
 author = "MDAnalysis"
@@ -107,7 +106,6 @@ html_theme_options = {
     "base_url": "https://minium.com.au/mdanalysis-sphinx-theme/",
     "repo_url": "https://github.com/lilyminium/mdanalysis-sphinx-theme/",
     "repo_name": "mdanalysis-sphinx-theme",
-
 }
 
 # If HTML theme settings isn't lines 90-160, remember to change customization.rst

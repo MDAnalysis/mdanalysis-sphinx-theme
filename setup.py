@@ -17,8 +17,7 @@ setup(
     package_data={'mdanalysis_sphinx_theme': [
         'theme.conf',
         '*.html',
-        'static/css/*.css',
-        'static/js/*.js',
+        'static/*/*.*',
         'sass/*.*',
         'sass/*/*.*',
         'sass/bulma/sass/*/*.*',
@@ -30,7 +29,6 @@ setup(
         'Environment :: Console',
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',
         'Topic :: Documentation',
