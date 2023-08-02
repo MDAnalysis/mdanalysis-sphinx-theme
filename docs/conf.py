@@ -107,7 +107,7 @@ html_theme_options = {
     "base_url": "https://minium.com.au/mdanalysis-sphinx-theme/",
     "repo_url": "https://github.com/lilyminium/mdanalysis-sphinx-theme/",
     "repo_name": "mdanalysis-sphinx-theme",
-
+    "mdaofficial": True,
 }
 
 # If HTML theme settings isn't lines 90-160, remember to change customization.rst
