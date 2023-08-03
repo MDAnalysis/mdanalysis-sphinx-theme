@@ -1,7 +1,10 @@
-versioneer.pyc
 *.egg-info
-dist
-build
-__pycache__
 *.pyc
+.DS_Store
 .idea/
+__pycache__
+build
+dist
+mda_favicon.ico
+mda_logo.png
+versioneer.pyc
