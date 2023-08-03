@@ -1,3 +1,13 @@
+
+
+
+  
+
+
+<head>
+  <link rel="shortcut icon" href="_static/logo/mda_favicon.ico">
+</head>
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
@@ -32,11 +42,24 @@
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
 
-          
-          
-          <a href="../index.html">
-            
-          </a>
+
+
+  
+
+
+
+<a href="../index.html">
+  
+    <img src="_static/logo/mda_logo.png" class="logo" alt="Logo"/>
+</a>
+
+
+  
+  
+  
+
+
+
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
@@ -44,6 +67,8 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
+
+
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Basic Use</span></p>
 <ul>
@@ -330,6 +355,12 @@
     <span class="n">__all__</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">lib</span><span class="o">.</span><span class="n">__all__</span><span class="p">)</span>
     <span class="n">__all__</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="s1">&#39;linalg&#39;</span><span class="p">,</span> <span class="s1">&#39;fft&#39;</span><span class="p">,</span> <span class="s1">&#39;random&#39;</span><span class="p">,</span> <span class="s1">&#39;ctypeslib&#39;</span><span class="p">,</span> <span class="s1">&#39;ma&#39;</span><span class="p">])</span>
 
+    <span class="c1"># Remove min and max from __all__ to avoid `from numpy import *` override</span>
+    <span class="c1"># the builtins min/max. Temporary fix for 1.25.x/1.26.x, see gh-24229.</span>
+    <span class="n">__all__</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;min&#39;</span><span class="p">)</span>
+    <span class="n">__all__</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;max&#39;</span><span class="p">)</span>
+    <span class="n">__all__</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;round&#39;</span><span class="p">)</span>
+
     <span class="c1"># Remove one of the two occurrences of `issubdtype`, which is exposed as</span>
     <span class="c1"># both `numpy.core.issubdtype` and `numpy.lib.issubdtype`.</span>
     <span class="n">__all__</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;issubdtype&#39;</span><span class="p">)</span>
@@ -551,11 +582,20 @@
 
   <div role="contentinfo">
     <p>&#169; Copyright 2023, MDAnalysis.
-      <span class="lastupdated">Last updated on Aug 02, 2023.
+      <span class="lastupdated">Last updated on Aug 03, 2023.
       </span></p>
   </div>
 
-   
+  
+
+<div class="footer"><p>Please see
+    our <a href="https://www.mdanalysis.org/pages/privacy/">Privacy Policy</a>
+    to learn how <a href="https://www.mdanalysis.org">MDAnalysis</a> collects data.</p>
+    <script data-goatcounter="https://mdanalysis.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</div>
+
+
 
 </footer>
         </div>

@@ -7208,9 +7208,9 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 
 .footer {
-  background-color: #c26f00;
+  background-color: #FFFFFF;
   padding: 3rem 1.5rem 6rem;
-  color: #fff;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .hero {
@@ -10359,7 +10359,7 @@ footer .fineprint {
 }
 
 footer .fineprint a {
-  color: #fff;
+  color: rgba(0, 0, 0, 0.7);
   font-weight: 500;
 }
 
