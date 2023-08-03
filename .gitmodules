@@ -3,4 +3,4 @@
 	url = https://github.com/jupyter/notebook.git
 [submodule "branding"]
 	path = branding
-	url = git@github.com:MDAnalysis/branding.git
+	url = https://github.com/MDAnalysis/branding.git
