@@ -14,13 +14,10 @@ def copy_mda_assets():
     static_logos = static_dir / 'logo'
 
     # main logo to appear in nav bar
-    mda_logo: Path = branding_dir / 'logos' /\
-                                    'rastered' /\
-                                    'mdanalysis-logo_bgwhite@600ppi.png'
+    mda_logo_base_file = 'mdanalysis-logo_bgwhite@600ppi.png'
+    mda_logo = branding_dir / 'logos' / 'rastered' / mda_logo_base_file
 
-    mda_favicon = branding_dir / 'logos' /\
-                                 'icons' /\
-                                 'mdanalysis-logo.ico'
+    mda_favicon = branding_dir / 'logos' / 'icons' / 'mdanalysis-logo.ico'
 
     if not mda_logo.exists():
         raise FileNotFoundError("Could not find the MDAnalysis logo. "
