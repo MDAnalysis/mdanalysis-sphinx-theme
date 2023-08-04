@@ -91,8 +91,7 @@
 <li class="toctree-l1"><a class="reference internal" href="pymethod.html">Python Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="numpydoc_example.html">NumPy Docstrings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="autodoc_pydantic_example.html">autodoc_pydantic API Docs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="numpydoc.html">Openff-toolkit example</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pydantic.html">Pydantic API docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mdanalysis.html">MDAnalysis example</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebook.html">Jupyter Notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rst-cheatsheet/rst-cheatsheet.html">rst Cheatsheet</a></li>
 <li class="toctree-l1"><a class="reference internal" href="primer.html">reStructuredText Primer</a></li>
@@ -132,53 +131,52 @@
 <p>There are two methods to alter the theme.
 The first, and simplest, uses the options exposed through <code class="docutils literal notranslate"><span class="pre">html_theme_options</span></code> in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>.
 This site’s options are:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 90</span><span class="c1"># Add any paths that contain custom static files (such as style sheets) here,</span>
-<span class="linenos"> 91</span><span class="c1"># relative to this directory. They are copied after the builtin static files,</span>
-<span class="linenos"> 92</span><span class="c1"># so a file named &#39;default.css&#39; will overwrite the builtin &#39;default.css&#39;.</span>
-<span class="linenos"> 93</span><span class="n">html_static_path</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;_static&quot;</span><span class="p">]</span>
-<span class="linenos"> 94</span>
-<span class="linenos"> 95</span><span class="c1"># If HTML theme settings isn&#39;t lines 90-160, remember to change customization.rst</span>
-<span class="linenos"> 96</span>
-<span class="linenos"> 97</span><span class="c1"># -- HTML theme settings ------------------------------------------------</span>
-<span class="linenos"> 98</span><span class="n">html_show_sourcelink</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="linenos"> 99</span><span class="n">html_sidebars</span> <span class="o">=</span> <span class="p">{</span>
-<span class="linenos">100</span>    <span class="s2">&quot;**&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;globaltoc.html&quot;</span><span class="p">,</span> <span class="s2">&quot;localtoc.html&quot;</span><span class="p">,</span> <span class="s2">&quot;searchbox.html&quot;</span><span class="p">],</span>
-<span class="linenos">101</span>    <span class="s2">&quot;customization&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;globaltoc.html&quot;</span><span class="p">,</span> <span class="s2">&quot;searchbox.html&quot;</span><span class="p">],</span>
-<span class="linenos">102</span>    <span class="s2">&quot;subpage/second-subsubpage&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;globaltoc.html&quot;</span><span class="p">,</span> <span class="s2">&quot;searchbox.html&quot;</span><span class="p">],</span>
-<span class="linenos">103</span><span class="p">}</span>
-<span class="linenos">104</span>
-<span class="linenos">105</span><span class="c1"># material theme options (see theme.conf for more information)</span>
-<span class="linenos">106</span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
-<span class="linenos">107</span>    <span class="s2">&quot;base_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://minium.com.au/mdanalysis-sphinx-theme/&quot;</span><span class="p">,</span>
-<span class="linenos">108</span>    <span class="s2">&quot;repo_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/lilyminium/mdanalysis-sphinx-theme/&quot;</span><span class="p">,</span>
-<span class="linenos">109</span>    <span class="s2">&quot;repo_name&quot;</span><span class="p">:</span> <span class="s2">&quot;mdanalysis-sphinx-theme&quot;</span><span class="p">,</span>
-<span class="linenos">110</span>    <span class="s2">&quot;mda_official&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-<span class="linenos">111</span><span class="p">}</span>
-<span class="linenos">112</span>
-<span class="linenos">113</span><span class="c1"># If HTML theme settings isn&#39;t lines 90-160, remember to change customization.rst</span>
-<span class="linenos">114</span>
-<span class="linenos">115</span><span class="n">language</span> <span class="o">=</span> <span class="s2">&quot;en&quot;</span>
-<span class="linenos">116</span><span class="n">html_last_updated_fmt</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-<span class="linenos">117</span>
-<span class="linenos">118</span><span class="n">todo_include_todos</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="linenos">119</span>
-<span class="linenos">120</span><span class="n">html_use_index</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="linenos">121</span><span class="n">html_domain_indices</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="linenos">122</span>
-<span class="linenos">123</span><span class="n">nbsphinx_execute</span> <span class="o">=</span> <span class="s2">&quot;always&quot;</span>
-<span class="linenos">124</span><span class="n">nbsphinx_kernel_name</span> <span class="o">=</span> <span class="s2">&quot;python3&quot;</span>
-<span class="linenos">125</span>
-<span class="linenos">126</span><span class="n">extlinks</span> <span class="o">=</span> <span class="p">{</span>
-<span class="linenos">127</span>    <span class="s2">&quot;duref&quot;</span><span class="p">:</span> <span class="p">(</span>
-<span class="linenos">128</span>        <span class="s2">&quot;http://docutils.sourceforge.net/docs/ref/rst/&quot;</span> <span class="s2">&quot;restructuredtext.html#</span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span>
-<span class="linenos">129</span>        <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span>
-<span class="linenos">130</span>    <span class="p">),</span>
-<span class="linenos">131</span>    <span class="s2">&quot;durole&quot;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;http://docutils.sourceforge.net/docs/ref/rst/&quot;</span> <span class="s2">&quot;roles.html#</span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">),</span>
-<span class="linenos">132</span>    <span class="s2">&quot;dudir&quot;</span><span class="p">:</span> <span class="p">(</span>
-<span class="linenos">133</span>        <span class="s2">&quot;http://docutils.sourceforge.net/docs/ref/rst/&quot;</span> <span class="s2">&quot;directives.html#</span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span>
-<span class="linenos">134</span>        <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span>
-<span class="linenos">135</span>    <span class="p">),</span>
-<span class="linenos">136</span><span class="p">}</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 90</span><span class="c1"># relative to this directory. They are copied after the builtin static files,</span>
+<span class="linenos"> 91</span><span class="c1"># so a file named &#39;default.css&#39; will overwrite the builtin &#39;default.css&#39;.</span>
+<span class="linenos"> 92</span><span class="n">html_static_path</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;_static&quot;</span><span class="p">]</span>
+<span class="linenos"> 93</span>
+<span class="linenos"> 94</span><span class="c1"># If HTML theme settings isn&#39;t lines 90-160, remember to change customization.rst</span>
+<span class="linenos"> 95</span>
+<span class="linenos"> 96</span><span class="c1"># -- HTML theme settings ------------------------------------------------</span>
+<span class="linenos"> 97</span><span class="n">html_show_sourcelink</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="linenos"> 98</span><span class="n">html_sidebars</span> <span class="o">=</span> <span class="p">{</span>
+<span class="linenos"> 99</span>    <span class="s2">&quot;**&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;globaltoc.html&quot;</span><span class="p">,</span> <span class="s2">&quot;localtoc.html&quot;</span><span class="p">,</span> <span class="s2">&quot;searchbox.html&quot;</span><span class="p">],</span>
+<span class="linenos">100</span>    <span class="s2">&quot;customization&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;globaltoc.html&quot;</span><span class="p">,</span> <span class="s2">&quot;searchbox.html&quot;</span><span class="p">],</span>
+<span class="linenos">101</span>    <span class="s2">&quot;subpage/second-subsubpage&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;globaltoc.html&quot;</span><span class="p">,</span> <span class="s2">&quot;searchbox.html&quot;</span><span class="p">],</span>
+<span class="linenos">102</span><span class="p">}</span>
+<span class="linenos">103</span>
+<span class="linenos">104</span><span class="c1"># material theme options (see theme.conf for more information)</span>
+<span class="linenos">105</span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+<span class="linenos">106</span>    <span class="s2">&quot;base_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://minium.com.au/mdanalysis-sphinx-theme/&quot;</span><span class="p">,</span>
+<span class="linenos">107</span>    <span class="s2">&quot;repo_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/lilyminium/mdanalysis-sphinx-theme/&quot;</span><span class="p">,</span>
+<span class="linenos">108</span>    <span class="s2">&quot;repo_name&quot;</span><span class="p">:</span> <span class="s2">&quot;mdanalysis-sphinx-theme&quot;</span><span class="p">,</span>
+<span class="linenos">109</span>    <span class="s2">&quot;mda_official&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+<span class="linenos">110</span><span class="p">}</span>
+<span class="linenos">111</span>
+<span class="linenos">112</span><span class="c1"># If HTML theme settings isn&#39;t lines 90-160, remember to change customization.rst</span>
+<span class="linenos">113</span>
+<span class="linenos">114</span><span class="n">language</span> <span class="o">=</span> <span class="s2">&quot;en&quot;</span>
+<span class="linenos">115</span><span class="n">html_last_updated_fmt</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="linenos">116</span>
+<span class="linenos">117</span><span class="n">todo_include_todos</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="linenos">118</span>
+<span class="linenos">119</span><span class="n">html_use_index</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="linenos">120</span><span class="n">html_domain_indices</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="linenos">121</span>
+<span class="linenos">122</span><span class="n">nbsphinx_execute</span> <span class="o">=</span> <span class="s2">&quot;always&quot;</span>
+<span class="linenos">123</span><span class="n">nbsphinx_kernel_name</span> <span class="o">=</span> <span class="s2">&quot;python3&quot;</span>
+<span class="linenos">124</span>
+<span class="linenos">125</span><span class="n">extlinks</span> <span class="o">=</span> <span class="p">{</span>
+<span class="linenos">126</span>    <span class="s2">&quot;duref&quot;</span><span class="p">:</span> <span class="p">(</span>
+<span class="linenos">127</span>        <span class="s2">&quot;http://docutils.sourceforge.net/docs/ref/rst/&quot;</span> <span class="s2">&quot;restructuredtext.html#</span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span>
+<span class="linenos">128</span>        <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span>
+<span class="linenos">129</span>    <span class="p">),</span>
+<span class="linenos">130</span>    <span class="s2">&quot;durole&quot;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;http://docutils.sourceforge.net/docs/ref/rst/&quot;</span> <span class="s2">&quot;roles.html#</span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">),</span>
+<span class="linenos">131</span>    <span class="s2">&quot;dudir&quot;</span><span class="p">:</span> <span class="p">(</span>
+<span class="linenos">132</span>        <span class="s2">&quot;http://docutils.sourceforge.net/docs/ref/rst/&quot;</span> <span class="s2">&quot;directives.html#</span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span>
+<span class="linenos">133</span>        <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span>
+<span class="linenos">134</span>    <span class="p">),</span>
+<span class="linenos">135</span><span class="p">}</span>
 </pre></div>
 </div>
 <p>Many of these settings are provided in this site as examples; for a minimalistic example, see <a class="reference internal" href="index.html#quickstart"><span class="std std-ref">MDAnalysis Sphinx theme Quickstart</span></a>.</p>
@@ -302,7 +300,7 @@ customization:</p>
 
   <div role="contentinfo">
     <p>&#169; Copyright 2023, MDAnalysis.
-      <span class="lastupdated">Last updated on Aug 03, 2023.
+      <span class="lastupdated">Last updated on Aug 04, 2023.
       </span></p>
   </div>
 

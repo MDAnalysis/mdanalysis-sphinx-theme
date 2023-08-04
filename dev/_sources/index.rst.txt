@@ -100,8 +100,7 @@ or ``theme.conf`` for more details.
     pymethod
     numpydoc_example
     autodoc_pydantic_example
-    numpydoc
-    pydantic
+    mdanalysis
     notebook.ipynb
     rst-cheatsheet/rst-cheatsheet
     primer
