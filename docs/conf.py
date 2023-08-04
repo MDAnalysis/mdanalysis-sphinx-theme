@@ -19,7 +19,6 @@ import os
 import sys
 
 sys.path.insert(0, os.path.abspath("."))
-# from distutils.version import LooseVersion
 
 copyright = "2023, MDAnalysis"
 author = "MDAnalysis"

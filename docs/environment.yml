@@ -20,6 +20,8 @@ dependencies:
   - sphinx-autobuild
   - sphinx>=6.2.1,<7
   - sphinx_rtd_theme
+
+  - mdanalysis
   - pip:
     - readthedocs-sphinx-search
     - beautifulsoup4
