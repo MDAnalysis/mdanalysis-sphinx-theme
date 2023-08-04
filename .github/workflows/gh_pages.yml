@@ -120,5 +120,5 @@ jobs:
           comment-id: ${{ steps.fc.outputs.comment-id }}
           issue-number: ${{ github.event.pull_request.number }}
           body: |
-            Example docs for this PR [rendered here](https://minium.com.au/mdanalysis-sphinx-theme/PR${{ github.event.number }})
+            Example docs for this PR [rendered here](https://mdanalysis.org/mdanalysis-sphinx-theme/PR${{ github.event.number }})
           edit-mode: replace

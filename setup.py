@@ -43,7 +43,7 @@ setup(
     name='mdanalysis_sphinx_theme',
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
-    url='https://github.com/lilyminium/mdanalysis-sphinx-theme/',
+    url='https://github.com/mdanalysis/mdanalysis-sphinx-theme/',
     license='MIT',
     author='MDAnalysis',
     author_email='mdanalysis@numfocus.org',
