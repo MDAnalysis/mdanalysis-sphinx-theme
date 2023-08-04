@@ -9093,7 +9093,7 @@ html {
   overflow: hidden;
   color: rgba(0, 0, 0, 0.87);
   page-break-inside: avoid;
-  border-left: 0.25rem solid #ca6500;
+  border-left: none;
   border-radius: 0.125rem;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.4);
 }
@@ -9143,7 +9143,7 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.note .admonition-title, .rst-content .admonition.note.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-note .admonition-title, .rst-content .admonition.admonition-note.deprecated .versionmodified.deprecated, .rst-content div.deprecated.note .admonition-title, .rst-content div.deprecated.note.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-note .admonition-title, .rst-content div.deprecated.admonition-note.deprecated .versionmodified.deprecated, .rst-content div.alert.note .admonition-title, .rst-content div.alert.note.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-note .admonition-title, .rst-content div.alert.admonition-note.deprecated .versionmodified.deprecated {
-  background-color: rgba(122, 122, 122, 0.1);
+  background-color: #7a7a7a;
   border-left-color: #7a7a7a;
 }
 
@@ -9166,7 +9166,7 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.seealso .admonition-title, .rst-content .admonition.seealso.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-seealso .admonition-title, .rst-content .admonition.admonition-seealso.deprecated .versionmodified.deprecated, .rst-content div.deprecated.seealso .admonition-title, .rst-content div.deprecated.seealso.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-seealso .admonition-title, .rst-content div.deprecated.admonition-seealso.deprecated .versionmodified.deprecated, .rst-content div.alert.seealso .admonition-title, .rst-content div.alert.seealso.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-seealso .admonition-title, .rst-content div.alert.admonition-seealso.deprecated .versionmodified.deprecated {
-  background-color: rgba(122, 122, 122, 0.1);
+  background-color: #7a7a7a;
   border-left-color: #7a7a7a;
 }
 
@@ -9189,7 +9189,7 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.admonition-abstract .admonition-title, .rst-content .admonition.admonition-abstract.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-summary .admonition-title, .rst-content .admonition.admonition-summary.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-tldr .admonition-title, .rst-content .admonition.admonition-tldr.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-abstract .admonition-title, .rst-content div.deprecated.admonition-abstract.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-summary .admonition-title, .rst-content div.deprecated.admonition-summary.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-tldr .admonition-title, .rst-content div.deprecated.admonition-tldr.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-abstract .admonition-title, .rst-content div.alert.admonition-abstract.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-summary .admonition-title, .rst-content div.alert.admonition-summary.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-tldr .admonition-title, .rst-content div.alert.admonition-tldr.deprecated .versionmodified.deprecated {
-  background-color: rgba(50, 152, 220, 0.1);
+  background-color: #3298dc;
   border-left-color: #3298dc;
 }
 
@@ -9204,24 +9204,24 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.admonition-info, .rst-content .admonition.alert-info, .rst-content div.deprecated.admonition-info, .rst-content div.deprecated.alert-info, .rst-content div.alert.admonition-info, .rst-content div.alert.alert-info {
-  border-left-color: #007ee7;
+  border-left-color: #ca6500;
 }
 
 [dir="rtl"] .rst-content .admonition.admonition-info, [dir="rtl"] .rst-content .admonition.alert-info, [dir="rtl"] .rst-content div.deprecated.admonition-info, [dir="rtl"] .rst-content div.deprecated.alert-info, [dir="rtl"] .rst-content div.alert.admonition-info, [dir="rtl"] .rst-content div.alert.alert-info {
-  border-right-color: #007ee7;
+  border-right-color: #ca6500;
 }
 
 .rst-content .admonition.admonition-info .admonition-title, .rst-content .admonition.admonition-info.deprecated .versionmodified.deprecated, .rst-content .admonition.alert-info .admonition-title, .rst-content .admonition.alert-info.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-info .admonition-title, .rst-content div.deprecated.admonition-info.deprecated .versionmodified.deprecated, .rst-content div.deprecated.alert-info .admonition-title, .rst-content div.deprecated.alert-info.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-info .admonition-title, .rst-content div.alert.admonition-info.deprecated .versionmodified.deprecated, .rst-content div.alert.alert-info .admonition-title, .rst-content div.alert.alert-info.deprecated .versionmodified.deprecated {
-  background-color: rgba(0, 126, 231, 0.1);
-  border-left-color: #007ee7;
+  background-color: #ca6500;
+  border-left-color: #ca6500;
 }
 
 [dir="rtl"] .rst-content .admonition.admonition-info .admonition-title, [dir="rtl"] .rst-content .admonition.admonition-info.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content .admonition.alert-info .admonition-title, [dir="rtl"] .rst-content .admonition.alert-info.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.deprecated.admonition-info .admonition-title, [dir="rtl"] .rst-content div.deprecated.admonition-info.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.deprecated.alert-info .admonition-title, [dir="rtl"] .rst-content div.deprecated.alert-info.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.alert.admonition-info .admonition-title, [dir="rtl"] .rst-content div.alert.admonition-info.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.alert.alert-info .admonition-title, [dir="rtl"] .rst-content div.alert.alert-info.deprecated .versionmodified.deprecated {
-  border-right-color: #007ee7;
+  border-right-color: #ca6500;
 }
 
 .rst-content .admonition.admonition-info .admonition-title::before, .rst-content .admonition.admonition-info.deprecated .versionmodified.deprecated::before, .rst-content .admonition.alert-info .admonition-title::before, .rst-content .admonition.alert-info.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-info .admonition-title::before, .rst-content div.deprecated.admonition-info.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.alert-info .admonition-title::before, .rst-content div.deprecated.alert-info.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-info .admonition-title::before, .rst-content div.alert.admonition-info.deprecated .versionmodified.deprecated::before, .rst-content div.alert.alert-info .admonition-title::before, .rst-content div.alert.alert-info.deprecated .versionmodified.deprecated::before {
-  color: #007ee7;
+  color: #ca6500;
   font-family: "Font Awesome 5 Free";
   content: "";
 }
@@ -9235,7 +9235,7 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.admonition-todo .admonition-title, .rst-content .admonition.admonition-todo.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-todo .admonition-title, .rst-content div.deprecated.admonition-todo.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-todo .admonition-title, .rst-content div.alert.admonition-todo.deprecated .versionmodified.deprecated {
-  background-color: rgba(231, 203, 0, 0.1);
+  background-color: #e7cb00;
   border-left-color: #e7cb00;
 }
 
@@ -9258,7 +9258,7 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.tip .admonition-title, .rst-content .admonition.tip.deprecated .versionmodified.deprecated, .rst-content .admonition.hint .admonition-title, .rst-content .admonition.hint.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-tip .admonition-title, .rst-content .admonition.admonition-tip.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-hint .admonition-title, .rst-content .admonition.admonition-hint.deprecated .versionmodified.deprecated, .rst-content div.deprecated.tip .admonition-title, .rst-content div.deprecated.tip.deprecated .versionmodified.deprecated, .rst-content div.deprecated.hint .admonition-title, .rst-content div.deprecated.hint.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-tip .admonition-title, .rst-content div.deprecated.admonition-tip.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-hint .admonition-title, .rst-content div.deprecated.admonition-hint.deprecated .versionmodified.deprecated, .rst-content div.alert.tip .admonition-title, .rst-content div.alert.tip.deprecated .versionmodified.deprecated, .rst-content div.alert.hint .admonition-title, .rst-content div.alert.hint.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-tip .admonition-title, .rst-content div.alert.admonition-tip.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-hint .admonition-title, .rst-content div.alert.admonition-hint.deprecated .versionmodified.deprecated {
-  background-color: rgba(0, 209, 178, 0.1);
+  background-color: #00d1b2;
   border-left-color: #00d1b2;
 }
 
@@ -9281,7 +9281,7 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.important .admonition-title, .rst-content .admonition.important.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-important .admonition-title, .rst-content .admonition.admonition-important.deprecated .versionmodified.deprecated, .rst-content div.deprecated.important .admonition-title, .rst-content div.deprecated.important.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-important .admonition-title, .rst-content div.deprecated.admonition-important.deprecated .versionmodified.deprecated, .rst-content div.alert.important .admonition-title, .rst-content div.alert.important.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-important .admonition-title, .rst-content div.alert.admonition-important.deprecated .versionmodified.deprecated {
-  background-color: rgba(1, 169, 1, 0.1);
+  background-color: #01a901;
   border-left-color: #01a901;
 }
 
@@ -9304,7 +9304,7 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.admonition-success .admonition-title, .rst-content .admonition.admonition-success.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-check .admonition-title, .rst-content .admonition.admonition-check.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-done .admonition-title, .rst-content .admonition.admonition-done.deprecated .versionmodified.deprecated, .rst-content .admonition.alert-success .admonition-title, .rst-content .admonition.alert-success.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-success .admonition-title, .rst-content div.deprecated.admonition-success.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-check .admonition-title, .rst-content div.deprecated.admonition-check.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-done .admonition-title, .rst-content div.deprecated.admonition-done.deprecated .versionmodified.deprecated, .rst-content div.deprecated.alert-success .admonition-title, .rst-content div.deprecated.alert-success.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-success .admonition-title, .rst-content div.alert.admonition-success.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-check .admonition-title, .rst-content div.alert.admonition-check.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-done .admonition-title, .rst-content div.alert.admonition-done.deprecated .versionmodified.deprecated, .rst-content div.alert.alert-success .admonition-title, .rst-content div.alert.alert-success.deprecated .versionmodified.deprecated {
-  background-color: rgba(1, 169, 1, 0.1);
+  background-color: #01a901;
   border-left-color: #01a901;
 }
 
@@ -9327,7 +9327,7 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.admonition-question .admonition-title, .rst-content .admonition.admonition-question.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-help .admonition-title, .rst-content .admonition.admonition-help.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-faq .admonition-title, .rst-content .admonition.admonition-faq.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-question .admonition-title, .rst-content div.deprecated.admonition-question.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-help .admonition-title, .rst-content div.deprecated.admonition-help.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-faq .admonition-title, .rst-content div.deprecated.admonition-faq.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-question .admonition-title, .rst-content div.alert.admonition-question.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-help .admonition-title, .rst-content div.alert.admonition-help.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-faq .admonition-title, .rst-content div.alert.admonition-faq.deprecated .versionmodified.deprecated {
-  background-color: rgba(50, 152, 220, 0.1);
+  background-color: #3298dc;
   border-left-color: #3298dc;
 }
 
@@ -9350,7 +9350,7 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.warning .admonition-title, .rst-content .admonition.warning.deprecated .versionmodified.deprecated, .rst-content .admonition.caution .admonition-title, .rst-content .admonition.caution.deprecated .versionmodified.deprecated, .rst-content .admonition.attention .admonition-title, .rst-content .admonition.attention.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-warning .admonition-title, .rst-content .admonition.admonition-warning.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-caution .admonition-title, .rst-content .admonition.admonition-caution.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-attention .admonition-title, .rst-content .admonition.admonition-attention.deprecated .versionmodified.deprecated, .rst-content div.deprecated.warning .admonition-title, .rst-content div.deprecated.warning.deprecated .versionmodified.deprecated, .rst-content div.deprecated.caution .admonition-title, .rst-content div.deprecated.caution.deprecated .versionmodified.deprecated, .rst-content div.deprecated.attention .admonition-title, .rst-content div.deprecated.attention.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-warning .admonition-title, .rst-content div.deprecated.admonition-warning.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-caution .admonition-title, .rst-content div.deprecated.admonition-caution.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-attention .admonition-title, .rst-content div.deprecated.admonition-attention.deprecated .versionmodified.deprecated, .rst-content div.alert.warning .admonition-title, .rst-content div.alert.warning.deprecated .versionmodified.deprecated, .rst-content div.alert.caution .admonition-title, .rst-content div.alert.caution.deprecated .versionmodified.deprecated, .rst-content div.alert.attention .admonition-title, .rst-content div.alert.attention.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-warning .admonition-title, .rst-content div.alert.admonition-warning.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-caution .admonition-title, .rst-content div.alert.admonition-caution.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-attention .admonition-title, .rst-content div.alert.admonition-attention.deprecated .versionmodified.deprecated {
-  background-color: rgba(255, 146, 0, 0.1);
+  background-color: #FF9200;
   border-left-color: #FF9200;
 }
 
@@ -9373,7 +9373,7 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.attention .admonition-title, .rst-content .admonition.attention.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-attention .admonition-title, .rst-content .admonition.admonition-attention.deprecated .versionmodified.deprecated, .rst-content .admonition.alert-warning .admonition-title, .rst-content .admonition.alert-warning.deprecated .versionmodified.deprecated, .rst-content div.deprecated.attention .admonition-title, .rst-content div.deprecated.attention.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-attention .admonition-title, .rst-content div.deprecated.admonition-attention.deprecated .versionmodified.deprecated, .rst-content div.deprecated.alert-warning .admonition-title, .rst-content div.deprecated.alert-warning.deprecated .versionmodified.deprecated, .rst-content div.alert.attention .admonition-title, .rst-content div.alert.attention.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-attention .admonition-title, .rst-content div.alert.admonition-attention.deprecated .versionmodified.deprecated, .rst-content div.alert.alert-warning .admonition-title, .rst-content div.alert.alert-warning.deprecated .versionmodified.deprecated {
-  background-color: rgba(231, 203, 0, 0.1);
+  background-color: #e7cb00;
   border-left-color: #e7cb00;
 }
 
@@ -9388,47 +9388,47 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.error, .rst-content .admonition.admonition-failure, .rst-content .admonition.admonition-fail, .rst-content .admonition.admonition-missing, .rst-content .admonition.admonition-error, .rst-content div.deprecated.error, .rst-content div.deprecated.admonition-failure, .rst-content div.deprecated.admonition-fail, .rst-content div.deprecated.admonition-missing, .rst-content div.deprecated.admonition-error, .rst-content div.alert.error, .rst-content div.alert.admonition-failure, .rst-content div.alert.admonition-fail, .rst-content div.alert.admonition-missing, .rst-content div.alert.admonition-error {
-  border-left-color: #f14668;
+  border-left-color: #F45F4B;
 }
 
 [dir="rtl"] .rst-content .admonition.error, [dir="rtl"] .rst-content .admonition.admonition-failure, [dir="rtl"] .rst-content .admonition.admonition-fail, [dir="rtl"] .rst-content .admonition.admonition-missing, [dir="rtl"] .rst-content .admonition.admonition-error, [dir="rtl"] .rst-content div.deprecated.error, [dir="rtl"] .rst-content div.deprecated.admonition-failure, [dir="rtl"] .rst-content div.deprecated.admonition-fail, [dir="rtl"] .rst-content div.deprecated.admonition-missing, [dir="rtl"] .rst-content div.deprecated.admonition-error, [dir="rtl"] .rst-content div.alert.error, [dir="rtl"] .rst-content div.alert.admonition-failure, [dir="rtl"] .rst-content div.alert.admonition-fail, [dir="rtl"] .rst-content div.alert.admonition-missing, [dir="rtl"] .rst-content div.alert.admonition-error {
-  border-right-color: #f14668;
+  border-right-color: #F45F4B;
 }
 
 .rst-content .admonition.error .admonition-title, .rst-content .admonition.error.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-failure .admonition-title, .rst-content .admonition.admonition-failure.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-fail .admonition-title, .rst-content .admonition.admonition-fail.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-missing .admonition-title, .rst-content .admonition.admonition-missing.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-error .admonition-title, .rst-content .admonition.admonition-error.deprecated .versionmodified.deprecated, .rst-content div.deprecated.error .admonition-title, .rst-content div.deprecated.error.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-failure .admonition-title, .rst-content div.deprecated.admonition-failure.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-fail .admonition-title, .rst-content div.deprecated.admonition-fail.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-missing .admonition-title, .rst-content div.deprecated.admonition-missing.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-error .admonition-title, .rst-content div.deprecated.admonition-error.deprecated .versionmodified.deprecated, .rst-content div.alert.error .admonition-title, .rst-content div.alert.error.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-failure .admonition-title, .rst-content div.alert.admonition-failure.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-fail .admonition-title, .rst-content div.alert.admonition-fail.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-missing .admonition-title, .rst-content div.alert.admonition-missing.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-error .admonition-title, .rst-content div.alert.admonition-error.deprecated .versionmodified.deprecated {
-  background-color: rgba(241, 70, 104, 0.1);
-  border-left-color: #f14668;
+  background-color: #F45F4B;
+  border-left-color: #F45F4B;
 }
 
 [dir="rtl"] .rst-content .admonition.error .admonition-title, [dir="rtl"] .rst-content .admonition.error.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content .admonition.admonition-failure .admonition-title, [dir="rtl"] .rst-content .admonition.admonition-failure.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content .admonition.admonition-fail .admonition-title, [dir="rtl"] .rst-content .admonition.admonition-fail.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content .admonition.admonition-missing .admonition-title, [dir="rtl"] .rst-content .admonition.admonition-missing.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content .admonition.admonition-error .admonition-title, [dir="rtl"] .rst-content .admonition.admonition-error.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.deprecated.error .admonition-title, [dir="rtl"] .rst-content div.deprecated.error.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.deprecated.admonition-failure .admonition-title, [dir="rtl"] .rst-content div.deprecated.admonition-failure.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.deprecated.admonition-fail .admonition-title, [dir="rtl"] .rst-content div.deprecated.admonition-fail.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.deprecated.admonition-missing .admonition-title, [dir="rtl"] .rst-content div.deprecated.admonition-missing.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.deprecated.admonition-error .admonition-title, [dir="rtl"] .rst-content div.deprecated.admonition-error.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.alert.error .admonition-title, [dir="rtl"] .rst-content div.alert.error.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.alert.admonition-failure .admonition-title, [dir="rtl"] .rst-content div.alert.admonition-failure.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.alert.admonition-fail .admonition-title, [dir="rtl"] .rst-content div.alert.admonition-fail.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.alert.admonition-missing .admonition-title, [dir="rtl"] .rst-content div.alert.admonition-missing.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.alert.admonition-error .admonition-title, [dir="rtl"] .rst-content div.alert.admonition-error.deprecated .versionmodified.deprecated {
-  border-right-color: #f14668;
+  border-right-color: #F45F4B;
 }
 
 .rst-content .admonition.error .admonition-title::before, .rst-content .admonition.error.deprecated .versionmodified.deprecated::before, .rst-content .admonition.admonition-failure .admonition-title::before, .rst-content .admonition.admonition-failure.deprecated .versionmodified.deprecated::before, .rst-content .admonition.admonition-fail .admonition-title::before, .rst-content .admonition.admonition-fail.deprecated .versionmodified.deprecated::before, .rst-content .admonition.admonition-missing .admonition-title::before, .rst-content .admonition.admonition-missing.deprecated .versionmodified.deprecated::before, .rst-content .admonition.admonition-error .admonition-title::before, .rst-content .admonition.admonition-error.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.error .admonition-title::before, .rst-content div.deprecated.error.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-failure .admonition-title::before, .rst-content div.deprecated.admonition-failure.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-fail .admonition-title::before, .rst-content div.deprecated.admonition-fail.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-missing .admonition-title::before, .rst-content div.deprecated.admonition-missing.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-error .admonition-title::before, .rst-content div.deprecated.admonition-error.deprecated .versionmodified.deprecated::before, .rst-content div.alert.error .admonition-title::before, .rst-content div.alert.error.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-failure .admonition-title::before, .rst-content div.alert.admonition-failure.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-fail .admonition-title::before, .rst-content div.alert.admonition-fail.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-missing .admonition-title::before, .rst-content div.alert.admonition-missing.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-error .admonition-title::before, .rst-content div.alert.admonition-error.deprecated .versionmodified.deprecated::before {
-  color: #f14668;
+  color: #F45F4B;
   font-family: "Font Awesome 5 Free";
   content: "";
 }
 
 .rst-content .admonition.danger, .rst-content .admonition.admonition-danger, .rst-content .admonition.alert-danger, .rst-content div.deprecated.danger, .rst-content div.deprecated.admonition-danger, .rst-content div.deprecated.alert-danger, .rst-content div.alert.danger, .rst-content div.alert.admonition-danger, .rst-content div.alert.alert-danger {
-  border-left-color: #f14668;
+  border-left-color: #F45F4B;
 }
 
 [dir="rtl"] .rst-content .admonition.danger, [dir="rtl"] .rst-content .admonition.admonition-danger, [dir="rtl"] .rst-content .admonition.alert-danger, [dir="rtl"] .rst-content div.deprecated.danger, [dir="rtl"] .rst-content div.deprecated.admonition-danger, [dir="rtl"] .rst-content div.deprecated.alert-danger, [dir="rtl"] .rst-content div.alert.danger, [dir="rtl"] .rst-content div.alert.admonition-danger, [dir="rtl"] .rst-content div.alert.alert-danger {
-  border-right-color: #f14668;
+  border-right-color: #F45F4B;
 }
 
 .rst-content .admonition.danger .admonition-title, .rst-content .admonition.danger.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-danger .admonition-title, .rst-content .admonition.admonition-danger.deprecated .versionmodified.deprecated, .rst-content .admonition.alert-danger .admonition-title, .rst-content .admonition.alert-danger.deprecated .versionmodified.deprecated, .rst-content div.deprecated.danger .admonition-title, .rst-content div.deprecated.danger.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-danger .admonition-title, .rst-content div.deprecated.admonition-danger.deprecated .versionmodified.deprecated, .rst-content div.deprecated.alert-danger .admonition-title, .rst-content div.deprecated.alert-danger.deprecated .versionmodified.deprecated, .rst-content div.alert.danger .admonition-title, .rst-content div.alert.danger.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-danger .admonition-title, .rst-content div.alert.admonition-danger.deprecated .versionmodified.deprecated, .rst-content div.alert.alert-danger .admonition-title, .rst-content div.alert.alert-danger.deprecated .versionmodified.deprecated {
-  background-color: rgba(241, 70, 104, 0.1);
-  border-left-color: #f14668;
+  background-color: #F45F4B;
+  border-left-color: #F45F4B;
 }
 
 [dir="rtl"] .rst-content .admonition.danger .admonition-title, [dir="rtl"] .rst-content .admonition.danger.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content .admonition.admonition-danger .admonition-title, [dir="rtl"] .rst-content .admonition.admonition-danger.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content .admonition.alert-danger .admonition-title, [dir="rtl"] .rst-content .admonition.alert-danger.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.deprecated.danger .admonition-title, [dir="rtl"] .rst-content div.deprecated.danger.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.deprecated.admonition-danger .admonition-title, [dir="rtl"] .rst-content div.deprecated.admonition-danger.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.deprecated.alert-danger .admonition-title, [dir="rtl"] .rst-content div.deprecated.alert-danger.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.alert.danger .admonition-title, [dir="rtl"] .rst-content div.alert.danger.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.alert.admonition-danger .admonition-title, [dir="rtl"] .rst-content div.alert.admonition-danger.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.alert.alert-danger .admonition-title, [dir="rtl"] .rst-content div.alert.alert-danger.deprecated .versionmodified.deprecated {
-  border-right-color: #f14668;
+  border-right-color: #F45F4B;
 }
 
 .rst-content .admonition.danger .admonition-title::before, .rst-content .admonition.danger.deprecated .versionmodified.deprecated::before, .rst-content .admonition.admonition-danger .admonition-title::before, .rst-content .admonition.admonition-danger.deprecated .versionmodified.deprecated::before, .rst-content .admonition.alert-danger .admonition-title::before, .rst-content .admonition.alert-danger.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.danger .admonition-title::before, .rst-content div.deprecated.danger.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-danger .admonition-title::before, .rst-content div.deprecated.admonition-danger.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.alert-danger .admonition-title::before, .rst-content div.deprecated.alert-danger.deprecated .versionmodified.deprecated::before, .rst-content div.alert.danger .admonition-title::before, .rst-content div.alert.danger.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-danger .admonition-title::before, .rst-content div.alert.admonition-danger.deprecated .versionmodified.deprecated::before, .rst-content div.alert.alert-danger .admonition-title::before, .rst-content div.alert.alert-danger.deprecated .versionmodified.deprecated::before {
-  color: #f14668;
+  color: #F45F4B;
   font-family: "Font Awesome 5 Free";
   content: "";
 }
@@ -9442,7 +9442,7 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.admonition-bug .admonition-title, .rst-content .admonition.admonition-bug.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-bug .admonition-title, .rst-content div.deprecated.admonition-bug.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-bug .admonition-title, .rst-content div.alert.admonition-bug.deprecated .versionmodified.deprecated {
-  background-color: rgba(184, 107, 255, 0.1);
+  background-color: #b86bff;
   border-left-color: #b86bff;
 }
 
@@ -9465,7 +9465,7 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.admonition-example .admonition-title, .rst-content .admonition.admonition-example.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-example .admonition-title, .rst-content div.deprecated.admonition-example.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-example .admonition-title, .rst-content div.alert.admonition-example.deprecated .versionmodified.deprecated {
-  background-color: rgba(0, 126, 231, 0.1);
+  background-color: #007ee7;
   border-left-color: #007ee7;
 }
 
@@ -9488,7 +9488,7 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.admonition-quote .admonition-title, .rst-content .admonition.admonition-quote.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-cite .admonition-title, .rst-content .admonition.admonition-cite.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-quote .admonition-title, .rst-content div.deprecated.admonition-quote.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-cite .admonition-title, .rst-content div.deprecated.admonition-cite.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-quote .admonition-title, .rst-content div.alert.admonition-quote.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-cite .admonition-title, .rst-content div.alert.admonition-cite.deprecated .versionmodified.deprecated {
-  background-color: rgba(122, 122, 122, 0.1);
+  background-color: #7a7a7a;
   border-left-color: #7a7a7a;
 }
 
@@ -9511,7 +9511,7 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.deprecated .admonition-title, .rst-content .admonition.deprecated.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-deprecated .admonition-title, .rst-content .admonition.admonition-deprecated.deprecated .versionmodified.deprecated, .rst-content div.deprecated.deprecated .admonition-title, .rst-content div.deprecated.deprecated.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-deprecated .admonition-title, .rst-content div.deprecated.admonition-deprecated.deprecated .versionmodified.deprecated, .rst-content div.alert.deprecated .admonition-title, .rst-content div.alert.deprecated.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-deprecated .admonition-title, .rst-content div.alert.admonition-deprecated.deprecated .versionmodified.deprecated {
-  background-color: rgba(231, 203, 0, 0.1);
+  background-color: #e7cb00;
   border-left-color: #e7cb00;
 }
 
@@ -9534,7 +9534,7 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.experimental .admonition-title, .rst-content .admonition.experimental.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-experimental .admonition-title, .rst-content .admonition.admonition-experimental.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-experiment .admonition-title, .rst-content .admonition.admonition-experiment.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-experiments .admonition-title, .rst-content .admonition.admonition-experiments.deprecated .versionmodified.deprecated, .rst-content div.deprecated.experimental .admonition-title, .rst-content div.deprecated.experimental.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-experimental .admonition-title, .rst-content div.deprecated.admonition-experimental.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-experiment .admonition-title, .rst-content div.deprecated.admonition-experiment.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-experiments .admonition-title, .rst-content div.deprecated.admonition-experiments.deprecated .versionmodified.deprecated, .rst-content div.alert.experimental .admonition-title, .rst-content div.alert.experimental.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-experimental .admonition-title, .rst-content div.alert.admonition-experimental.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-experiment .admonition-title, .rst-content div.alert.admonition-experiment.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-experiments .admonition-title, .rst-content div.alert.admonition-experiments.deprecated .versionmodified.deprecated {
-  background-color: rgba(231, 203, 0, 0.1);
+  background-color: #e7cb00;
   border-left-color: #e7cb00;
 }
 
@@ -9566,7 +9566,7 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
   position: relative;
   padding: 0.5rem 0.75rem 0.5rem 2.5rem;
   font-weight: 700;
-  background-color: rgba(202, 101, 0, 0.1);
+  background-color: #ca6500;
   border-left: 0.25rem solid #ca6500;
 }
 
