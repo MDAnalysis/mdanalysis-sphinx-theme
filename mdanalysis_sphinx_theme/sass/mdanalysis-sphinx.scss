@@ -52,27 +52,6 @@ html.writer-html4 .rst-content dl:not(.docutils) > dt, html.writer-html5 .rst-co
         border: 1px solid $mdanalysis-gray;
     }
 
-    .seealso {
-        background: $mdanalysis-gray-light;
-        p.admonition-title {
-            background: $mdanalysis-gray;
-        }
-    }
-
-    .error, .warning {
-        background: $mdanalysis-red-light;
-        p.admonition-title {
-            background: $mdanalysis-orange-red;
-        }
-    }
-
-    .caution, .note, .important {
-        background: $mdanalysis-orange-light;
-        p.admonition-title {
-            background: $mdanalysis-orange;
-        }
-    }
-
     code.literal {
         color: $mdanalysis-code-orange;
         background-color: $mdanalysis-white;
