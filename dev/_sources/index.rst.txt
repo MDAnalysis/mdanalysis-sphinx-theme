@@ -13,7 +13,7 @@ Install from git
 
 .. code-block:: shell-session
 
-   $ pip install git+https://github.com/lilyminium/mdanalysis-sphinx-theme.git@main
+   $ pip install git+https://github.com/mdanalysis/mdanalysis-sphinx-theme.git@main
 
 Or, add to your ReadTheDocs environment.yml
 
@@ -26,7 +26,7 @@ Or, add to your ReadTheDocs environment.yml
         - <conda dependency>
         # --- snip --- #
         - pip:
-            - git+https://github.com/lilyminium/mdanalysis-sphinx-theme.git@main
+            - git+https://github.com/mdanalysis/mdanalysis-sphinx-theme.git@main
 
 Update your ``conf.py`` with the required changes:
 
