@@ -2907,7 +2907,7 @@ table th {
 }
 
 .navbar.is-danger {
-  background-color: #f14668;
+  background-color: #F45F4B;
   color: #fff;
 }
 
@@ -2920,7 +2920,7 @@ table th {
 .navbar.is-danger .navbar-brand .navbar-link:focus,
 .navbar.is-danger .navbar-brand .navbar-link:hover,
 .navbar.is-danger .navbar-brand .navbar-link.is-active {
-  background-color: #ef2e55;
+  background-color: #f34a33;
   color: #fff;
 }
 
@@ -2949,7 +2949,7 @@ table th {
 .navbar.is-danger .navbar-end .navbar-link:focus,
 .navbar.is-danger .navbar-end .navbar-link:hover,
 .navbar.is-danger .navbar-end .navbar-link.is-active {
-    background-color: #ef2e55;
+    background-color: #f34a33;
     color: #fff;
   }
   .navbar.is-danger .navbar-start .navbar-link::after,
@@ -2959,11 +2959,11 @@ table th {
   .navbar.is-danger .navbar-item.has-dropdown:focus .navbar-link,
 .navbar.is-danger .navbar-item.has-dropdown:hover .navbar-link,
 .navbar.is-danger .navbar-item.has-dropdown.is-active .navbar-link {
-    background-color: #ef2e55;
+    background-color: #f34a33;
     color: #fff;
   }
   .navbar.is-danger .navbar-dropdown a.navbar-item.is-active {
-    background-color: #f14668;
+    background-color: #F45F4B;
     color: #fff;
   }
 }
@@ -3964,11 +3964,11 @@ div.icon-text {
 }
 
 .is-danger.textarea, .is-danger.input {
-  border-color: #f14668;
+  border-color: #F45F4B;
 }
 
 .is-danger.textarea:focus, .is-danger.input:focus, .is-danger.is-focused.textarea, .is-danger.is-focused.input, .is-danger.textarea:active, .is-danger.input:active, .is-danger.is-active.textarea, .is-danger.is-active.input {
-  box-shadow: 0 0 0 0.125em rgba(241, 70, 104, 0.25);
+  box-shadow: 0 0 0 0.125em rgba(244, 95, 75, 0.25);
 }
 
 .is-small.textarea, .is-small.input {
@@ -4255,19 +4255,19 @@ div.icon-text {
 }
 
 .select.is-danger:not(:hover)::after {
-  border-color: #f14668;
+  border-color: #F45F4B;
 }
 
 .select.is-danger select {
-  border-color: #f14668;
+  border-color: #F45F4B;
 }
 
 .select.is-danger select:hover, .select.is-danger select.is-hovered {
-  border-color: #ef2e55;
+  border-color: #f34a33;
 }
 
 .select.is-danger select:focus, .select.is-danger select.is-focused, .select.is-danger select:active, .select.is-danger select.is-active {
-  box-shadow: 0 0 0 0.125em rgba(241, 70, 104, 0.25);
+  box-shadow: 0 0 0 0.125em rgba(244, 95, 75, 0.25);
 }
 
 .select.is-small {
@@ -4539,25 +4539,25 @@ div.icon-text {
 }
 
 .file.is-danger .file-cta {
-  background-color: #f14668;
+  background-color: #F45F4B;
   border-color: transparent;
   color: #fff;
 }
 
 .file.is-danger:hover .file-cta, .file.is-danger.is-hovered .file-cta {
-  background-color: #f03a5f;
+  background-color: #f3543f;
   border-color: transparent;
   color: #fff;
 }
 
 .file.is-danger:focus .file-cta, .file.is-danger.is-focused .file-cta {
   border-color: transparent;
-  box-shadow: 0 0 0.5em rgba(241, 70, 104, 0.25);
+  box-shadow: 0 0 0.5em rgba(244, 95, 75, 0.25);
   color: #fff;
 }
 
 .file.is-danger:active .file-cta, .file.is-danger.is-active .file-cta {
-  background-color: #ef2e55;
+  background-color: #f34a33;
   border-color: transparent;
   color: #fff;
 }
@@ -4813,7 +4813,7 @@ div.icon-text {
 }
 
 .help.is-danger {
-  color: #f14668;
+  color: #F45F4B;
 }
 
 .field:not(:last-child) {
@@ -5317,39 +5317,39 @@ a.has-text-warning-dark:hover, a.has-text-warning-dark:focus {
 }
 
 .has-text-danger {
-  color: #f14668 !important;
+  color: #F45F4B !important;
 }
 
 a.has-text-danger:hover, a.has-text-danger:focus {
-  color: #ee1742 !important;
+  color: #f1341b !important;
 }
 
 .has-background-danger {
-  background-color: #f14668 !important;
+  background-color: #F45F4B !important;
 }
 
 .has-text-danger-light {
-  color: #feecf0 !important;
+  color: #feeeec !important;
 }
 
 a.has-text-danger-light:hover, a.has-text-danger-light:focus {
-  color: #fabdc9 !important;
+  color: #fbc3bc !important;
 }
 
 .has-background-danger-light {
-  background-color: #feecf0 !important;
+  background-color: #feeeec !important;
 }
 
 .has-text-danger-dark {
-  color: #cc0f35 !important;
+  color: #c0210c !important;
 }
 
 a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
-  color: #ee2049 !important;
+  color: #f0290f !important;
 }
 
 .has-background-danger-dark {
-  background-color: #cc0f35 !important;
+  background-color: #c0210c !important;
 }
 
 .has-text-black-bis {
@@ -7698,7 +7698,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 
 .hero.is-danger {
-  background-color: #f14668;
+  background-color: #F45F4B;
   color: #fff;
 }
 
@@ -7722,7 +7722,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 @media screen and (max-width: 1023px) {
   .hero.is-danger .navbar-menu {
-    background-color: #f14668;
+    background-color: #F45F4B;
   }
 }
 
@@ -7734,7 +7734,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .hero.is-danger a.navbar-item:hover, .hero.is-danger a.navbar-item.is-active,
 .hero.is-danger .navbar-link:hover,
 .hero.is-danger .navbar-link.is-active {
-  background-color: #ef2e55;
+  background-color: #f34a33;
   color: #fff;
 }
 
@@ -7762,16 +7762,16 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .hero.is-danger .tabs.is-boxed li.is-active a, .hero.is-danger .tabs.is-boxed li.is-active a:hover, .hero.is-danger .tabs.is-toggle li.is-active a, .hero.is-danger .tabs.is-toggle li.is-active a:hover {
   background-color: #fff;
   border-color: #fff;
-  color: #f14668;
+  color: #F45F4B;
 }
 
 .hero.is-danger.is-bold {
-  background-image: linear-gradient(141deg, #fa0a62 0%, #f14668 71%, #f7595f 100%);
+  background-image: linear-gradient(141deg, #fd0f1a 0%, #F45F4B 71%, #fa8b5f 100%);
 }
 
 @media screen and (max-width: 768px) {
   .hero.is-danger.is-bold .navbar-menu {
-    background-image: linear-gradient(141deg, #fa0a62 0%, #f14668 71%, #f7595f 100%);
+    background-image: linear-gradient(141deg, #fd0f1a 0%, #F45F4B 71%, #fa8b5f 100%);
   }
 }
 
@@ -9204,24 +9204,24 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.admonition-info, .rst-content .admonition.alert-info, .rst-content div.deprecated.admonition-info, .rst-content div.deprecated.alert-info, .rst-content div.alert.admonition-info, .rst-content div.alert.alert-info {
-  border-left-color: #008790;
+  border-left-color: #007ee7;
 }
 
 [dir="rtl"] .rst-content .admonition.admonition-info, [dir="rtl"] .rst-content .admonition.alert-info, [dir="rtl"] .rst-content div.deprecated.admonition-info, [dir="rtl"] .rst-content div.deprecated.alert-info, [dir="rtl"] .rst-content div.alert.admonition-info, [dir="rtl"] .rst-content div.alert.alert-info {
-  border-right-color: #008790;
+  border-right-color: #007ee7;
 }
 
 .rst-content .admonition.admonition-info .admonition-title, .rst-content .admonition.admonition-info.deprecated .versionmodified.deprecated, .rst-content .admonition.alert-info .admonition-title, .rst-content .admonition.alert-info.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-info .admonition-title, .rst-content div.deprecated.admonition-info.deprecated .versionmodified.deprecated, .rst-content div.deprecated.alert-info .admonition-title, .rst-content div.deprecated.alert-info.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-info .admonition-title, .rst-content div.alert.admonition-info.deprecated .versionmodified.deprecated, .rst-content div.alert.alert-info .admonition-title, .rst-content div.alert.alert-info.deprecated .versionmodified.deprecated {
-  background-color: rgba(0, 135, 144, 0.1);
-  border-left-color: #008790;
+  background-color: rgba(0, 126, 231, 0.1);
+  border-left-color: #007ee7;
 }
 
 [dir="rtl"] .rst-content .admonition.admonition-info .admonition-title, [dir="rtl"] .rst-content .admonition.admonition-info.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content .admonition.alert-info .admonition-title, [dir="rtl"] .rst-content .admonition.alert-info.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.deprecated.admonition-info .admonition-title, [dir="rtl"] .rst-content div.deprecated.admonition-info.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.deprecated.alert-info .admonition-title, [dir="rtl"] .rst-content div.deprecated.alert-info.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.alert.admonition-info .admonition-title, [dir="rtl"] .rst-content div.alert.admonition-info.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.alert.alert-info .admonition-title, [dir="rtl"] .rst-content div.alert.alert-info.deprecated .versionmodified.deprecated {
-  border-right-color: #008790;
+  border-right-color: #007ee7;
 }
 
 .rst-content .admonition.admonition-info .admonition-title::before, .rst-content .admonition.admonition-info.deprecated .versionmodified.deprecated::before, .rst-content .admonition.alert-info .admonition-title::before, .rst-content .admonition.alert-info.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-info .admonition-title::before, .rst-content div.deprecated.admonition-info.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.alert-info .admonition-title::before, .rst-content div.deprecated.alert-info.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-info .admonition-title::before, .rst-content div.alert.admonition-info.deprecated .versionmodified.deprecated::before, .rst-content div.alert.alert-info .admonition-title::before, .rst-content div.alert.alert-info.deprecated .versionmodified.deprecated::before {
-  color: #008790;
+  color: #007ee7;
   font-family: "Font Awesome 5 Free";
   content: "";
 }
@@ -9457,24 +9457,24 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.admonition-example, .rst-content div.deprecated.admonition-example, .rst-content div.alert.admonition-example {
-  border-left-color: #008790;
+  border-left-color: #007ee7;
 }
 
 [dir="rtl"] .rst-content .admonition.admonition-example, [dir="rtl"] .rst-content div.deprecated.admonition-example, [dir="rtl"] .rst-content div.alert.admonition-example {
-  border-right-color: #008790;
+  border-right-color: #007ee7;
 }
 
 .rst-content .admonition.admonition-example .admonition-title, .rst-content .admonition.admonition-example.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-example .admonition-title, .rst-content div.deprecated.admonition-example.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-example .admonition-title, .rst-content div.alert.admonition-example.deprecated .versionmodified.deprecated {
-  background-color: rgba(0, 135, 144, 0.1);
-  border-left-color: #008790;
+  background-color: rgba(0, 126, 231, 0.1);
+  border-left-color: #007ee7;
 }
 
 [dir="rtl"] .rst-content .admonition.admonition-example .admonition-title, [dir="rtl"] .rst-content .admonition.admonition-example.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.deprecated.admonition-example .admonition-title, [dir="rtl"] .rst-content div.deprecated.admonition-example.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.alert.admonition-example .admonition-title, [dir="rtl"] .rst-content div.alert.admonition-example.deprecated .versionmodified.deprecated {
-  border-right-color: #008790;
+  border-right-color: #007ee7;
 }
 
 .rst-content .admonition.admonition-example .admonition-title::before, .rst-content .admonition.admonition-example.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-example .admonition-title::before, .rst-content div.deprecated.admonition-example.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-example .admonition-title::before, .rst-content div.alert.admonition-example.deprecated .versionmodified.deprecated::before {
-  color: #008790;
+  color: #007ee7;
   font-family: "Font Awesome 5 Free";
   content: "";
 }
@@ -10262,30 +10262,6 @@ html.writer-html4 .rst-content dl:not(.docutils) > dt, html.writer-html5 .rst-co
 .rst-content .guilabel {
   background: #FFEBD0;
   border: 1px solid #808080;
-}
-
-.rst-content .seealso {
-  background: #e3e3e3;
-}
-
-.rst-content .seealso p.admonition-title {
-  background: #808080;
-}
-
-.rst-content .error, .rst-content .warning {
-  background: #FFEEED;
-}
-
-.rst-content .error p.admonition-title, .rst-content .warning p.admonition-title {
-  background: #F45F4B;
-}
-
-.rst-content .caution, .rst-content .note, .rst-content .important {
-  background: #FFEBD0;
-}
-
-.rst-content .caution p.admonition-title, .rst-content .note p.admonition-title, .rst-content .important p.admonition-title {
-  background: #FF9200;
 }
 
 .rst-content code.literal {
