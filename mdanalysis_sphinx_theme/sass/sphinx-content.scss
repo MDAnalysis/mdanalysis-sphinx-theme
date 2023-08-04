@@ -163,7 +163,7 @@ section, .section {
 }
 
 
-.table-container.autosummary {
+.wy-table-responsive.autosummary {
   table {
     table-layout:fixed;
     width: 100%;
@@ -188,7 +188,7 @@ section, .section {
   overflow-x: hidden;
 }
 
-.table-container:not(.autosummary) {
+.wy-table-responsive:not(.autosummary) {
   // Allow large, scrollable tables to be expanded
   &.expanded {
     @include z-depth(2);
@@ -266,10 +266,10 @@ section, .section {
   }
 }
 
-// Use Bulma's tables
-table {
-  @extend .table;
-}
+// // Use Bulma's tables
+// table {
+//   @extend .table;
+// }
 
 // Citations
 dl.citation {

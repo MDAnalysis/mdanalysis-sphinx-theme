@@ -86,3 +86,12 @@ html.writer-html4 .rst-content dl:not(.docutils) > dt, html.writer-html5 .rst-co
         }
     }
 }
+
+
+.wy-table-responsive {
+    table {
+        td {
+            white-space: inherit;
+        }
+    }
+}
