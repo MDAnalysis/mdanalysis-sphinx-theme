@@ -42,7 +42,7 @@
     [dir="rtl"] &
         border-right-color: $color
     .admonition-title, &.deprecated .versionmodified.deprecated
-      background-color: rgba($color, 0.1)
+      background-color: $color //rgba($color, 0.1)
       border-left-color: $color
 
       // Adjust for right-to-left languages
@@ -122,7 +122,7 @@
       overflow: hidden
       color: $text
       page-break-inside: avoid
-      border-left: 0.25rem solid $accent
+      border-left: none //0.25rem solid $accent
       border-radius: 0.125rem
       @include z-depth(6)
 
@@ -166,7 +166,7 @@
       &.admonition-abstract, &.admonition-summary, &.admonition-tldr
           @include material_admonitions($cyan, "Font Awesome 5 Free", "\f543")
       &.admonition-info, &.alert-info
-          @include material_admonitions($blue, "Font Awesome 5 Free", "\f129")
+          @include material_admonitions($mdanalysis-code-orange, "Font Awesome 5 Free", "\f129")
       &.admonition-todo
           @include material_admonitions($yellow, "Font Awesome 5 Free", "\f249")
       &.tip, &.hint, &.admonition-tip, &.admonition-hint
@@ -182,9 +182,9 @@
       &.attention, &.admonition-attention, &.alert-warning
           @include material_admonitions($yellow, "Font Awesome 5 Free", "\f071")
       &.error, &.admonition-failure, &.admonition-fail, &.admonition-missing, &.admonition-error
-          @include material_admonitions($red, "Font Awesome 5 Free", "\f057")
+          @include material_admonitions($mdanalysis-orange-red, "Font Awesome 5 Free", "\f057")
       &.danger, &.admonition-danger, &.alert-danger
-          @include material_admonitions($red, "Font Awesome 5 Free", "\f7b9")
+          @include material_admonitions($mdanalysis-orange-red, "Font Awesome 5 Free", "\f7b9")
       &.admonition-bug
           @include material_admonitions($purple, "Font Awesome 5 Free", "\f188")
       &.admonition-example
@@ -212,7 +212,7 @@
       position: relative
       padding: 0.5rem 0.75rem 0.5rem 2.5rem
       font-weight: 700
-      background-color: rgba($accent, 0.1)
+      background-color: $accent // rgba($accent, 0.1)
       border-left: 0.25rem solid $accent
 
       // Adjust for right-to-left languages
