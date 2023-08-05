@@ -7892,11 +7892,13 @@ html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(
 }
 
 html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dt, html.writer-html4 .rst-content dl:not(.docutils) > dt {
+  border-top: 3px solid #ca6500;
+  color: #343131;
   display: inherit;
   line-height: 1.4;
   font-family: Menlo, Monaco, "Courier New", monospace;
   font-size: 0.9rem;
-  background-color: rgba(255, 146, 0, 0.1);
+  background-color: #FFEBD0;
   border-radius: 4px;
   overflow-wrap: break-word;
   position: relative;
@@ -7906,6 +7908,12 @@ html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(
 
 html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dt:target::before, html.writer-html4 .rst-content dl:not(.docutils) > dt:target::before {
   background-color: #FFFFFF;
+}
+
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dt > .property, html.writer-html4 .rst-content dl:not(.docutils) > dt > .property {
+  display: unset;
+  padding-right: 0px;
+  max-width: 100%;
 }
 
 html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dt .viewcode-link, html.writer-html4 .rst-content dl:not(.docutils) > dt .viewcode-link {
@@ -8099,8 +8107,6 @@ html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(
 .rst-content h4 code,
 .rst-content h5 code,
 .rst-content h6 code {
-  margin: initial;
-  padding: initial;
   background-color: transparent;
   box-shadow: none;
 }
@@ -9190,7 +9196,6 @@ html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(
   border-left: none;
   border-radius: 0.125rem;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.4);
-  box-shadow: none;
 }
 
 @media print {
@@ -10113,18 +10118,6 @@ main > .columns {
 
 code {
   white-space: inherit;
-}
-
-html.writer-html4 .rst-content dl:not(.docutils) > dt, html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dt {
-  background: #FFEBD0;
-  border-top: 3px solid #ca6500;
-  color: #343131;
-}
-
-html.writer-html4 .rst-content dl:not(.docutils) > dt .property, html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dt .property {
-  display: unset;
-  padding-right: unset;
-  max-width: unset;
 }
 
 .rst-content .guilabel {
