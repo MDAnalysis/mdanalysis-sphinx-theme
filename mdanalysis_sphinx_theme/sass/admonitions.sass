@@ -39,6 +39,7 @@
 
 @mixin material_admonitions($color, $font, $unicode)
     border-left-color: $color
+    background-color: rgba($color, 0.1)
     [dir="rtl"] &
         border-right-color: $color
     .admonition-title, &.deprecated .versionmodified.deprecated
@@ -51,7 +52,8 @@
 
       // Admonition icon
       &::before
-        color: $color
+        // color: $color
+        color: $white
         font-family: $font
         content: $unicode
 
@@ -160,41 +162,41 @@
         max-width: calc(80ex - 2  * #{$admonition-margin})
 
       &.note, &.admonition-note
-          @include material_admonitions($grey, "Font Awesome 5 Free", "\f303")
+          @include material_admonitions($grey, "FontAwesome", "\f05a")
       &.seealso, &.admonition-seealso
-          @include material_admonitions($grey, "Font Awesome 5 Free", "\f06e")
+          @include material_admonitions($grey, "FontAwesome", "\f06e")
       &.admonition-abstract, &.admonition-summary, &.admonition-tldr
-          @include material_admonitions($cyan, "Font Awesome 5 Free", "\f543")
+          @include material_admonitions($cyan, "FontAwesome", "\f543")
       &.admonition-info, &.alert-info
-          @include material_admonitions($mdanalysis-code-orange, "Font Awesome 5 Free", "\f129")
+          @include material_admonitions($mdanalysis-code-orange, "FontAwesome", "\f129")
       &.admonition-todo
-          @include material_admonitions($yellow, "Font Awesome 5 Free", "\f249")
+          @include material_admonitions($yellow, "FontAwesome", "\f249")
       &.tip, &.hint, &.admonition-tip, &.admonition-hint
-          @include material_admonitions($turquoise, "Font Awesome 5 Free", "\f06d")
+          @include material_admonitions($turquoise, "FontAwesome", "\f06d")
       &.important, &.admonition-important
-          @include material_admonitions($green, "Font Awesome 5 Free", "\f06a")
+          @include material_admonitions($green, "FontAwesome", "\f06a")
       &.admonition-success, &.admonition-check, &.admonition-done, &.alert-success
-          @include material_admonitions($green, "Font Awesome 5 Free", "\f058")
+          @include material_admonitions($green, "FontAwesome", "\f058")
       &.admonition-question, &.admonition-help, &.admonition-faq
-          @include material_admonitions($cyan, "Font Awesome 5 Free", "\f059")
+          @include material_admonitions($cyan, "FontAwesome", "\f059")
       &.warning, &.caution, &.attention, &.admonition-warning, &.admonition-caution, &.admonition-attention
-          @include material_admonitions($orange, "Font Awesome 5 Free", "\f071")
+          @include material_admonitions($orange, "FontAwesome", "\f071")
       &.attention, &.admonition-attention, &.alert-warning
-          @include material_admonitions($yellow, "Font Awesome 5 Free", "\f071")
+          @include material_admonitions($yellow, "FontAwesome", "\f071")
       &.error, &.admonition-failure, &.admonition-fail, &.admonition-missing, &.admonition-error
-          @include material_admonitions($mdanalysis-orange-red, "Font Awesome 5 Free", "\f057")
+          @include material_admonitions($mdanalysis-orange-red, "FontAwesome", "\f057")
       &.danger, &.admonition-danger, &.alert-danger
-          @include material_admonitions($mdanalysis-orange-red, "Font Awesome 5 Free", "\f7b9")
+          @include material_admonitions($mdanalysis-orange-red, "FontAwesome", "\f071")
       &.admonition-bug
-          @include material_admonitions($purple, "Font Awesome 5 Free", "\f188")
+          @include material_admonitions($purple, "FontAwesome", "\f188")
       &.admonition-example
-          @include material_admonitions($blue, "Font Awesome 5 Free", "\f0c5")
+          @include material_admonitions($blue, "FontAwesome", "\f0c5")
       &.admonition-quote, &.admonition-cite
-          @include material_admonitions($grey, "Font Awesome 5 Free", "\f10e")
+          @include material_admonitions($grey, "FontAwesome", "\f10e")
       &.deprecated, &.admonition-deprecated
-          @include material_admonitions($yellow, "Font Awesome 5 Free", "\f017")
+          @include material_admonitions($yellow, "FontAwesome", "\f017")
       &.experimental, &.admonition-experimental, &.admonition-experiment, &.admonition-experiments
-          @include material_admonitions($yellow, "Font Awesome 5 Free", "\f492")
+          @include material_admonitions($yellow, "FontAwesome", "\f492")
 
     // Differences between deprecated and admonitions
     div.deprecated > p
@@ -236,7 +238,7 @@
         width: 1.25rem
         height: 1.25rem
         color: $accent
-        font-family: "Font Awesome 5 Free"
+        font-family: "FontAwesome"
         content: "\f12a"
 
         // Adjust for right-to-left languages
