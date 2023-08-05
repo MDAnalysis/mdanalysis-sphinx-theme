@@ -40,12 +40,15 @@ html.writer-html4 .rst-content dl:not(.docutils) > dt, html.writer-html5 .rst-co
     background: $mdanalysis-orange-light;
     border-top: 3px solid $mdanalysis-code-orange;
     color: $readthedocs-dark-gray;
+
+    .property {
+        display: unset;
+        padding-right: unset;
+        max-width: unset;
+    }
 }
 
 .rst-content {
-    .viewcode-link, .viewcode-back {
-        color: $mdanalysis-gray;
-    }
 
     .guilabel {
         background: $mdanalysis-orange-light;

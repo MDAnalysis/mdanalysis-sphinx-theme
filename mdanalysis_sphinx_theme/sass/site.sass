@@ -9,8 +9,9 @@
 @import "bulma/sass/utilities/functions.sass"
 @import "utilities/_convert"
 @import "utilities/_z-depth"
-@import "css/theme.css"
 
+
+@import "css/theme.css"
 $mdanalysis-orange: #FF9200
 $mdanalysis-gray: #808080
 $mdanalysis-white: #FFFFFF
@@ -78,6 +79,7 @@ $mobile-content-margin-y: 2vw
 
 $admonition-margin: 1.25rem
 
+
 // 42.5rem is about 80 characters
 $para-width: 42.5rem
 
@@ -117,23 +119,24 @@ $breadcrumb-item-separator-color-light: findColorInvert($breadcrumb-item-separat
 html
     scroll-padding-top: $navbar-height + $below-navbar-spacing
 
+
+@import "sphinx-api.scss"
 .rst-content
     @import "material-content.scss"
     @import "sphinx-content.scss"
     @import "admonitions.sass"
-    @import "sphinx-api.scss"
     font-size: px2rem(16px)
     line-height: 1.6
     color-adjust: exact
     @media screen and (max-width: $tablet - 1px)
-      width: 100vw - 2 * $mobile-content-margin-y
-      margin-left: $mobile-content-margin-y
-      margin-right: $mobile-content-margin-y
+        width: 100vw - 2 * $mobile-content-margin-y
+        margin-left: $mobile-content-margin-y
+        margin-right: $mobile-content-margin-y
     @media screen and (min-width: $tablet) and (max-width: $desktop - 1px)
-      margin-left: $mobile-content-margin-y
+        margin-left: $mobile-content-margin-y
     @media screen and (min-width: $desktop)
-      max-width: $para-width
-      margin: auto
+        max-width: $para-width
+        margin: auto
 
 
 header, .navbar.is-primary.has-shadow
