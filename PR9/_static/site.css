@@ -7871,6 +7871,100 @@ html {
   scroll-padding-top: 4.5rem;
 }
 
+h1, h2, .rst-content #index h3, .rst-content .toctree-wrapper .caption, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+.viewcode-back {
+  float: right;
+  color: #FF9200;
+}
+
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple), html.writer-html4 .rst-content dl:not(.docutils) {
+  padding-bottom: 0.5em;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) .property, html.writer-html4 .rst-content dl:not(.docutils) .property {
+  display: inherit;
+  padding-right: 0px;
+  max-width: 100%;
+}
+
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dt, html.writer-html4 .rst-content dl:not(.docutils) > dt {
+  display: inherit;
+  line-height: 1.4;
+  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-size: 0.9rem;
+  background-color: rgba(255, 146, 0, 0.1);
+  border-radius: 4px;
+  overflow-wrap: break-word;
+  position: relative;
+  padding-left: 0.45rem;
+  padding-right: 4.5rem;
+}
+
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dt:target::before, html.writer-html4 .rst-content dl:not(.docutils) > dt:target::before {
+  background-color: #FFFFFF;
+}
+
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dt .viewcode-link, html.writer-html4 .rst-content dl:not(.docutils) > dt .viewcode-link {
+  position: absolute;
+  top: 0.45rem;
+  right: 1.8rem;
+  color: #808080;
+}
+
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dt .viewcode-link .pre:hover, html.writer-html4 .rst-content dl:not(.docutils) > dt .viewcode-link .pre:hover {
+  color: #FF9200;
+}
+
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dt .headerlink, html.writer-html4 .rst-content dl:not(.docutils) > dt .headerlink {
+  position: absolute;
+  top: 0.45rem;
+  right: 0.45rem;
+  color: #FF9200;
+  opacity: 1;
+  margin-top: -0.1rem;
+}
+
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dd, html.writer-html4 .rst-content dl:not(.docutils) > dd {
+  margin: 1em;
+}
+
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dd:empty, html.writer-html4 .rst-content dl:not(.docutils) > dd:empty {
+  padding-bottom: 0 !important;
+}
+
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dd > .field-list > dt, html.writer-html4 .rst-content dl:not(.docutils) > dd > .field-list > dt {
+  font-weight: bold;
+}
+
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dd > .field-list > dd > ul.simple, html.writer-html4 .rst-content dl:not(.docutils) > dd > .field-list > dd > ul.simple {
+  margin-left: 0;
+}
+
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dd > .field-list > dd > dl > dt > strong, html.writer-html4 .rst-content dl:not(.docutils) > dd > .field-list > dd > dl > dt > strong, html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dd > .field-list > dd > ul.simple:first-child > li > p:first-child > strong, html.writer-html4 .rst-content dl:not(.docutils) > dd > .field-list > dd > ul.simple:first-child > li > p:first-child > strong, html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dd > .field-list > dd > p:first-child > strong, html.writer-html4 .rst-content dl:not(.docutils) > dd > .field-list > dd > p:first-child > strong {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+  color: #343131;
+  font-weight: normal;
+}
+
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dd > .field-list > dd > dl > dt > .classifier, html.writer-html4 .rst-content dl:not(.docutils) > dd > .field-list > dd > dl > dt > .classifier, html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dd > .field-list > dd > ul.simple:first-child > li > p:first-child > .classifier, html.writer-html4 .rst-content dl:not(.docutils) > dd > .field-list > dd > ul.simple:first-child > li > p:first-child > .classifier, html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dd > .field-list > dd > p:first-child > .classifier, html.writer-html4 .rst-content dl:not(.docutils) > dd > .field-list > dd > p:first-child > .classifier {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+  color: #4a4a4a;
+  overflow-wrap: break-word;
+}
+
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dd > .field-list > dd > dl > dt > a.reference > em, html.writer-html4 .rst-content dl:not(.docutils) > dd > .field-list > dd > dl > dt > a.reference > em, html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dd > .field-list > dd > p:first-child > a.reference > em, html.writer-html4 .rst-content dl:not(.docutils) > dd > .field-list > dd > p:first-child > a.reference > em {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-style: normal;
+}
+
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dd > .field-list > dd > dl > dt > strong::after, html.writer-html4 .rst-content dl:not(.docutils) > dd > .field-list > dd > dl > dt > strong::after {
+  content: ": ";
+}
+
 .rst-content {
   font-size: 1rem;
   line-height: 1.6;
@@ -8338,7 +8432,7 @@ html {
   text-align: inherit;
 }
 
-.rst-content .rubric, .rst-content dl[class]:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote) > dd > .field-list > dt {
+.rst-content .rubric {
   font-weight: bold;
 }
 
@@ -9623,253 +9717,6 @@ html .rst-content .admonition-title:last-child.versionmodified.deprecated, html 
   margin-top: 0;
 }
 
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] {
-  padding-bottom: 0.5em;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-}
-
-@media screen and (min-width: 1216px) and (max-width: 1407px) {
-  .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] {
-    width: 52.5vw;
-  }
-}
-
-@media screen and (min-width: 1408px) {
-  .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] {
-    width: 46.2rem;
-  }
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt {
-  font-family: Menlo, Monaco, "Courier New", monospace;
-  font-size: 1.1rem;
-  padding: 1.1rem;
-  background-color: rgba(255, 146, 0, 0.1);
-  border-radius: 4px;
-  overflow-wrap: break-word;
-  position: relative;
-  padding-left: 3.3rem;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt:target::before {
-  background-color: #FFFFFF;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .property .pre {
-  color: #974c00;
-  font-size: inherit;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-prename {
-  padding: 0;
-  background-color: transparent;
-  font-weight: 200;
-  font-size: inherit;
-  color: #7a7a7a;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-name {
-  padding: 0;
-  background-color: transparent;
-  color: #FF9200;
-  font-weight: 600;
-  font-size: inherit;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-name ~ .property .pre {
-  color: #4a4a4a;
-  font-style: normal;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-name + a.reference.internal .viewcode-link {
-  position: static !important;
-  float: right;
-  margin-left: 0.5em;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-paren {
-  font-size: inherit;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-param {
-  font-size: inherit;
-  font-style: normal;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-param > .pre {
-  color: #343131;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-param > .n > .pre {
-  color: #343131;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-param > .o > .pre {
-  color: #FF9200;
-  padding-left: 0.2em;
-  padding-right: 0.2em;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-param .p .pre, .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-param .p + .n .pre, .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-param .p + .w + .n .pre {
-  color: #4a4a4a;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-param > .default_value > .pre {
-  color: #4a4a4a;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-param a {
-  font-weight: 550;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-param a:hover .pre, .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-param a:hover pre, .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-param a:hover code {
-  color: #ca6500 !important;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt .sig-param + .sig-paren, .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt .optional + .sig-paren {
-  position: relative;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt .sig-param + .sig-paren ~ *:not(a.reference.internal, .headerlink), .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt .optional + .sig-paren ~ *:not(a.reference.internal, .headerlink) {
-  position: relative;
-  left: -2.2rem;
-  max-width: calc(100% + 2.2rem - 4em);
-  display: inline-block;
-  vertical-align: top;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt .sig-param + .sig-paren ~ .headerlink, .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt .optional + .sig-paren ~ .headerlink {
-  bottom: 1.1rem;
-  right: 1.1rem;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt .autodoc_pydantic_validator_arrow::before {
-  content: "\a";
-  white-space: pre;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt .autodoc_pydantic_validator_arrow ~ .property::after {
-  content: "\a      ";
-  white-space: pre;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt .autodoc_pydantic_validator_arrow ~ .headerlink {
-  bottom: 1.1rem;
-  right: 1.1rem;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt .viewcode-link {
-  position: absolute;
-  top: 1.1rem;
-  right: 1.1rem;
-  color: #FF9200;
-  font-size: 0.825em;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt .viewcode-link:hover {
-  color: #ca6500;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > a.headerlink {
-  font-size: 1em;
-  opacity: 1;
-  transform: translate(0);
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd {
-  margin: 1em;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd:empty {
-  padding-bottom: 0 !important;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > .field-list > dd > ul.simple {
-  margin-left: 0;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > .field-list > dd > ul.simple:first-child > li {
-  list-style: none;
-  margin-left: 0;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > .field-list > dd > dl > dt > strong, .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > .field-list > dd > ul.simple:first-child > li > p:first-child > strong, .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > .field-list > dd > p:first-child > strong {
-  font-family: Menlo, Monaco, "Courier New", monospace;
-  color: #343131;
-  font-weight: normal;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > .field-list > dd > dl > dt > .classifier, .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > .field-list > dd > ul.simple:first-child > li > p:first-child > .classifier, .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > .field-list > dd > p:first-child > .classifier {
-  font-family: Menlo, Monaco, "Courier New", monospace;
-  color: #4a4a4a;
-  overflow-wrap: break-word;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > .field-list > dd > dl > dt > a.reference > em, .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > .field-list > dd > ul.simple:first-child > li > p:first-child > a.reference > em, .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > .field-list > dd > p:first-child > a.reference > em {
-  font-family: Menlo, Monaco, "Courier New", monospace;
-  font-style: normal;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > .field-list > dd > dl > dt > strong::after {
-  content: ": ";
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > .field-list > dd > dl > dd, .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > .field-list > dd > ul.simple:first-child > li > p:not(:first-child) {
-  margin-top: 0;
-  margin-bottom: 0.5em;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] {
-  padding-bottom: 0;
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
-  border-radius: 4px;
-}
-
-@media screen and (min-width: 1216px) {
-  .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] {
-    margin-left: 0;
-    width: 100%;
-  }
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt {
-  border-radius: 0px;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd {
-  margin-right: 1.5em;
-  margin-left: 1.5em;
-  padding-bottom: 0.75em;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] p {
-  hyphens: none;
-  text-align: unset;
-}
-
-.rst-content .pydantic_field .sig > .sig-name + .property:not(:last-of-type) a {
-  font-weight: bold;
-}
-
-.rst-content .pydantic_field .sig > .sig-name + .property:not(:last-of-type) .pre {
-  color: #4a4a4a;
-}
-
-.rst-content details.autodoc_pydantic_collapsable_json > summary {
-  max-width: 42.5rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.rst-content h1, .rst-content h2, .rst-content .toctree-wrapper .caption, .rst-content #index h3, .rst-content h3, .rst-content h4, .rst-content h5, .rst-content h6 {
-  overflow-wrap: break-word;
-}
-
-.rst-content .viewcode-back {
-  float: right;
-  color: #FF9200;
-}
-
 @media screen and (max-width: 768px) {
   .rst-content {
     width: 96vw;
@@ -10274,8 +10121,10 @@ html.writer-html4 .rst-content dl:not(.docutils) > dt, html.writer-html5 .rst-co
   color: #343131;
 }
 
-.rst-content .viewcode-link, .rst-content .viewcode-back {
-  color: #808080;
+html.writer-html4 .rst-content dl:not(.docutils) > dt .property, html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dt .property {
+  display: unset;
+  padding-right: unset;
+  max-width: unset;
 }
 
 .rst-content .guilabel {
