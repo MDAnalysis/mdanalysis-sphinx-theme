@@ -3,7 +3,7 @@ $api-name-color: $primary;
 
 $api-property-color: darken($mdanalysis-code-orange, 10);
 $api-path-color: $grey;
-$api-bg-color: rgba($mdanalysis-orange, 0.1);
+$api-bg-color: $mdanalysis-orange-light; // rgba($mdanalysis-orange, 0.1);
 $api-param-symbol-color: $mdanalysis-orange;
 $api-param-name-color: $readthedocs-dark-gray;
 $api-param-value-color: $grey-dark;
@@ -24,13 +24,11 @@ h1, h2, h3, h4, h5, h6 {
   color: $api-source-link-color;
 }
 
-
 // Override ReadTheDocs
 // workaround necessary while html4 and 5 are supported
 %py-obj-dl {
     padding-bottom: 0.5em;
     @include z-depth(2); // shadow
-
 
     .property {
         display: inherit;
@@ -39,6 +37,10 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     > dt {
+        // background: $mdanalysis-orange-light;
+        border-top: 3px solid $mdanalysis-code-orange;
+        color: $readthedocs-dark-gray;
+
         display: inherit;
         line-height: 1.4;
 
@@ -60,6 +62,12 @@ h1, h2, h3, h4, h5, h6 {
         padding-left: $api-header-padding;
         padding-right: 2*($api-header-padding + $api-arguments-indent);
 
+        > .property {
+            display: unset;
+            padding-right: 0px;
+            max-width: 100%;
+        }
+
         // links
         .viewcode-link {
             position: absolute;
@@ -79,6 +87,7 @@ h1, h2, h3, h4, h5, h6 {
             color: $api-name-color;
             opacity: 1;
             margin-top: -0.1rem;
+
         }
 
     }

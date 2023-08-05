@@ -35,19 +35,6 @@ code {
 }
 
 
-html.writer-html4 .rst-content dl:not(.docutils) > dt, html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dt {
-    // override theme.css
-    background: $mdanalysis-orange-light;
-    border-top: 3px solid $mdanalysis-code-orange;
-    color: $readthedocs-dark-gray;
-
-    .property {
-        display: unset;
-        padding-right: unset;
-        max-width: unset;
-    }
-}
-
 .rst-content {
 
     .guilabel {
