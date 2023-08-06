@@ -7903,7 +7903,7 @@ html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(
   overflow-wrap: break-word;
   position: relative;
   padding-left: 0.45rem;
-  padding-right: 4.5rem;
+  padding-right: 5.625rem;
 }
 
 html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dt:target::before, html.writer-html4 .rst-content dl:not(.docutils) > dt:target::before {
