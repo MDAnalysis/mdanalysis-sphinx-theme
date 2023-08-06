@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
         }
 
         padding-left: $api-header-padding;
-        padding-right: 2*($api-header-padding + $api-arguments-indent);
+        padding-right: 2.5 * ($api-header-padding + $api-arguments-indent);
 
         > .property {
             display: unset;
