@@ -9,9 +9,9 @@
 @import "bulma/sass/utilities/functions.sass"
 @import "utilities/_convert"
 @import "utilities/_z-depth"
-@import "css/theme.css"
-// @import "css/jupyter.min.css"
 
+
+@import "css/theme.css"
 $mdanalysis-orange: #FF9200
 $mdanalysis-gray: #808080
 $mdanalysis-white: #FFFFFF
@@ -22,10 +22,12 @@ $readthedocs-dark-gray: #343131
 $readthedocs-light-gray: #e6e6e6
 $mdanalysis-gray-light: #e3e3e3
 $mdanalysis-yellow: #e7cb00
-$mdanalysis-blue: #008790
+$mdanalysis-blue: #007ee7
 $mdanalysis-green: #01a901
 $mdanalysis-orange-red: #F45F4B
 $mdanalysis-red-light: #FFEEED
+
+$danger: $mdanalysis-orange-red
 
 $primary: $mdanalysis-orange
 $accent: $mdanalysis-code-orange
@@ -34,6 +36,8 @@ $green: $mdanalysis-green
 $blue: $mdanalysis-blue
 $yellow: $mdanalysis-yellow
 $orange: $mdanalysis-orange
+
+
 
 $link: $primary
 $link-hover: $accent
@@ -73,8 +77,8 @@ $navbar-height: 4rem
 $below-navbar-spacing: 0.5rem
 $mobile-content-margin-y: 2vw
 
-$bulma-admonitions: false
 $admonition-margin: 1.25rem
+
 
 // 42.5rem is about 80 characters
 $para-width: 42.5rem
@@ -96,10 +100,8 @@ $expanded-table-fullhd-width: 58rem
 @import "bulma/sass/components/tabs.sass"
 @import "bulma/sass/elements/icon.sass"
 @import "bulma/sass/elements/image.sass"
-@import "bulma/sass/elements/table.sass"
 @import "bulma/sass/form/_all.sass"
 @import "bulma/sass/helpers/_all.sass"
-@import "bulma/sass/layout/footer.sass"
 @import "bulma/sass/layout/hero.sass"
 
 $breadcrumb-item-color-light: findColorInvert($breadcrumb-item-color)
@@ -117,23 +119,24 @@ $breadcrumb-item-separator-color-light: findColorInvert($breadcrumb-item-separat
 html
     scroll-padding-top: $navbar-height + $below-navbar-spacing
 
+
+@import "sphinx-api.scss"
 .rst-content
     @import "material-content.scss"
     @import "sphinx-content.scss"
     @import "admonitions.sass"
-    @import "sphinx-api.scss"
     font-size: px2rem(16px)
     line-height: 1.6
     color-adjust: exact
     @media screen and (max-width: $tablet - 1px)
-      width: 100vw - 2 * $mobile-content-margin-y
-      margin-left: $mobile-content-margin-y
-      margin-right: $mobile-content-margin-y
+        width: 100vw - 2 * $mobile-content-margin-y
+        margin-left: $mobile-content-margin-y
+        margin-right: $mobile-content-margin-y
     @media screen and (min-width: $tablet) and (max-width: $desktop - 1px)
-      margin-left: $mobile-content-margin-y
+        margin-left: $mobile-content-margin-y
     @media screen and (min-width: $desktop)
-      max-width: $para-width
-      margin: auto
+        max-width: $para-width
+        margin: auto
 
 
 header, .navbar.is-primary.has-shadow

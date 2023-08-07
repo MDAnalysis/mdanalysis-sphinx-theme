@@ -1,48 +1,11 @@
-// Set the variables color, color-invert, color-light and color-dark for an admonition type
-@function admonition-colors($name)
-    $components: map-get($message-colors, $name)
-    $color: nth($components, 1)
-    $color-invert: nth($components, 2)
-    $color-light: null
-    $color-dark: null
-
-    @if length($components) >= 3
-        $color-light: nth($components, 3)
-        @if length($components) >= 4
-            $color-dark: nth($components, 4)
-        @else
-            $color-luminance: colorLuminance($color)
-            $darken-percentage: $color-luminance * 70%
-            $desaturate-percentage: $color-luminance * 30%
-            $color-dark: desaturate(darken($color, $darken-percentage), $desaturate-percentage)
-    @else
-        $color-lightning: max((100% - lightness($color)) - 2%, 0%)
-        $color-light: lighten($color, $color-lightning)
-
-    @return ($color, $color-invert, $color-light, $color-dark)
-
-// Apply the admonition colors to a bulma admonition
-@mixin bulma-admonition-colors($name)
-    $components: admonition-colors($name)
-    $color: nth($components, 1)
-    $color-invert: nth($components, 2)
-    $color-light: nth($components, 3)
-    $color-dark: nth($components, 4)
-
-    background-color: $color-light
-    .admonition-title
-        background-color: $color
-        color: $color-invert
-        + *
-            border-color: $color
-            color: $color-dark
 
 @mixin material_admonitions($color, $font, $unicode)
     border-left-color: $color
+    background-color: rgba($color, 0.1)
     [dir="rtl"] &
         border-right-color: $color
     .admonition-title, &.deprecated .versionmodified.deprecated
-      background-color: rgba($color, 0.1)
+      background-color: $color //rgba($color, 0.1)
       border-left-color: $color
 
       // Adjust for right-to-left languages
@@ -51,203 +14,140 @@
 
       // Admonition icon
       &::before
-        color: $color
+        // color: $color
+        color: $white
         font-family: $font
         content: $unicode
 
-@if $bulma-admonitions
-    .admonition
-        // Clear adjustments made by basic.css
-        clear: unset
-        margin-top: unset
-        margin-bottom: unset
-        padding: unset
-        &::after
-            display: unset
-            content: unset
-            clear: unset
+.admonition, div.deprecated, div.alert
+  margin: $admonition-margin 0
+  padding: 0 0.75rem
+  overflow: hidden
+  color: $text
+  page-break-inside: avoid
+  border-left: none //0.25rem solid $accent
+  border-radius: 0.125rem
+  @include z-depth(6)
 
-        @extend .message
+  // [print]: Omit shadow as it may lead to rendering errors
+  @media print
+    box-shadow: none
 
-        .admonition-title
-            // Clear adjustments made by basic.css
-            margin: unset
+  // Adjust for right-to-left languages
+  [dir="rtl"] &
+    border-right: 0.25rem solid $accent
+    border-left: none
 
-            margin-bottom: 0
-            @extend .message-header
-            ~ *
-                @extend .message-body
-                border-width: 0
-                border-top-left-radius: 0
-                border-top-right-radius: 0
+  // Adjust vertical spacing for nested admonitions
+  .admonition
+    margin-top: 1em
+    margin-bottom: 1em
 
-        > *:not(.admonition-title)
-            @extend .message-body
+  // Adjust spacing for contained table wrappers
+  .md-typeset__scrollwrap
+    margin: 1em -0.75rem
 
-        &.warning
-            @include bulma-admonition-colors("warning")
+  // Adjust spacing for contained tables
+  .md-typeset__table
+    padding: 0 0.75rem
 
-        &.attention
-            @include bulma-admonition-colors("info")
+  // Adjust spacing for single-child tabbed block container
+  > .tabbed-set:only-child
+    margin-top: 0
 
-        &.caution
-            @include bulma-admonition-colors("warning")
+  // Adjust spacing on last child
+  html &:not(div.deprecated) > :last-child
+    margin-bottom: 0.75rem
 
-        &.danger
-            @include bulma-admonition-colors("danger")
+  &:not(div.deprecated) >p:not(.admonition-title)
+    max-width: calc(80ex - 2  * #{$admonition-margin})
 
-        &.error
-            @include bulma-admonition-colors("danger")
+  &.note, &.admonition-note
+      @include material_admonitions($grey, "FontAwesome", "\f05a")
+  &.seealso, &.admonition-seealso
+      @include material_admonitions($grey, "FontAwesome", "\f06e")
+  &.admonition-abstract, &.admonition-summary, &.admonition-tldr
+      @include material_admonitions($cyan, "FontAwesome", "\f543")
+  &.admonition-info, &.alert-info
+      @include material_admonitions($mdanalysis-code-orange, "FontAwesome", "\f129")
+  &.admonition-todo
+      @include material_admonitions($yellow, "FontAwesome", "\f249")
+  &.tip, &.hint, &.admonition-tip, &.admonition-hint
+      @include material_admonitions($turquoise, "FontAwesome", "\f06d")
+  &.important, &.admonition-important
+      @include material_admonitions($green, "FontAwesome", "\f06a")
+  &.admonition-success, &.admonition-check, &.admonition-done, &.alert-success
+      @include material_admonitions($green, "FontAwesome", "\f058")
+  &.admonition-question, &.admonition-help, &.admonition-faq
+      @include material_admonitions($cyan, "FontAwesome", "\f059")
+  &.warning, &.caution, &.attention, &.admonition-warning, &.admonition-caution, &.admonition-attention
+      @include material_admonitions($orange, "FontAwesome", "\f071")
+  &.attention, &.admonition-attention, &.alert-warning
+      @include material_admonitions($yellow, "FontAwesome", "\f071")
+  &.error, &.admonition-failure, &.admonition-fail, &.admonition-missing, &.admonition-error
+      @include material_admonitions($mdanalysis-orange-red, "FontAwesome", "\f057")
+  &.danger, &.admonition-danger, &.alert-danger
+      @include material_admonitions($mdanalysis-orange-red, "FontAwesome", "\f071")
+  &.admonition-bug
+      @include material_admonitions($purple, "FontAwesome", "\f188")
+  &.admonition-example
+      @include material_admonitions($blue, "FontAwesome", "\f0c5")
+  &.admonition-quote, &.admonition-cite
+      @include material_admonitions($grey, "FontAwesome", "\f10e")
+  &.deprecated, &.admonition-deprecated
+      @include material_admonitions($yellow, "FontAwesome", "\f017")
+  &.experimental, &.admonition-experimental, &.admonition-experiment, &.admonition-experiments
+      @include material_admonitions($yellow, "FontAwesome", "\f492")
 
-        &.hint
-            @include bulma-admonition-colors("primary")
+// Differences between deprecated and admonitions
+div.deprecated > p
+  margin-top: 0
+  max-width: unset
 
-        &.important
-            @include bulma-admonition-colors("info")
+.versionmodified.deprecated
+  display: block
+  margin: 0 -0.75rem 0.75rem -1rem
 
-        &.note
-            @include bulma-admonition-colors("success")
+// Admonition title
+.admonition-title
+  margin: 0 -0.75rem 0 -1rem
+.admonition-title, .versionmodified.deprecated
+  position: relative
+  padding: 0.5rem 0.75rem 0.5rem 2.5rem
+  font-weight: 700
+  background-color: $accent // rgba($accent, 0.1)
+  border-left: 0.25rem solid $accent
 
-        &.tip
-            @include bulma-admonition-colors("success")
+  // Adjust for right-to-left languages
+  [dir="rtl"] &
+    margin: 0 -1rem 0 -0.75rem
+    padding: 0.5rem 2.5rem 0.5rem 0.75rem
+    border-right: 0.25rem solid $accent
+    border-left: none
 
-@else
-    // ----------------------------------------------------------------------------
-    // Rules: layout
-    // ----------------------------------------------------------------------------
-    // Admonition
-    .admonition, div.deprecated, div.alert
-      margin: $admonition-margin 0
-      padding: 0 0.75rem
-      overflow: hidden
-      color: $text
-      page-break-inside: avoid
-      border-left: 0.25rem solid $accent
-      border-radius: 0.125rem
-      @include z-depth(6)
+  // Adjust spacing for title-only admonitions
+  html &:last-child
+    &.admonition-title
+      margin-bottom: 0
+    &.versionmodified.deprecated
+      margin-bottom: -1rem
 
-      // [print]: Omit shadow as it may lead to rendering errors
-      @media print
-        box-shadow: none
+  // Admonition icon
+  &::before
+    position: absolute
+    left: 0.75rem
+    width: 1.25rem
+    height: 1.25rem
+    color: $accent
+    font-family: "FontAwesome"
+    content: "\f12a"
 
-      // Adjust for right-to-left languages
-      [dir="rtl"] &
-        border-right: 0.25rem solid $accent
-        border-left: none
+    // Adjust for right-to-left languages
+    [dir="rtl"] &
+      right: 0.75rem
+      left: initial
 
-      // Adjust vertical spacing for nested admonitions
-      .admonition
-        margin-top: 1em
-        margin-bottom: 1em
-
-      // Adjust spacing for contained table wrappers
-      .md-typeset__scrollwrap
-        margin: 1em -0.75rem
-
-      // Adjust spacing for contained tables
-      .md-typeset__table
-        padding: 0 0.75rem
-
-      // Adjust spacing for single-child tabbed block container
-      > .tabbed-set:only-child
-        margin-top: 0
-
-      // Adjust spacing on last child
-      html &:not(div.deprecated) > :last-child
-        margin-bottom: 0.75rem
-
-      &:not(div.deprecated) >p:not(.admonition-title)
-        max-width: calc(80ex - 2  * #{$admonition-margin})
-
-      &.note, &.admonition-note
-          @include material_admonitions($grey, "Font Awesome 5 Free", "\f303")
-      &.seealso, &.admonition-seealso
-          @include material_admonitions($grey, "Font Awesome 5 Free", "\f06e")
-      &.admonition-abstract, &.admonition-summary, &.admonition-tldr
-          @include material_admonitions($cyan, "Font Awesome 5 Free", "\f543")
-      &.admonition-info, &.alert-info
-          @include material_admonitions($blue, "Font Awesome 5 Free", "\f129")
-      &.admonition-todo
-          @include material_admonitions($yellow, "Font Awesome 5 Free", "\f249")
-      &.tip, &.hint, &.admonition-tip, &.admonition-hint
-          @include material_admonitions($turquoise, "Font Awesome 5 Free", "\f06d")
-      &.important, &.admonition-important
-          @include material_admonitions($green, "Font Awesome 5 Free", "\f06a")
-      &.admonition-success, &.admonition-check, &.admonition-done, &.alert-success
-          @include material_admonitions($green, "Font Awesome 5 Free", "\f058")
-      &.admonition-question, &.admonition-help, &.admonition-faq
-          @include material_admonitions($cyan, "Font Awesome 5 Free", "\f059")
-      &.warning, &.caution, &.attention, &.admonition-warning, &.admonition-caution, &.admonition-attention
-          @include material_admonitions($orange, "Font Awesome 5 Free", "\f071")
-      &.attention, &.admonition-attention, &.alert-warning
-          @include material_admonitions($yellow, "Font Awesome 5 Free", "\f071")
-      &.error, &.admonition-failure, &.admonition-fail, &.admonition-missing, &.admonition-error
-          @include material_admonitions($red, "Font Awesome 5 Free", "\f057")
-      &.danger, &.admonition-danger, &.alert-danger
-          @include material_admonitions($red, "Font Awesome 5 Free", "\f7b9")
-      &.admonition-bug
-          @include material_admonitions($purple, "Font Awesome 5 Free", "\f188")
-      &.admonition-example
-          @include material_admonitions($blue, "Font Awesome 5 Free", "\f0c5")
-      &.admonition-quote, &.admonition-cite
-          @include material_admonitions($grey, "Font Awesome 5 Free", "\f10e")
-      &.deprecated, &.admonition-deprecated
-          @include material_admonitions($yellow, "Font Awesome 5 Free", "\f017")
-      &.experimental, &.admonition-experimental, &.admonition-experiment, &.admonition-experiments
-          @include material_admonitions($yellow, "Font Awesome 5 Free", "\f492")
-
-    // Differences between deprecated and admonitions
-    div.deprecated > p
-      margin-top: 0
-      max-width: unset
-
-    .versionmodified.deprecated
-      display: block
-      margin: 0 -0.75rem 0.75rem -1rem
-
-    // Admonition title
-    .admonition-title
-      margin: 0 -0.75rem 0 -1rem
-    .admonition-title, .versionmodified.deprecated
-      position: relative
-      padding: 0.5rem 0.75rem 0.5rem 2.5rem
-      font-weight: 700
-      background-color: rgba($accent, 0.1)
-      border-left: 0.25rem solid $accent
-
-      // Adjust for right-to-left languages
-      [dir="rtl"] &
-        margin: 0 -1rem 0 -0.75rem
-        padding: 0.5rem 2.5rem 0.5rem 0.75rem
-        border-right: 0.25rem solid $accent
-        border-left: none
-
-      // Adjust spacing for title-only admonitions
-      html &:last-child
-        &.admonition-title
-          margin-bottom: 0
-        &.versionmodified.deprecated
-          margin-bottom: -1rem
-
-      // Admonition icon
-      &::before
-        position: absolute
-        left: 0.75rem
-        width: 1.25rem
-        height: 1.25rem
-        color: $accent
-        font-family: "Font Awesome 5 Free"
-        content: "\f12a"
-
-        // Adjust for right-to-left languages
-        [dir="rtl"] &
-          right: 0.75rem
-          left: initial
-
-      // Adjust spacing on last tabbed block container child - if the tabbed
-      // block container is the sole child, it looks better to omit the margin
-      + .tabbed-set:last-child
-        margin-top: 0
-
-
-
+  // Adjust spacing on last tabbed block container child - if the tabbed
+  // block container is the sole child, it looks better to omit the margin
+  + .tabbed-set:last-child
+    margin-top: 0

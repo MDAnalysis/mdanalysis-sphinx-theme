@@ -1,42 +1,52 @@
 // The Numpydoc API layout
-
 $api-name-color: $primary;
+
 $api-property-color: darken($mdanalysis-code-orange, 10);
 $api-path-color: $grey;
-$api-bg-color: rgba($mdanalysis-orange, 0.1);
+$api-bg-color: $mdanalysis-orange-light; // rgba($mdanalysis-orange, 0.1);
 $api-param-symbol-color: $mdanalysis-orange;
 $api-param-name-color: $readthedocs-dark-gray;
 $api-param-value-color: $grey-dark;
 $api-type-color: $grey-dark;
 $api-source-link-color: $mdanalysis-orange;
-
-$api-header-font-size: 1.1rem;
-$api-header-padding: 1 * $api-header-font-size;
+$api-header-font-size: 0.9rem;
+$api-header-padding: 0.5 * $api-header-font-size;
 $api-arguments-indent: 2 * $api-header-font-size;
 
-// Definition of an object. Hopefully.
-// Could also use dl.py, but this would fail
-// if we ever wanted to document something that
-// isn't Python
-// RTD does it like this, but with fewer exceptions, so
-// we should be OK
-dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] {
-    // Give ourselves some more room on big screens
-    @media screen and (min-width: $widescreen) and (max-width: $fullhd - 1) {
-        // margin-left: calc(-0.5 * (#{$api-widescreen-width} - #{$para-width}));
-        width: $api-widescreen-width;
-    }
-    @media screen and (min-width: $fullhd) {
-        // margin-left: -0.5 * ($api-fullhd-width - $para-width);
-        width: $api-fullhd-width;
-    }
+// Break headings wherever, if necessary
+h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+// Docs button in source on right
+.viewcode-back {
+  float: right;
+  color: $api-source-link-color;
+}
+
+// Override ReadTheDocs
+// workaround necessary while html4 and 5 are supported
+%py-obj-dl {
     padding-bottom: 0.5em;
-    @include z-depth(2);
-    // Header and signature
+    @include z-depth(2); // shadow
+
+    .property {
+        display: inherit;
+        padding-right: 0px;
+        max-width: 100%;
+    }
+
     > dt {
+        // background: $mdanalysis-orange-light;
+        border-top: 3px solid $mdanalysis-code-orange;
+        color: $readthedocs-dark-gray;
+
+        display: inherit;
+        line-height: 1.4;
+
         font-family: $family-monospace;
         font-size: $api-header-font-size;
-        padding: $api-header-padding;
+        // padding: $api-header-font-size;
         background-color: $api-bg-color;
         border-radius: 4px;
         // Allow words to break anywhere, if necessary
@@ -49,195 +59,54 @@ dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list)
             }
         }
 
-        // Indent the argument list
-        padding-left: $api-header-padding + $api-arguments-indent;
-        // > :first-child {
-        //     margin-left: -$api-arguments-indent;
-        // }
+        padding-left: $api-header-padding;
+        padding-right: 2.5 * ($api-header-padding + $api-arguments-indent);
 
-        // Text specifying class, function, method, pydantic model, etc. Not always present, eg for plain functions
-        > .property .pre {
-            color: $api-property-color;
-            font-size: inherit;
+        > .property {
+            display: unset;
+            padding-right: 0px;
+            max-width: 100%;
+        }
 
-        }
-        // Text providing path to the object
-        > .sig-prename {
-            padding: 0;
-            background-color: transparent;
-            font-weight: 200;
-            font-size: inherit;
-            color: $api-path-color;
-        }
-        // Text providing the name of the object
-        > .sig-name {
-            padding: 0;
-            background-color: transparent;
-            color: $api-name-color;
-            font-weight: 600;
-            font-size: inherit;
-            // autodoc_pydantic produces types as properties _after_ the sig name
-            ~ .property .pre {
-                color: $api-type-color;
-                font-style: normal;
-            }
-
-            // If the source link immediately follows the name, don't position it absolutely
-            + a.reference.internal .viewcode-link {
-                position: static !important;
-                float: right;
-                margin-left: 0.5em;
-            }
-        }
-        // Opening and closing parenthesis
-        > .sig-paren {
-            font-size: inherit;
-
-        }
-        // Each parameter
-        > .sig-param {
-            font-size: inherit;
-            font-style: normal;
-            // Entire parameter if parsing the parameter has failed. Splits on commas
-            > .pre {
-                color: $api-param-name-color;
-            }
-            // Name of a parameter
-            > .n > .pre {
-                color: $api-param-name-color;
-            }
-            // Symbols; equals sign, asterisk, etc
-            > .o > .pre {
-                color: $api-param-symbol-color;
-                padding-left: 0.2em;
-                padding-right: 0.2em;
-            }
-            // Type anotation
-            .p, .p + .n, .p + .w + .n {
-                .pre {
-                    color: $api-type-color;
-                }
-            }
-            // Default values of arguments
-            > .default_value > .pre {
-                color: $api-param-value-color;
-            }
-            // After each parameter, newline
-            // &::before {
-            //     content: "\a";
-            //     white-space: pre;
-            // }
-            // Links
-            a {
-                font-weight: 550;
-                &:hover {
-                    .pre, pre, code {
-                        color: $link-hover !important;
-                    }
-                }
-            }
-        }
-        // Brackets [] denoting optional arguments
-        // This is redundant information and I am displeased to have to support it
-        // > .optional {
-        //     // Put optional [] brackets on their own lines
-        //     &::before {
-        //         content: "\a";
-        //         white-space: pre;
-        //     }
-        //     // Optional parameters need extra indentation
-        //     ~ .sig-param::before {
-        //         content: "\a    ";
-        //     }
-        // }
-        // Closing parenthesis
-        .sig-param, .optional {
-            + .sig-paren {
-                // &::before {
-                //     content: "\a";
-                //     white-space: pre;
-                // }
-
-                // Unindent closing paren, and everything following (except source link)
-                position: relative;
-                // left: -$api-arguments-indent;
-                ~*:not(a.reference.internal, .headerlink) {
-                    position: relative;
-                    left: -$api-arguments-indent;
-                    max-width: calc(100% + #{$api-arguments-indent} - 4em);
-                    display: inline-block;
-                    vertical-align: top;
-                }
-                ~ .headerlink {
-                    // position: absolute;
-                    bottom: $api-header-padding;
-                    right: $api-header-padding;
-                }
-            }
-        }
-        // Pydantic validator arrow
-        .autodoc_pydantic_validator_arrow {
-            &::before {
-                content: "\a";
-                white-space: pre;
-            }
-            // Comma separating validated fields
-            ~ .property {
-                &::after {
-                    content: "\a      ";
-                    white-space: pre;
-                }
-            }
-            ~ .headerlink {
-                // position: absolute;
-                bottom: $api-header-padding;
-                right: $api-header-padding;
-            }
-        }
-        // Link to the source code for the object (not present on inherited objects)
+        // links
         .viewcode-link {
             position: absolute;
             top: $api-header-padding;
-            right: $api-header-padding;
-            color: $api-source-link-color;
-            font-size: $pre-font-size;
-            &:hover {
-                color: $link-hover;
+            right: $api-arguments-indent;
+            color: $mdanalysis-gray;
+
+            .pre:hover {
+                color: $api-source-link-color;
             }
         }
-        // Permalink to the object (to here)
-        > a.headerlink {
-            font-size: 1em;
+
+        .headerlink {
+            position: absolute;
+            top: $api-header-padding;
+            right: $api-header-padding;
+            color: $api-name-color;
             opacity: 1;
-            transform: translate(0);
+            margin-top: -0.1rem;
+
         }
+
     }
-    // Content
+
     >dd {
         margin: 1em;
         &:empty {
             padding-bottom: 0 !important;
         }
-        // Description/docstring
-        >p {
 
-        }
-        // JSON schema for pydantic stuff
-        >.autodoc_pydantic_collapsable_json {
-        }
-        // Parameters, Returns, Other Parameters, Raises sections
         >.field-list {
             // Headings
             >dt {
-                @extend .rubric;
+                font-weight: bold;
             }
+
             // Content
             >dd {
                 >ul.simple {
-                    margin-left: 0;
-                }
-                >ul.simple:first-child>li {
-                    list-style: none;
                     margin-left: 0;
                 }
                 >dl>dt, >ul.simple:first-child>li>p:first-child, >p:first-child {
@@ -261,113 +130,25 @@ dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list)
                 >dl>dt>strong::after {
                     content: ": ";
                 }
-                // Description of the parameter, return value, or exception
-                >dl>dd, >ul.simple:first-child>li>p:not(:first-child) {
-                    margin-top: 0;
-                    margin-bottom: 0.5em;
-                }
             }
         }
-        // Notes, References, Methods, Attributes, and Examples headings
-        >.rubric {
-
-        }
-        // Reference list (bibliography)
-        >dl.citation {
-
-        }
-        // Doctests - already nicely formatted!
-        >.doctest {
-
-        }
-        // Tables of methods, attributes, classes, etc.
-        // Should probably style this globally so it captures the same tables in autosummary directives
-        >.longtable.docutils {
-            // A row of the table
-            tr {
-                //An odd row
-                *.row-odd {
-
-                }
-                //An even row
-                *.row-even {
-
-                }
-                // An entry on the LHS of the table - link to another object + possibly a signature
-                // Signature is a direct child of this element
-                td:first-child {
-                    // May need to style everything in td:first-child, then re-overwrite things here
-                    a.reference code {
-
-                    }
-                }
-                // An entry on the RHS of the table - description
-                td:last-child {
-
-                }
-
-            }
-
-        }
-        // Child object - recapitulates structure above
-        >dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] {
-            @media screen and (min-width: $widescreen) {
-                margin-left: 0;
-                width: 100%;
-            }
-            padding-bottom: 0;
-            @include z-depth(4);
-            border-radius: 4px;
-            // Inner object header and signature
-            > dt {
-                border-radius: 0px;
-            }
-            // Inner object body
-            > dd {
-                margin-right: 1.5em;
-                margin-left: 1.5em;
-                padding-bottom: 0.75em;
-            }
-        }
-    }
-
-    // Don't justify/hyphenate in API
-    // Undoes styling found by searching "@if hyphenate" in sphinx-api.scss
-    p {
-        hyphens: none;
-        text-align: unset;
     }
 }
 
-// Pydantic fields have their own stuff going on
-// We still want types to be the right colour
-// This works as long as the type annotation is defined,
-// but can cause the field's name to be recoloured if eg no
-// type is defined and the field has an alias
-.pydantic_field .sig {
-    > .sig-name + .property:not(:last-of-type) {
-        a {
-            font-weight: bold;
-        }
-        .pre {
-            color: $api-type-color;
+
+html.writer-html4 {
+    .rst-content {
+        dl:not(.docutils) {
+            @extend %py-obj-dl;
         }
     }
 }
 
-details.autodoc_pydantic_collapsable_json > summary {
-    max-width: 42.5rem;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-// Break headings wherever, if necessary
-h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-}
-
-// Docs button in source on right
-.viewcode-back {
-  float: right;
-  color: $api-source-link-color;
+html.writer-html5 {
+    .rst-content {
+        dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) {
+            @extend %py-obj-dl;
+        }
+    }
 }
