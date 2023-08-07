@@ -66,7 +66,7 @@ fieldset[disabled] .file-name, fieldset[disabled] .select select, .select fields
   width: 0.625em;
 }
 
-.table-container:not(:last-child), .table:not(:last-child), .rst-content table:not(:last-child), .tabs:not(:last-child), .level:not(:last-child), .breadcrumb:not(:last-child) {
+.tabs:not(:last-child), .level:not(:last-child), .breadcrumb:not(:last-child) {
   margin-bottom: 1.5rem;
 }
 
@@ -2907,7 +2907,7 @@ table th {
 }
 
 .navbar.is-danger {
-  background-color: #f14668;
+  background-color: #F45F4B;
   color: #fff;
 }
 
@@ -2920,7 +2920,7 @@ table th {
 .navbar.is-danger .navbar-brand .navbar-link:focus,
 .navbar.is-danger .navbar-brand .navbar-link:hover,
 .navbar.is-danger .navbar-brand .navbar-link.is-active {
-  background-color: #ef2e55;
+  background-color: #f34a33;
   color: #fff;
 }
 
@@ -2949,7 +2949,7 @@ table th {
 .navbar.is-danger .navbar-end .navbar-link:focus,
 .navbar.is-danger .navbar-end .navbar-link:hover,
 .navbar.is-danger .navbar-end .navbar-link.is-active {
-    background-color: #ef2e55;
+    background-color: #f34a33;
     color: #fff;
   }
   .navbar.is-danger .navbar-start .navbar-link::after,
@@ -2959,11 +2959,11 @@ table th {
   .navbar.is-danger .navbar-item.has-dropdown:focus .navbar-link,
 .navbar.is-danger .navbar-item.has-dropdown:hover .navbar-link,
 .navbar.is-danger .navbar-item.has-dropdown.is-active .navbar-link {
-    background-color: #ef2e55;
+    background-color: #f34a33;
     color: #fff;
   }
   .navbar.is-danger .navbar-dropdown a.navbar-item.is-active {
-    background-color: #f14668;
+    background-color: #F45F4B;
     color: #fff;
   }
 }
@@ -3825,233 +3825,6 @@ div.icon-text {
   width: 128px;
 }
 
-.table, .rst-content table {
-  background-color: white;
-  color: #363636;
-}
-
-.table td, .rst-content table td,
-.table th,
-.rst-content table th {
-  border: 1px solid #dbdbdb;
-  border-width: 0 0 1px;
-  padding: 0.5em 0.75em;
-  vertical-align: top;
-}
-
-.table td.is-white, .rst-content table td.is-white,
-.table th.is-white,
-.rst-content table th.is-white {
-  background-color: white;
-  border-color: white;
-  color: #0a0a0a;
-}
-
-.table td.is-black, .rst-content table td.is-black,
-.table th.is-black,
-.rst-content table th.is-black {
-  background-color: #0a0a0a;
-  border-color: #0a0a0a;
-  color: white;
-}
-
-.table td.is-light, .rst-content table td.is-light,
-.table th.is-light,
-.rst-content table th.is-light {
-  background-color: whitesmoke;
-  border-color: whitesmoke;
-  color: rgba(0, 0, 0, 0.7);
-}
-
-.table td.is-dark, .rst-content table td.is-dark,
-.table th.is-dark,
-.rst-content table th.is-dark {
-  background-color: #363636;
-  border-color: #363636;
-  color: #fff;
-}
-
-.table td.is-primary, .rst-content table td.is-primary,
-.table th.is-primary,
-.rst-content table th.is-primary {
-  background-color: #FF9200;
-  border-color: #FF9200;
-  color: #fff;
-}
-
-.table td.is-link, .rst-content table td.is-link,
-.table th.is-link,
-.rst-content table th.is-link {
-  background-color: #FF9200;
-  border-color: #FF9200;
-  color: #fff;
-}
-
-.table td.is-info, .rst-content table td.is-info,
-.table th.is-info,
-.rst-content table th.is-info {
-  background-color: #3298dc;
-  border-color: #3298dc;
-  color: #fff;
-}
-
-.table td.is-success, .rst-content table td.is-success,
-.table th.is-success,
-.rst-content table th.is-success {
-  background-color: #01a901;
-  border-color: #01a901;
-  color: #fff;
-}
-
-.table td.is-warning, .rst-content table td.is-warning,
-.table th.is-warning,
-.rst-content table th.is-warning {
-  background-color: #e7cb00;
-  border-color: #e7cb00;
-  color: rgba(0, 0, 0, 0.7);
-}
-
-.table td.is-danger, .rst-content table td.is-danger,
-.table th.is-danger,
-.rst-content table th.is-danger {
-  background-color: #f14668;
-  border-color: #f14668;
-  color: #fff;
-}
-
-.table td.is-narrow, .rst-content table td.is-narrow,
-.table th.is-narrow,
-.rst-content table th.is-narrow {
-  white-space: nowrap;
-  width: 1%;
-}
-
-.table td.is-selected, .rst-content table td.is-selected,
-.table th.is-selected,
-.rst-content table th.is-selected {
-  background-color: #FF9200;
-  color: #fff;
-}
-
-.table td.is-selected a, .rst-content table td.is-selected a,
-.table td.is-selected strong,
-.rst-content table td.is-selected strong,
-.table th.is-selected a,
-.rst-content table th.is-selected a,
-.table th.is-selected strong,
-.rst-content table th.is-selected strong {
-  color: currentColor;
-}
-
-.table td.is-vcentered, .rst-content table td.is-vcentered,
-.table th.is-vcentered,
-.rst-content table th.is-vcentered {
-  vertical-align: middle;
-}
-
-.table th, .rst-content table th {
-  color: #363636;
-}
-
-.table th:not([align]), .rst-content table th:not([align]) {
-  text-align: inherit;
-}
-
-.table tr.is-selected, .rst-content table tr.is-selected {
-  background-color: #FF9200;
-  color: #fff;
-}
-
-.table tr.is-selected a, .rst-content table tr.is-selected a,
-.table tr.is-selected strong,
-.rst-content table tr.is-selected strong {
-  color: currentColor;
-}
-
-.table tr.is-selected td, .rst-content table tr.is-selected td,
-.table tr.is-selected th,
-.rst-content table tr.is-selected th {
-  border-color: #fff;
-  color: currentColor;
-}
-
-.table thead, .rst-content table thead {
-  background-color: transparent;
-}
-
-.table thead td, .rst-content table thead td,
-.table thead th,
-.rst-content table thead th {
-  border-width: 0 0 2px;
-  color: #363636;
-}
-
-.table tfoot, .rst-content table tfoot {
-  background-color: transparent;
-}
-
-.table tfoot td, .rst-content table tfoot td,
-.table tfoot th,
-.rst-content table tfoot th {
-  border-width: 2px 0 0;
-  color: #363636;
-}
-
-.table tbody, .rst-content table tbody {
-  background-color: transparent;
-}
-
-.table tbody tr:last-child td, .rst-content table tbody tr:last-child td,
-.table tbody tr:last-child th,
-.rst-content table tbody tr:last-child th {
-  border-bottom-width: 0;
-}
-
-.table.is-bordered td, .rst-content table.is-bordered td,
-.table.is-bordered th,
-.rst-content table.is-bordered th {
-  border-width: 1px;
-}
-
-.table.is-bordered tr:last-child td, .rst-content table.is-bordered tr:last-child td,
-.table.is-bordered tr:last-child th,
-.rst-content table.is-bordered tr:last-child th {
-  border-bottom-width: 1px;
-}
-
-.table.is-fullwidth, .rst-content table.is-fullwidth {
-  width: 100%;
-}
-
-.table.is-hoverable tbody tr:not(.is-selected):hover, .rst-content table.is-hoverable tbody tr:not(.is-selected):hover {
-  background-color: #fafafa;
-}
-
-.table.is-hoverable.is-striped tbody tr:not(.is-selected):hover, .rst-content table.is-hoverable.is-striped tbody tr:not(.is-selected):hover {
-  background-color: #fafafa;
-}
-
-.table.is-hoverable.is-striped tbody tr:not(.is-selected):hover:nth-child(even), .rst-content table.is-hoverable.is-striped tbody tr:not(.is-selected):hover:nth-child(even) {
-  background-color: whitesmoke;
-}
-
-.table.is-narrow td, .rst-content table.is-narrow td,
-.table.is-narrow th,
-.rst-content table.is-narrow th {
-  padding: 0.25em 0.5em;
-}
-
-.table.is-striped tbody tr:not(.is-selected):nth-child(even), .rst-content table.is-striped tbody tr:not(.is-selected):nth-child(even) {
-  background-color: #fafafa;
-}
-
-.table-container {
-  -webkit-overflow-scrolling: touch;
-  overflow: auto;
-  overflow-y: hidden;
-  max-width: 100%;
-}
-
 /* Bulma Form */
 .select select, .textarea, .input {
   background-color: white;
@@ -4191,11 +3964,11 @@ div.icon-text {
 }
 
 .is-danger.textarea, .is-danger.input {
-  border-color: #f14668;
+  border-color: #F45F4B;
 }
 
 .is-danger.textarea:focus, .is-danger.input:focus, .is-danger.is-focused.textarea, .is-danger.is-focused.input, .is-danger.textarea:active, .is-danger.input:active, .is-danger.is-active.textarea, .is-danger.is-active.input {
-  box-shadow: 0 0 0 0.125em rgba(241, 70, 104, 0.25);
+  box-shadow: 0 0 0 0.125em rgba(244, 95, 75, 0.25);
 }
 
 .is-small.textarea, .is-small.input {
@@ -4482,19 +4255,19 @@ div.icon-text {
 }
 
 .select.is-danger:not(:hover)::after {
-  border-color: #f14668;
+  border-color: #F45F4B;
 }
 
 .select.is-danger select {
-  border-color: #f14668;
+  border-color: #F45F4B;
 }
 
 .select.is-danger select:hover, .select.is-danger select.is-hovered {
-  border-color: #ef2e55;
+  border-color: #f34a33;
 }
 
 .select.is-danger select:focus, .select.is-danger select.is-focused, .select.is-danger select:active, .select.is-danger select.is-active {
-  box-shadow: 0 0 0 0.125em rgba(241, 70, 104, 0.25);
+  box-shadow: 0 0 0 0.125em rgba(244, 95, 75, 0.25);
 }
 
 .select.is-small {
@@ -4766,25 +4539,25 @@ div.icon-text {
 }
 
 .file.is-danger .file-cta {
-  background-color: #f14668;
+  background-color: #F45F4B;
   border-color: transparent;
   color: #fff;
 }
 
 .file.is-danger:hover .file-cta, .file.is-danger.is-hovered .file-cta {
-  background-color: #f03a5f;
+  background-color: #f3543f;
   border-color: transparent;
   color: #fff;
 }
 
 .file.is-danger:focus .file-cta, .file.is-danger.is-focused .file-cta {
   border-color: transparent;
-  box-shadow: 0 0 0.5em rgba(241, 70, 104, 0.25);
+  box-shadow: 0 0 0.5em rgba(244, 95, 75, 0.25);
   color: #fff;
 }
 
 .file.is-danger:active .file-cta, .file.is-danger.is-active .file-cta {
-  background-color: #ef2e55;
+  background-color: #f34a33;
   border-color: transparent;
   color: #fff;
 }
@@ -5040,7 +4813,7 @@ div.icon-text {
 }
 
 .help.is-danger {
-  color: #f14668;
+  color: #F45F4B;
 }
 
 .field:not(:last-child) {
@@ -5544,39 +5317,39 @@ a.has-text-warning-dark:hover, a.has-text-warning-dark:focus {
 }
 
 .has-text-danger {
-  color: #f14668 !important;
+  color: #F45F4B !important;
 }
 
 a.has-text-danger:hover, a.has-text-danger:focus {
-  color: #ee1742 !important;
+  color: #f1341b !important;
 }
 
 .has-background-danger {
-  background-color: #f14668 !important;
+  background-color: #F45F4B !important;
 }
 
 .has-text-danger-light {
-  color: #feecf0 !important;
+  color: #feeeec !important;
 }
 
 a.has-text-danger-light:hover, a.has-text-danger-light:focus {
-  color: #fabdc9 !important;
+  color: #fbc3bc !important;
 }
 
 .has-background-danger-light {
-  background-color: #feecf0 !important;
+  background-color: #feeeec !important;
 }
 
 .has-text-danger-dark {
-  color: #cc0f35 !important;
+  color: #c0210c !important;
 }
 
 a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
-  color: #ee2049 !important;
+  color: #f0290f !important;
 }
 
 .has-background-danger-dark {
-  background-color: #cc0f35 !important;
+  background-color: #c0210c !important;
 }
 
 .has-text-black-bis {
@@ -7207,12 +6980,6 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   }
 }
 
-.footer {
-  background-color: #FFFFFF;
-  padding: 3rem 1.5rem 6rem;
-  color: rgba(0, 0, 0, 0.7);
-}
-
 .hero {
   align-items: stretch;
   display: flex;
@@ -7931,7 +7698,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 
 .hero.is-danger {
-  background-color: #f14668;
+  background-color: #F45F4B;
   color: #fff;
 }
 
@@ -7955,7 +7722,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 @media screen and (max-width: 1023px) {
   .hero.is-danger .navbar-menu {
-    background-color: #f14668;
+    background-color: #F45F4B;
   }
 }
 
@@ -7967,7 +7734,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .hero.is-danger a.navbar-item:hover, .hero.is-danger a.navbar-item.is-active,
 .hero.is-danger .navbar-link:hover,
 .hero.is-danger .navbar-link.is-active {
-  background-color: #ef2e55;
+  background-color: #f34a33;
   color: #fff;
 }
 
@@ -7995,16 +7762,16 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .hero.is-danger .tabs.is-boxed li.is-active a, .hero.is-danger .tabs.is-boxed li.is-active a:hover, .hero.is-danger .tabs.is-toggle li.is-active a, .hero.is-danger .tabs.is-toggle li.is-active a:hover {
   background-color: #fff;
   border-color: #fff;
-  color: #f14668;
+  color: #F45F4B;
 }
 
 .hero.is-danger.is-bold {
-  background-image: linear-gradient(141deg, #fa0a62 0%, #f14668 71%, #f7595f 100%);
+  background-image: linear-gradient(141deg, #fd0f1a 0%, #F45F4B 71%, #fa8b5f 100%);
 }
 
 @media screen and (max-width: 768px) {
   .hero.is-danger.is-bold .navbar-menu {
-    background-image: linear-gradient(141deg, #fa0a62 0%, #f14668 71%, #f7595f 100%);
+    background-image: linear-gradient(141deg, #fd0f1a 0%, #F45F4B 71%, #fa8b5f 100%);
   }
 }
 
@@ -8102,6 +7869,108 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 html {
   scroll-padding-top: 4.5rem;
+}
+
+h1, h2, .rst-content #index h3, .rst-content .toctree-wrapper .caption, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+.viewcode-back {
+  float: right;
+  color: #FF9200;
+}
+
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple), html.writer-html4 .rst-content dl:not(.docutils) {
+  padding-bottom: 0.5em;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) .property, html.writer-html4 .rst-content dl:not(.docutils) .property {
+  display: inherit;
+  padding-right: 0px;
+  max-width: 100%;
+}
+
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dt, html.writer-html4 .rst-content dl:not(.docutils) > dt {
+  border-top: 3px solid #ca6500;
+  color: #343131;
+  display: inherit;
+  line-height: 1.4;
+  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-size: 0.9rem;
+  background-color: #FFEBD0;
+  border-radius: 4px;
+  overflow-wrap: break-word;
+  position: relative;
+  padding-left: 0.45rem;
+  padding-right: 5.625rem;
+}
+
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dt:target::before, html.writer-html4 .rst-content dl:not(.docutils) > dt:target::before {
+  background-color: #FFFFFF;
+}
+
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dt > .property, html.writer-html4 .rst-content dl:not(.docutils) > dt > .property {
+  display: unset;
+  padding-right: 0px;
+  max-width: 100%;
+}
+
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dt .viewcode-link, html.writer-html4 .rst-content dl:not(.docutils) > dt .viewcode-link {
+  position: absolute;
+  top: 0.45rem;
+  right: 1.8rem;
+  color: #808080;
+}
+
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dt .viewcode-link .pre:hover, html.writer-html4 .rst-content dl:not(.docutils) > dt .viewcode-link .pre:hover {
+  color: #FF9200;
+}
+
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dt .headerlink, html.writer-html4 .rst-content dl:not(.docutils) > dt .headerlink {
+  position: absolute;
+  top: 0.45rem;
+  right: 0.45rem;
+  color: #FF9200;
+  opacity: 1;
+  margin-top: -0.1rem;
+}
+
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dd, html.writer-html4 .rst-content dl:not(.docutils) > dd {
+  margin: 1em;
+}
+
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dd:empty, html.writer-html4 .rst-content dl:not(.docutils) > dd:empty {
+  padding-bottom: 0 !important;
+}
+
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dd > .field-list > dt, html.writer-html4 .rst-content dl:not(.docutils) > dd > .field-list > dt {
+  font-weight: bold;
+}
+
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dd > .field-list > dd > ul.simple, html.writer-html4 .rst-content dl:not(.docutils) > dd > .field-list > dd > ul.simple {
+  margin-left: 0;
+}
+
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dd > .field-list > dd > dl > dt > strong, html.writer-html4 .rst-content dl:not(.docutils) > dd > .field-list > dd > dl > dt > strong, html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dd > .field-list > dd > ul.simple:first-child > li > p:first-child > strong, html.writer-html4 .rst-content dl:not(.docutils) > dd > .field-list > dd > ul.simple:first-child > li > p:first-child > strong, html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dd > .field-list > dd > p:first-child > strong, html.writer-html4 .rst-content dl:not(.docutils) > dd > .field-list > dd > p:first-child > strong {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+  color: #343131;
+  font-weight: normal;
+}
+
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dd > .field-list > dd > dl > dt > .classifier, html.writer-html4 .rst-content dl:not(.docutils) > dd > .field-list > dd > dl > dt > .classifier, html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dd > .field-list > dd > ul.simple:first-child > li > p:first-child > .classifier, html.writer-html4 .rst-content dl:not(.docutils) > dd > .field-list > dd > ul.simple:first-child > li > p:first-child > .classifier, html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dd > .field-list > dd > p:first-child > .classifier, html.writer-html4 .rst-content dl:not(.docutils) > dd > .field-list > dd > p:first-child > .classifier {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+  color: #4a4a4a;
+  overflow-wrap: break-word;
+}
+
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dd > .field-list > dd > dl > dt > a.reference > em, html.writer-html4 .rst-content dl:not(.docutils) > dd > .field-list > dd > dl > dt > a.reference > em, html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dd > .field-list > dd > p:first-child > a.reference > em, html.writer-html4 .rst-content dl:not(.docutils) > dd > .field-list > dd > p:first-child > a.reference > em {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-style: normal;
+}
+
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dd > .field-list > dd > dl > dt > strong::after, html.writer-html4 .rst-content dl:not(.docutils) > dd > .field-list > dd > dl > dt > strong::after {
+  content: ": ";
 }
 
 .rst-content {
@@ -8238,8 +8107,6 @@ html {
 .rst-content h4 code,
 .rst-content h5 code,
 .rst-content h6 code {
-  margin: initial;
-  padding: initial;
   background-color: transparent;
   box-shadow: none;
 }
@@ -8571,7 +8438,7 @@ html {
   text-align: inherit;
 }
 
-.rst-content .rubric, .rst-content dl[class]:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote) > dd > .field-list > dt {
+.rst-content .rubric {
   font-weight: bold;
 }
 
@@ -8670,70 +8537,70 @@ html {
   }
 }
 
-.rst-content .table-container.autosummary {
+.rst-content .wy-table-responsive.autosummary {
   overflow-x: hidden;
 }
 
-.rst-content .table-container.autosummary table {
+.rst-content .wy-table-responsive.autosummary table {
   table-layout: fixed;
   width: 100%;
 }
 
-.rst-content .table-container.autosummary table colgroup col:first-child {
+.rst-content .wy-table-responsive.autosummary table colgroup col:first-child {
   width: 30% !important;
 }
 
-.rst-content .table-container.autosummary table colgroup col:last-child {
+.rst-content .wy-table-responsive.autosummary table colgroup col:last-child {
   width: 70% !important;
 }
 
-.rst-content .table-container.autosummary table td:first-child {
+.rst-content .wy-table-responsive.autosummary table td:first-child {
   overflow-wrap: break-word;
 }
 
-.rst-content .table-container.autosummary table td:first-child a, .rst-content .table-container.autosummary table td:first-child code {
+.rst-content .wy-table-responsive.autosummary table td:first-child a, .rst-content .wy-table-responsive.autosummary table td:first-child code {
   overflow-wrap: break-word;
 }
 
-.rst-content .table-container.autosummary table td:first-child a::after, .rst-content .table-container.autosummary table td:first-child code::after {
+.rst-content .wy-table-responsive.autosummary table td:first-child a::after, .rst-content .wy-table-responsive.autosummary table td:first-child code::after {
   content: "​";
 }
 
-.rst-content .table-container:not(.autosummary).expanded {
+.rst-content .wy-table-responsive:not(.autosummary).expanded {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (min-width: 1216px) and (max-width: 1407px) {
-  .rst-content .table-container:not(.autosummary).expanded {
+  .rst-content .wy-table-responsive:not(.autosummary).expanded {
     margin-left: calc(-0.5 * (66vw - 42.5rem));
     width: 66vw;
     max-width: 66vw;
   }
-  .rst-content .table-container:not(.autosummary).expanded table {
+  .rst-content .wy-table-responsive:not(.autosummary).expanded table {
     min-width: 66vw;
   }
 }
 
 @media screen and (min-width: 1408px) {
-  .rst-content .table-container:not(.autosummary).expanded {
+  .rst-content .wy-table-responsive:not(.autosummary).expanded {
     margin-left: -7.75rem;
     width: 58rem;
     max-width: 58rem;
   }
-  .rst-content .table-container:not(.autosummary).expanded table {
+  .rst-content .wy-table-responsive:not(.autosummary).expanded table {
     min-width: 58rem;
   }
 }
 
-.rst-content .table-container:not(.autosummary) table {
+.rst-content .wy-table-responsive:not(.autosummary) table {
   font-size: 85%;
 }
 
-.rst-content .table-container:not(.autosummary) table tbody tr {
+.rst-content .wy-table-responsive:not(.autosummary) table tbody tr {
   transition: background-color 125ms;
 }
 
-.rst-content .table-container:not(.autosummary) table tbody tr:hover {
+.rst-content .wy-table-responsive:not(.autosummary) table tbody tr:hover {
   background-color: rgba(0, 0, 0, 0.035);
 }
 
@@ -9326,7 +9193,7 @@ html {
   overflow: hidden;
   color: rgba(0, 0, 0, 0.87);
   page-break-inside: avoid;
-  border-left: 0.25rem solid #ca6500;
+  border-left: none;
   border-radius: 0.125rem;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.4);
 }
@@ -9369,6 +9236,7 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 
 .rst-content .admonition.note, .rst-content .admonition.admonition-note, .rst-content div.deprecated.note, .rst-content div.deprecated.admonition-note, .rst-content div.alert.note, .rst-content div.alert.admonition-note {
   border-left-color: #7a7a7a;
+  background-color: rgba(122, 122, 122, 0.1);
 }
 
 [dir="rtl"] .rst-content .admonition.note, [dir="rtl"] .rst-content .admonition.admonition-note, [dir="rtl"] .rst-content div.deprecated.note, [dir="rtl"] .rst-content div.deprecated.admonition-note, [dir="rtl"] .rst-content div.alert.note, [dir="rtl"] .rst-content div.alert.admonition-note {
@@ -9376,7 +9244,7 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.note .admonition-title, .rst-content .admonition.note.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-note .admonition-title, .rst-content .admonition.admonition-note.deprecated .versionmodified.deprecated, .rst-content div.deprecated.note .admonition-title, .rst-content div.deprecated.note.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-note .admonition-title, .rst-content div.deprecated.admonition-note.deprecated .versionmodified.deprecated, .rst-content div.alert.note .admonition-title, .rst-content div.alert.note.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-note .admonition-title, .rst-content div.alert.admonition-note.deprecated .versionmodified.deprecated {
-  background-color: rgba(122, 122, 122, 0.1);
+  background-color: #7a7a7a;
   border-left-color: #7a7a7a;
 }
 
@@ -9385,13 +9253,14 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.note .admonition-title::before, .rst-content .admonition.note.deprecated .versionmodified.deprecated::before, .rst-content .admonition.admonition-note .admonition-title::before, .rst-content .admonition.admonition-note.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.note .admonition-title::before, .rst-content div.deprecated.note.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-note .admonition-title::before, .rst-content div.deprecated.admonition-note.deprecated .versionmodified.deprecated::before, .rst-content div.alert.note .admonition-title::before, .rst-content div.alert.note.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-note .admonition-title::before, .rst-content div.alert.admonition-note.deprecated .versionmodified.deprecated::before {
-  color: #7a7a7a;
-  font-family: "Font Awesome 5 Free";
-  content: "";
+  color: white;
+  font-family: "FontAwesome";
+  content: "";
 }
 
 .rst-content .admonition.seealso, .rst-content .admonition.admonition-seealso, .rst-content div.deprecated.seealso, .rst-content div.deprecated.admonition-seealso, .rst-content div.alert.seealso, .rst-content div.alert.admonition-seealso {
   border-left-color: #7a7a7a;
+  background-color: rgba(122, 122, 122, 0.1);
 }
 
 [dir="rtl"] .rst-content .admonition.seealso, [dir="rtl"] .rst-content .admonition.admonition-seealso, [dir="rtl"] .rst-content div.deprecated.seealso, [dir="rtl"] .rst-content div.deprecated.admonition-seealso, [dir="rtl"] .rst-content div.alert.seealso, [dir="rtl"] .rst-content div.alert.admonition-seealso {
@@ -9399,7 +9268,7 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.seealso .admonition-title, .rst-content .admonition.seealso.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-seealso .admonition-title, .rst-content .admonition.admonition-seealso.deprecated .versionmodified.deprecated, .rst-content div.deprecated.seealso .admonition-title, .rst-content div.deprecated.seealso.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-seealso .admonition-title, .rst-content div.deprecated.admonition-seealso.deprecated .versionmodified.deprecated, .rst-content div.alert.seealso .admonition-title, .rst-content div.alert.seealso.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-seealso .admonition-title, .rst-content div.alert.admonition-seealso.deprecated .versionmodified.deprecated {
-  background-color: rgba(122, 122, 122, 0.1);
+  background-color: #7a7a7a;
   border-left-color: #7a7a7a;
 }
 
@@ -9408,13 +9277,14 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.seealso .admonition-title::before, .rst-content .admonition.seealso.deprecated .versionmodified.deprecated::before, .rst-content .admonition.admonition-seealso .admonition-title::before, .rst-content .admonition.admonition-seealso.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.seealso .admonition-title::before, .rst-content div.deprecated.seealso.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-seealso .admonition-title::before, .rst-content div.deprecated.admonition-seealso.deprecated .versionmodified.deprecated::before, .rst-content div.alert.seealso .admonition-title::before, .rst-content div.alert.seealso.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-seealso .admonition-title::before, .rst-content div.alert.admonition-seealso.deprecated .versionmodified.deprecated::before {
-  color: #7a7a7a;
-  font-family: "Font Awesome 5 Free";
+  color: white;
+  font-family: "FontAwesome";
   content: "";
 }
 
 .rst-content .admonition.admonition-abstract, .rst-content .admonition.admonition-summary, .rst-content .admonition.admonition-tldr, .rst-content div.deprecated.admonition-abstract, .rst-content div.deprecated.admonition-summary, .rst-content div.deprecated.admonition-tldr, .rst-content div.alert.admonition-abstract, .rst-content div.alert.admonition-summary, .rst-content div.alert.admonition-tldr {
   border-left-color: #3298dc;
+  background-color: rgba(50, 152, 220, 0.1);
 }
 
 [dir="rtl"] .rst-content .admonition.admonition-abstract, [dir="rtl"] .rst-content .admonition.admonition-summary, [dir="rtl"] .rst-content .admonition.admonition-tldr, [dir="rtl"] .rst-content div.deprecated.admonition-abstract, [dir="rtl"] .rst-content div.deprecated.admonition-summary, [dir="rtl"] .rst-content div.deprecated.admonition-tldr, [dir="rtl"] .rst-content div.alert.admonition-abstract, [dir="rtl"] .rst-content div.alert.admonition-summary, [dir="rtl"] .rst-content div.alert.admonition-tldr {
@@ -9422,7 +9292,7 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.admonition-abstract .admonition-title, .rst-content .admonition.admonition-abstract.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-summary .admonition-title, .rst-content .admonition.admonition-summary.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-tldr .admonition-title, .rst-content .admonition.admonition-tldr.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-abstract .admonition-title, .rst-content div.deprecated.admonition-abstract.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-summary .admonition-title, .rst-content div.deprecated.admonition-summary.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-tldr .admonition-title, .rst-content div.deprecated.admonition-tldr.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-abstract .admonition-title, .rst-content div.alert.admonition-abstract.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-summary .admonition-title, .rst-content div.alert.admonition-summary.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-tldr .admonition-title, .rst-content div.alert.admonition-tldr.deprecated .versionmodified.deprecated {
-  background-color: rgba(50, 152, 220, 0.1);
+  background-color: #3298dc;
   border-left-color: #3298dc;
 }
 
@@ -9431,36 +9301,38 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.admonition-abstract .admonition-title::before, .rst-content .admonition.admonition-abstract.deprecated .versionmodified.deprecated::before, .rst-content .admonition.admonition-summary .admonition-title::before, .rst-content .admonition.admonition-summary.deprecated .versionmodified.deprecated::before, .rst-content .admonition.admonition-tldr .admonition-title::before, .rst-content .admonition.admonition-tldr.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-abstract .admonition-title::before, .rst-content div.deprecated.admonition-abstract.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-summary .admonition-title::before, .rst-content div.deprecated.admonition-summary.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-tldr .admonition-title::before, .rst-content div.deprecated.admonition-tldr.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-abstract .admonition-title::before, .rst-content div.alert.admonition-abstract.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-summary .admonition-title::before, .rst-content div.alert.admonition-summary.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-tldr .admonition-title::before, .rst-content div.alert.admonition-tldr.deprecated .versionmodified.deprecated::before {
-  color: #3298dc;
-  font-family: "Font Awesome 5 Free";
+  color: white;
+  font-family: "FontAwesome";
   content: "";
 }
 
 .rst-content .admonition.admonition-info, .rst-content .admonition.alert-info, .rst-content div.deprecated.admonition-info, .rst-content div.deprecated.alert-info, .rst-content div.alert.admonition-info, .rst-content div.alert.alert-info {
-  border-left-color: #008790;
+  border-left-color: #ca6500;
+  background-color: rgba(202, 101, 0, 0.1);
 }
 
 [dir="rtl"] .rst-content .admonition.admonition-info, [dir="rtl"] .rst-content .admonition.alert-info, [dir="rtl"] .rst-content div.deprecated.admonition-info, [dir="rtl"] .rst-content div.deprecated.alert-info, [dir="rtl"] .rst-content div.alert.admonition-info, [dir="rtl"] .rst-content div.alert.alert-info {
-  border-right-color: #008790;
+  border-right-color: #ca6500;
 }
 
 .rst-content .admonition.admonition-info .admonition-title, .rst-content .admonition.admonition-info.deprecated .versionmodified.deprecated, .rst-content .admonition.alert-info .admonition-title, .rst-content .admonition.alert-info.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-info .admonition-title, .rst-content div.deprecated.admonition-info.deprecated .versionmodified.deprecated, .rst-content div.deprecated.alert-info .admonition-title, .rst-content div.deprecated.alert-info.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-info .admonition-title, .rst-content div.alert.admonition-info.deprecated .versionmodified.deprecated, .rst-content div.alert.alert-info .admonition-title, .rst-content div.alert.alert-info.deprecated .versionmodified.deprecated {
-  background-color: rgba(0, 135, 144, 0.1);
-  border-left-color: #008790;
+  background-color: #ca6500;
+  border-left-color: #ca6500;
 }
 
 [dir="rtl"] .rst-content .admonition.admonition-info .admonition-title, [dir="rtl"] .rst-content .admonition.admonition-info.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content .admonition.alert-info .admonition-title, [dir="rtl"] .rst-content .admonition.alert-info.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.deprecated.admonition-info .admonition-title, [dir="rtl"] .rst-content div.deprecated.admonition-info.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.deprecated.alert-info .admonition-title, [dir="rtl"] .rst-content div.deprecated.alert-info.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.alert.admonition-info .admonition-title, [dir="rtl"] .rst-content div.alert.admonition-info.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.alert.alert-info .admonition-title, [dir="rtl"] .rst-content div.alert.alert-info.deprecated .versionmodified.deprecated {
-  border-right-color: #008790;
+  border-right-color: #ca6500;
 }
 
 .rst-content .admonition.admonition-info .admonition-title::before, .rst-content .admonition.admonition-info.deprecated .versionmodified.deprecated::before, .rst-content .admonition.alert-info .admonition-title::before, .rst-content .admonition.alert-info.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-info .admonition-title::before, .rst-content div.deprecated.admonition-info.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.alert-info .admonition-title::before, .rst-content div.deprecated.alert-info.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-info .admonition-title::before, .rst-content div.alert.admonition-info.deprecated .versionmodified.deprecated::before, .rst-content div.alert.alert-info .admonition-title::before, .rst-content div.alert.alert-info.deprecated .versionmodified.deprecated::before {
-  color: #008790;
-  font-family: "Font Awesome 5 Free";
+  color: white;
+  font-family: "FontAwesome";
   content: "";
 }
 
 .rst-content .admonition.admonition-todo, .rst-content div.deprecated.admonition-todo, .rst-content div.alert.admonition-todo {
   border-left-color: #e7cb00;
+  background-color: rgba(231, 203, 0, 0.1);
 }
 
 [dir="rtl"] .rst-content .admonition.admonition-todo, [dir="rtl"] .rst-content div.deprecated.admonition-todo, [dir="rtl"] .rst-content div.alert.admonition-todo {
@@ -9468,7 +9340,7 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.admonition-todo .admonition-title, .rst-content .admonition.admonition-todo.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-todo .admonition-title, .rst-content div.deprecated.admonition-todo.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-todo .admonition-title, .rst-content div.alert.admonition-todo.deprecated .versionmodified.deprecated {
-  background-color: rgba(231, 203, 0, 0.1);
+  background-color: #e7cb00;
   border-left-color: #e7cb00;
 }
 
@@ -9477,13 +9349,14 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.admonition-todo .admonition-title::before, .rst-content .admonition.admonition-todo.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-todo .admonition-title::before, .rst-content div.deprecated.admonition-todo.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-todo .admonition-title::before, .rst-content div.alert.admonition-todo.deprecated .versionmodified.deprecated::before {
-  color: #e7cb00;
-  font-family: "Font Awesome 5 Free";
+  color: white;
+  font-family: "FontAwesome";
   content: "";
 }
 
 .rst-content .admonition.tip, .rst-content .admonition.hint, .rst-content .admonition.admonition-tip, .rst-content .admonition.admonition-hint, .rst-content div.deprecated.tip, .rst-content div.deprecated.hint, .rst-content div.deprecated.admonition-tip, .rst-content div.deprecated.admonition-hint, .rst-content div.alert.tip, .rst-content div.alert.hint, .rst-content div.alert.admonition-tip, .rst-content div.alert.admonition-hint {
   border-left-color: #00d1b2;
+  background-color: rgba(0, 209, 178, 0.1);
 }
 
 [dir="rtl"] .rst-content .admonition.tip, [dir="rtl"] .rst-content .admonition.hint, [dir="rtl"] .rst-content .admonition.admonition-tip, [dir="rtl"] .rst-content .admonition.admonition-hint, [dir="rtl"] .rst-content div.deprecated.tip, [dir="rtl"] .rst-content div.deprecated.hint, [dir="rtl"] .rst-content div.deprecated.admonition-tip, [dir="rtl"] .rst-content div.deprecated.admonition-hint, [dir="rtl"] .rst-content div.alert.tip, [dir="rtl"] .rst-content div.alert.hint, [dir="rtl"] .rst-content div.alert.admonition-tip, [dir="rtl"] .rst-content div.alert.admonition-hint {
@@ -9491,7 +9364,7 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.tip .admonition-title, .rst-content .admonition.tip.deprecated .versionmodified.deprecated, .rst-content .admonition.hint .admonition-title, .rst-content .admonition.hint.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-tip .admonition-title, .rst-content .admonition.admonition-tip.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-hint .admonition-title, .rst-content .admonition.admonition-hint.deprecated .versionmodified.deprecated, .rst-content div.deprecated.tip .admonition-title, .rst-content div.deprecated.tip.deprecated .versionmodified.deprecated, .rst-content div.deprecated.hint .admonition-title, .rst-content div.deprecated.hint.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-tip .admonition-title, .rst-content div.deprecated.admonition-tip.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-hint .admonition-title, .rst-content div.deprecated.admonition-hint.deprecated .versionmodified.deprecated, .rst-content div.alert.tip .admonition-title, .rst-content div.alert.tip.deprecated .versionmodified.deprecated, .rst-content div.alert.hint .admonition-title, .rst-content div.alert.hint.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-tip .admonition-title, .rst-content div.alert.admonition-tip.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-hint .admonition-title, .rst-content div.alert.admonition-hint.deprecated .versionmodified.deprecated {
-  background-color: rgba(0, 209, 178, 0.1);
+  background-color: #00d1b2;
   border-left-color: #00d1b2;
 }
 
@@ -9500,13 +9373,14 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.tip .admonition-title::before, .rst-content .admonition.tip.deprecated .versionmodified.deprecated::before, .rst-content .admonition.hint .admonition-title::before, .rst-content .admonition.hint.deprecated .versionmodified.deprecated::before, .rst-content .admonition.admonition-tip .admonition-title::before, .rst-content .admonition.admonition-tip.deprecated .versionmodified.deprecated::before, .rst-content .admonition.admonition-hint .admonition-title::before, .rst-content .admonition.admonition-hint.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.tip .admonition-title::before, .rst-content div.deprecated.tip.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.hint .admonition-title::before, .rst-content div.deprecated.hint.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-tip .admonition-title::before, .rst-content div.deprecated.admonition-tip.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-hint .admonition-title::before, .rst-content div.deprecated.admonition-hint.deprecated .versionmodified.deprecated::before, .rst-content div.alert.tip .admonition-title::before, .rst-content div.alert.tip.deprecated .versionmodified.deprecated::before, .rst-content div.alert.hint .admonition-title::before, .rst-content div.alert.hint.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-tip .admonition-title::before, .rst-content div.alert.admonition-tip.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-hint .admonition-title::before, .rst-content div.alert.admonition-hint.deprecated .versionmodified.deprecated::before {
-  color: #00d1b2;
-  font-family: "Font Awesome 5 Free";
+  color: white;
+  font-family: "FontAwesome";
   content: "";
 }
 
 .rst-content .admonition.important, .rst-content .admonition.admonition-important, .rst-content div.deprecated.important, .rst-content div.deprecated.admonition-important, .rst-content div.alert.important, .rst-content div.alert.admonition-important {
   border-left-color: #01a901;
+  background-color: rgba(1, 169, 1, 0.1);
 }
 
 [dir="rtl"] .rst-content .admonition.important, [dir="rtl"] .rst-content .admonition.admonition-important, [dir="rtl"] .rst-content div.deprecated.important, [dir="rtl"] .rst-content div.deprecated.admonition-important, [dir="rtl"] .rst-content div.alert.important, [dir="rtl"] .rst-content div.alert.admonition-important {
@@ -9514,7 +9388,7 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.important .admonition-title, .rst-content .admonition.important.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-important .admonition-title, .rst-content .admonition.admonition-important.deprecated .versionmodified.deprecated, .rst-content div.deprecated.important .admonition-title, .rst-content div.deprecated.important.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-important .admonition-title, .rst-content div.deprecated.admonition-important.deprecated .versionmodified.deprecated, .rst-content div.alert.important .admonition-title, .rst-content div.alert.important.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-important .admonition-title, .rst-content div.alert.admonition-important.deprecated .versionmodified.deprecated {
-  background-color: rgba(1, 169, 1, 0.1);
+  background-color: #01a901;
   border-left-color: #01a901;
 }
 
@@ -9523,13 +9397,14 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.important .admonition-title::before, .rst-content .admonition.important.deprecated .versionmodified.deprecated::before, .rst-content .admonition.admonition-important .admonition-title::before, .rst-content .admonition.admonition-important.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.important .admonition-title::before, .rst-content div.deprecated.important.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-important .admonition-title::before, .rst-content div.deprecated.admonition-important.deprecated .versionmodified.deprecated::before, .rst-content div.alert.important .admonition-title::before, .rst-content div.alert.important.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-important .admonition-title::before, .rst-content div.alert.admonition-important.deprecated .versionmodified.deprecated::before {
-  color: #01a901;
-  font-family: "Font Awesome 5 Free";
+  color: white;
+  font-family: "FontAwesome";
   content: "";
 }
 
 .rst-content .admonition.admonition-success, .rst-content .admonition.admonition-check, .rst-content .admonition.admonition-done, .rst-content .admonition.alert-success, .rst-content div.deprecated.admonition-success, .rst-content div.deprecated.admonition-check, .rst-content div.deprecated.admonition-done, .rst-content div.deprecated.alert-success, .rst-content div.alert.admonition-success, .rst-content div.alert.admonition-check, .rst-content div.alert.admonition-done, .rst-content div.alert.alert-success {
   border-left-color: #01a901;
+  background-color: rgba(1, 169, 1, 0.1);
 }
 
 [dir="rtl"] .rst-content .admonition.admonition-success, [dir="rtl"] .rst-content .admonition.admonition-check, [dir="rtl"] .rst-content .admonition.admonition-done, [dir="rtl"] .rst-content .admonition.alert-success, [dir="rtl"] .rst-content div.deprecated.admonition-success, [dir="rtl"] .rst-content div.deprecated.admonition-check, [dir="rtl"] .rst-content div.deprecated.admonition-done, [dir="rtl"] .rst-content div.deprecated.alert-success, [dir="rtl"] .rst-content div.alert.admonition-success, [dir="rtl"] .rst-content div.alert.admonition-check, [dir="rtl"] .rst-content div.alert.admonition-done, [dir="rtl"] .rst-content div.alert.alert-success {
@@ -9537,7 +9412,7 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.admonition-success .admonition-title, .rst-content .admonition.admonition-success.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-check .admonition-title, .rst-content .admonition.admonition-check.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-done .admonition-title, .rst-content .admonition.admonition-done.deprecated .versionmodified.deprecated, .rst-content .admonition.alert-success .admonition-title, .rst-content .admonition.alert-success.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-success .admonition-title, .rst-content div.deprecated.admonition-success.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-check .admonition-title, .rst-content div.deprecated.admonition-check.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-done .admonition-title, .rst-content div.deprecated.admonition-done.deprecated .versionmodified.deprecated, .rst-content div.deprecated.alert-success .admonition-title, .rst-content div.deprecated.alert-success.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-success .admonition-title, .rst-content div.alert.admonition-success.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-check .admonition-title, .rst-content div.alert.admonition-check.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-done .admonition-title, .rst-content div.alert.admonition-done.deprecated .versionmodified.deprecated, .rst-content div.alert.alert-success .admonition-title, .rst-content div.alert.alert-success.deprecated .versionmodified.deprecated {
-  background-color: rgba(1, 169, 1, 0.1);
+  background-color: #01a901;
   border-left-color: #01a901;
 }
 
@@ -9546,13 +9421,14 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.admonition-success .admonition-title::before, .rst-content .admonition.admonition-success.deprecated .versionmodified.deprecated::before, .rst-content .admonition.admonition-check .admonition-title::before, .rst-content .admonition.admonition-check.deprecated .versionmodified.deprecated::before, .rst-content .admonition.admonition-done .admonition-title::before, .rst-content .admonition.admonition-done.deprecated .versionmodified.deprecated::before, .rst-content .admonition.alert-success .admonition-title::before, .rst-content .admonition.alert-success.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-success .admonition-title::before, .rst-content div.deprecated.admonition-success.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-check .admonition-title::before, .rst-content div.deprecated.admonition-check.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-done .admonition-title::before, .rst-content div.deprecated.admonition-done.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.alert-success .admonition-title::before, .rst-content div.deprecated.alert-success.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-success .admonition-title::before, .rst-content div.alert.admonition-success.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-check .admonition-title::before, .rst-content div.alert.admonition-check.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-done .admonition-title::before, .rst-content div.alert.admonition-done.deprecated .versionmodified.deprecated::before, .rst-content div.alert.alert-success .admonition-title::before, .rst-content div.alert.alert-success.deprecated .versionmodified.deprecated::before {
-  color: #01a901;
-  font-family: "Font Awesome 5 Free";
+  color: white;
+  font-family: "FontAwesome";
   content: "";
 }
 
 .rst-content .admonition.admonition-question, .rst-content .admonition.admonition-help, .rst-content .admonition.admonition-faq, .rst-content div.deprecated.admonition-question, .rst-content div.deprecated.admonition-help, .rst-content div.deprecated.admonition-faq, .rst-content div.alert.admonition-question, .rst-content div.alert.admonition-help, .rst-content div.alert.admonition-faq {
   border-left-color: #3298dc;
+  background-color: rgba(50, 152, 220, 0.1);
 }
 
 [dir="rtl"] .rst-content .admonition.admonition-question, [dir="rtl"] .rst-content .admonition.admonition-help, [dir="rtl"] .rst-content .admonition.admonition-faq, [dir="rtl"] .rst-content div.deprecated.admonition-question, [dir="rtl"] .rst-content div.deprecated.admonition-help, [dir="rtl"] .rst-content div.deprecated.admonition-faq, [dir="rtl"] .rst-content div.alert.admonition-question, [dir="rtl"] .rst-content div.alert.admonition-help, [dir="rtl"] .rst-content div.alert.admonition-faq {
@@ -9560,7 +9436,7 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.admonition-question .admonition-title, .rst-content .admonition.admonition-question.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-help .admonition-title, .rst-content .admonition.admonition-help.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-faq .admonition-title, .rst-content .admonition.admonition-faq.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-question .admonition-title, .rst-content div.deprecated.admonition-question.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-help .admonition-title, .rst-content div.deprecated.admonition-help.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-faq .admonition-title, .rst-content div.deprecated.admonition-faq.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-question .admonition-title, .rst-content div.alert.admonition-question.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-help .admonition-title, .rst-content div.alert.admonition-help.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-faq .admonition-title, .rst-content div.alert.admonition-faq.deprecated .versionmodified.deprecated {
-  background-color: rgba(50, 152, 220, 0.1);
+  background-color: #3298dc;
   border-left-color: #3298dc;
 }
 
@@ -9569,13 +9445,14 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.admonition-question .admonition-title::before, .rst-content .admonition.admonition-question.deprecated .versionmodified.deprecated::before, .rst-content .admonition.admonition-help .admonition-title::before, .rst-content .admonition.admonition-help.deprecated .versionmodified.deprecated::before, .rst-content .admonition.admonition-faq .admonition-title::before, .rst-content .admonition.admonition-faq.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-question .admonition-title::before, .rst-content div.deprecated.admonition-question.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-help .admonition-title::before, .rst-content div.deprecated.admonition-help.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-faq .admonition-title::before, .rst-content div.deprecated.admonition-faq.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-question .admonition-title::before, .rst-content div.alert.admonition-question.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-help .admonition-title::before, .rst-content div.alert.admonition-help.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-faq .admonition-title::before, .rst-content div.alert.admonition-faq.deprecated .versionmodified.deprecated::before {
-  color: #3298dc;
-  font-family: "Font Awesome 5 Free";
+  color: white;
+  font-family: "FontAwesome";
   content: "";
 }
 
 .rst-content .admonition.warning, .rst-content .admonition.caution, .rst-content .admonition.attention, .rst-content .admonition.admonition-warning, .rst-content .admonition.admonition-caution, .rst-content .admonition.admonition-attention, .rst-content div.deprecated.warning, .rst-content div.deprecated.caution, .rst-content div.deprecated.attention, .rst-content div.deprecated.admonition-warning, .rst-content div.deprecated.admonition-caution, .rst-content div.deprecated.admonition-attention, .rst-content div.alert.warning, .rst-content div.alert.caution, .rst-content div.alert.attention, .rst-content div.alert.admonition-warning, .rst-content div.alert.admonition-caution, .rst-content div.alert.admonition-attention {
   border-left-color: #FF9200;
+  background-color: rgba(255, 146, 0, 0.1);
 }
 
 [dir="rtl"] .rst-content .admonition.warning, [dir="rtl"] .rst-content .admonition.caution, [dir="rtl"] .rst-content .admonition.attention, [dir="rtl"] .rst-content .admonition.admonition-warning, [dir="rtl"] .rst-content .admonition.admonition-caution, [dir="rtl"] .rst-content .admonition.admonition-attention, [dir="rtl"] .rst-content div.deprecated.warning, [dir="rtl"] .rst-content div.deprecated.caution, [dir="rtl"] .rst-content div.deprecated.attention, [dir="rtl"] .rst-content div.deprecated.admonition-warning, [dir="rtl"] .rst-content div.deprecated.admonition-caution, [dir="rtl"] .rst-content div.deprecated.admonition-attention, [dir="rtl"] .rst-content div.alert.warning, [dir="rtl"] .rst-content div.alert.caution, [dir="rtl"] .rst-content div.alert.attention, [dir="rtl"] .rst-content div.alert.admonition-warning, [dir="rtl"] .rst-content div.alert.admonition-caution, [dir="rtl"] .rst-content div.alert.admonition-attention {
@@ -9583,7 +9460,7 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.warning .admonition-title, .rst-content .admonition.warning.deprecated .versionmodified.deprecated, .rst-content .admonition.caution .admonition-title, .rst-content .admonition.caution.deprecated .versionmodified.deprecated, .rst-content .admonition.attention .admonition-title, .rst-content .admonition.attention.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-warning .admonition-title, .rst-content .admonition.admonition-warning.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-caution .admonition-title, .rst-content .admonition.admonition-caution.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-attention .admonition-title, .rst-content .admonition.admonition-attention.deprecated .versionmodified.deprecated, .rst-content div.deprecated.warning .admonition-title, .rst-content div.deprecated.warning.deprecated .versionmodified.deprecated, .rst-content div.deprecated.caution .admonition-title, .rst-content div.deprecated.caution.deprecated .versionmodified.deprecated, .rst-content div.deprecated.attention .admonition-title, .rst-content div.deprecated.attention.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-warning .admonition-title, .rst-content div.deprecated.admonition-warning.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-caution .admonition-title, .rst-content div.deprecated.admonition-caution.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-attention .admonition-title, .rst-content div.deprecated.admonition-attention.deprecated .versionmodified.deprecated, .rst-content div.alert.warning .admonition-title, .rst-content div.alert.warning.deprecated .versionmodified.deprecated, .rst-content div.alert.caution .admonition-title, .rst-content div.alert.caution.deprecated .versionmodified.deprecated, .rst-content div.alert.attention .admonition-title, .rst-content div.alert.attention.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-warning .admonition-title, .rst-content div.alert.admonition-warning.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-caution .admonition-title, .rst-content div.alert.admonition-caution.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-attention .admonition-title, .rst-content div.alert.admonition-attention.deprecated .versionmodified.deprecated {
-  background-color: rgba(255, 146, 0, 0.1);
+  background-color: #FF9200;
   border-left-color: #FF9200;
 }
 
@@ -9592,13 +9469,14 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.warning .admonition-title::before, .rst-content .admonition.warning.deprecated .versionmodified.deprecated::before, .rst-content .admonition.caution .admonition-title::before, .rst-content .admonition.caution.deprecated .versionmodified.deprecated::before, .rst-content .admonition.attention .admonition-title::before, .rst-content .admonition.attention.deprecated .versionmodified.deprecated::before, .rst-content .admonition.admonition-warning .admonition-title::before, .rst-content .admonition.admonition-warning.deprecated .versionmodified.deprecated::before, .rst-content .admonition.admonition-caution .admonition-title::before, .rst-content .admonition.admonition-caution.deprecated .versionmodified.deprecated::before, .rst-content .admonition.admonition-attention .admonition-title::before, .rst-content .admonition.admonition-attention.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.warning .admonition-title::before, .rst-content div.deprecated.warning.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.caution .admonition-title::before, .rst-content div.deprecated.caution.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.attention .admonition-title::before, .rst-content div.deprecated.attention.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-warning .admonition-title::before, .rst-content div.deprecated.admonition-warning.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-caution .admonition-title::before, .rst-content div.deprecated.admonition-caution.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-attention .admonition-title::before, .rst-content div.deprecated.admonition-attention.deprecated .versionmodified.deprecated::before, .rst-content div.alert.warning .admonition-title::before, .rst-content div.alert.warning.deprecated .versionmodified.deprecated::before, .rst-content div.alert.caution .admonition-title::before, .rst-content div.alert.caution.deprecated .versionmodified.deprecated::before, .rst-content div.alert.attention .admonition-title::before, .rst-content div.alert.attention.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-warning .admonition-title::before, .rst-content div.alert.admonition-warning.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-caution .admonition-title::before, .rst-content div.alert.admonition-caution.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-attention .admonition-title::before, .rst-content div.alert.admonition-attention.deprecated .versionmodified.deprecated::before {
-  color: #FF9200;
-  font-family: "Font Awesome 5 Free";
+  color: white;
+  font-family: "FontAwesome";
   content: "";
 }
 
 .rst-content .admonition.attention, .rst-content .admonition.admonition-attention, .rst-content .admonition.alert-warning, .rst-content div.deprecated.attention, .rst-content div.deprecated.admonition-attention, .rst-content div.deprecated.alert-warning, .rst-content div.alert.attention, .rst-content div.alert.admonition-attention, .rst-content div.alert.alert-warning {
   border-left-color: #e7cb00;
+  background-color: rgba(231, 203, 0, 0.1);
 }
 
 [dir="rtl"] .rst-content .admonition.attention, [dir="rtl"] .rst-content .admonition.admonition-attention, [dir="rtl"] .rst-content .admonition.alert-warning, [dir="rtl"] .rst-content div.deprecated.attention, [dir="rtl"] .rst-content div.deprecated.admonition-attention, [dir="rtl"] .rst-content div.deprecated.alert-warning, [dir="rtl"] .rst-content div.alert.attention, [dir="rtl"] .rst-content div.alert.admonition-attention, [dir="rtl"] .rst-content div.alert.alert-warning {
@@ -9606,7 +9484,7 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.attention .admonition-title, .rst-content .admonition.attention.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-attention .admonition-title, .rst-content .admonition.admonition-attention.deprecated .versionmodified.deprecated, .rst-content .admonition.alert-warning .admonition-title, .rst-content .admonition.alert-warning.deprecated .versionmodified.deprecated, .rst-content div.deprecated.attention .admonition-title, .rst-content div.deprecated.attention.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-attention .admonition-title, .rst-content div.deprecated.admonition-attention.deprecated .versionmodified.deprecated, .rst-content div.deprecated.alert-warning .admonition-title, .rst-content div.deprecated.alert-warning.deprecated .versionmodified.deprecated, .rst-content div.alert.attention .admonition-title, .rst-content div.alert.attention.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-attention .admonition-title, .rst-content div.alert.admonition-attention.deprecated .versionmodified.deprecated, .rst-content div.alert.alert-warning .admonition-title, .rst-content div.alert.alert-warning.deprecated .versionmodified.deprecated {
-  background-color: rgba(231, 203, 0, 0.1);
+  background-color: #e7cb00;
   border-left-color: #e7cb00;
 }
 
@@ -9615,59 +9493,62 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.attention .admonition-title::before, .rst-content .admonition.attention.deprecated .versionmodified.deprecated::before, .rst-content .admonition.admonition-attention .admonition-title::before, .rst-content .admonition.admonition-attention.deprecated .versionmodified.deprecated::before, .rst-content .admonition.alert-warning .admonition-title::before, .rst-content .admonition.alert-warning.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.attention .admonition-title::before, .rst-content div.deprecated.attention.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-attention .admonition-title::before, .rst-content div.deprecated.admonition-attention.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.alert-warning .admonition-title::before, .rst-content div.deprecated.alert-warning.deprecated .versionmodified.deprecated::before, .rst-content div.alert.attention .admonition-title::before, .rst-content div.alert.attention.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-attention .admonition-title::before, .rst-content div.alert.admonition-attention.deprecated .versionmodified.deprecated::before, .rst-content div.alert.alert-warning .admonition-title::before, .rst-content div.alert.alert-warning.deprecated .versionmodified.deprecated::before {
-  color: #e7cb00;
-  font-family: "Font Awesome 5 Free";
+  color: white;
+  font-family: "FontAwesome";
   content: "";
 }
 
 .rst-content .admonition.error, .rst-content .admonition.admonition-failure, .rst-content .admonition.admonition-fail, .rst-content .admonition.admonition-missing, .rst-content .admonition.admonition-error, .rst-content div.deprecated.error, .rst-content div.deprecated.admonition-failure, .rst-content div.deprecated.admonition-fail, .rst-content div.deprecated.admonition-missing, .rst-content div.deprecated.admonition-error, .rst-content div.alert.error, .rst-content div.alert.admonition-failure, .rst-content div.alert.admonition-fail, .rst-content div.alert.admonition-missing, .rst-content div.alert.admonition-error {
-  border-left-color: #f14668;
+  border-left-color: #F45F4B;
+  background-color: rgba(244, 95, 75, 0.1);
 }
 
 [dir="rtl"] .rst-content .admonition.error, [dir="rtl"] .rst-content .admonition.admonition-failure, [dir="rtl"] .rst-content .admonition.admonition-fail, [dir="rtl"] .rst-content .admonition.admonition-missing, [dir="rtl"] .rst-content .admonition.admonition-error, [dir="rtl"] .rst-content div.deprecated.error, [dir="rtl"] .rst-content div.deprecated.admonition-failure, [dir="rtl"] .rst-content div.deprecated.admonition-fail, [dir="rtl"] .rst-content div.deprecated.admonition-missing, [dir="rtl"] .rst-content div.deprecated.admonition-error, [dir="rtl"] .rst-content div.alert.error, [dir="rtl"] .rst-content div.alert.admonition-failure, [dir="rtl"] .rst-content div.alert.admonition-fail, [dir="rtl"] .rst-content div.alert.admonition-missing, [dir="rtl"] .rst-content div.alert.admonition-error {
-  border-right-color: #f14668;
+  border-right-color: #F45F4B;
 }
 
 .rst-content .admonition.error .admonition-title, .rst-content .admonition.error.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-failure .admonition-title, .rst-content .admonition.admonition-failure.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-fail .admonition-title, .rst-content .admonition.admonition-fail.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-missing .admonition-title, .rst-content .admonition.admonition-missing.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-error .admonition-title, .rst-content .admonition.admonition-error.deprecated .versionmodified.deprecated, .rst-content div.deprecated.error .admonition-title, .rst-content div.deprecated.error.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-failure .admonition-title, .rst-content div.deprecated.admonition-failure.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-fail .admonition-title, .rst-content div.deprecated.admonition-fail.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-missing .admonition-title, .rst-content div.deprecated.admonition-missing.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-error .admonition-title, .rst-content div.deprecated.admonition-error.deprecated .versionmodified.deprecated, .rst-content div.alert.error .admonition-title, .rst-content div.alert.error.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-failure .admonition-title, .rst-content div.alert.admonition-failure.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-fail .admonition-title, .rst-content div.alert.admonition-fail.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-missing .admonition-title, .rst-content div.alert.admonition-missing.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-error .admonition-title, .rst-content div.alert.admonition-error.deprecated .versionmodified.deprecated {
-  background-color: rgba(241, 70, 104, 0.1);
-  border-left-color: #f14668;
+  background-color: #F45F4B;
+  border-left-color: #F45F4B;
 }
 
 [dir="rtl"] .rst-content .admonition.error .admonition-title, [dir="rtl"] .rst-content .admonition.error.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content .admonition.admonition-failure .admonition-title, [dir="rtl"] .rst-content .admonition.admonition-failure.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content .admonition.admonition-fail .admonition-title, [dir="rtl"] .rst-content .admonition.admonition-fail.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content .admonition.admonition-missing .admonition-title, [dir="rtl"] .rst-content .admonition.admonition-missing.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content .admonition.admonition-error .admonition-title, [dir="rtl"] .rst-content .admonition.admonition-error.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.deprecated.error .admonition-title, [dir="rtl"] .rst-content div.deprecated.error.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.deprecated.admonition-failure .admonition-title, [dir="rtl"] .rst-content div.deprecated.admonition-failure.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.deprecated.admonition-fail .admonition-title, [dir="rtl"] .rst-content div.deprecated.admonition-fail.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.deprecated.admonition-missing .admonition-title, [dir="rtl"] .rst-content div.deprecated.admonition-missing.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.deprecated.admonition-error .admonition-title, [dir="rtl"] .rst-content div.deprecated.admonition-error.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.alert.error .admonition-title, [dir="rtl"] .rst-content div.alert.error.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.alert.admonition-failure .admonition-title, [dir="rtl"] .rst-content div.alert.admonition-failure.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.alert.admonition-fail .admonition-title, [dir="rtl"] .rst-content div.alert.admonition-fail.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.alert.admonition-missing .admonition-title, [dir="rtl"] .rst-content div.alert.admonition-missing.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.alert.admonition-error .admonition-title, [dir="rtl"] .rst-content div.alert.admonition-error.deprecated .versionmodified.deprecated {
-  border-right-color: #f14668;
+  border-right-color: #F45F4B;
 }
 
 .rst-content .admonition.error .admonition-title::before, .rst-content .admonition.error.deprecated .versionmodified.deprecated::before, .rst-content .admonition.admonition-failure .admonition-title::before, .rst-content .admonition.admonition-failure.deprecated .versionmodified.deprecated::before, .rst-content .admonition.admonition-fail .admonition-title::before, .rst-content .admonition.admonition-fail.deprecated .versionmodified.deprecated::before, .rst-content .admonition.admonition-missing .admonition-title::before, .rst-content .admonition.admonition-missing.deprecated .versionmodified.deprecated::before, .rst-content .admonition.admonition-error .admonition-title::before, .rst-content .admonition.admonition-error.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.error .admonition-title::before, .rst-content div.deprecated.error.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-failure .admonition-title::before, .rst-content div.deprecated.admonition-failure.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-fail .admonition-title::before, .rst-content div.deprecated.admonition-fail.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-missing .admonition-title::before, .rst-content div.deprecated.admonition-missing.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-error .admonition-title::before, .rst-content div.deprecated.admonition-error.deprecated .versionmodified.deprecated::before, .rst-content div.alert.error .admonition-title::before, .rst-content div.alert.error.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-failure .admonition-title::before, .rst-content div.alert.admonition-failure.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-fail .admonition-title::before, .rst-content div.alert.admonition-fail.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-missing .admonition-title::before, .rst-content div.alert.admonition-missing.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-error .admonition-title::before, .rst-content div.alert.admonition-error.deprecated .versionmodified.deprecated::before {
-  color: #f14668;
-  font-family: "Font Awesome 5 Free";
+  color: white;
+  font-family: "FontAwesome";
   content: "";
 }
 
 .rst-content .admonition.danger, .rst-content .admonition.admonition-danger, .rst-content .admonition.alert-danger, .rst-content div.deprecated.danger, .rst-content div.deprecated.admonition-danger, .rst-content div.deprecated.alert-danger, .rst-content div.alert.danger, .rst-content div.alert.admonition-danger, .rst-content div.alert.alert-danger {
-  border-left-color: #f14668;
+  border-left-color: #F45F4B;
+  background-color: rgba(244, 95, 75, 0.1);
 }
 
 [dir="rtl"] .rst-content .admonition.danger, [dir="rtl"] .rst-content .admonition.admonition-danger, [dir="rtl"] .rst-content .admonition.alert-danger, [dir="rtl"] .rst-content div.deprecated.danger, [dir="rtl"] .rst-content div.deprecated.admonition-danger, [dir="rtl"] .rst-content div.deprecated.alert-danger, [dir="rtl"] .rst-content div.alert.danger, [dir="rtl"] .rst-content div.alert.admonition-danger, [dir="rtl"] .rst-content div.alert.alert-danger {
-  border-right-color: #f14668;
+  border-right-color: #F45F4B;
 }
 
 .rst-content .admonition.danger .admonition-title, .rst-content .admonition.danger.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-danger .admonition-title, .rst-content .admonition.admonition-danger.deprecated .versionmodified.deprecated, .rst-content .admonition.alert-danger .admonition-title, .rst-content .admonition.alert-danger.deprecated .versionmodified.deprecated, .rst-content div.deprecated.danger .admonition-title, .rst-content div.deprecated.danger.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-danger .admonition-title, .rst-content div.deprecated.admonition-danger.deprecated .versionmodified.deprecated, .rst-content div.deprecated.alert-danger .admonition-title, .rst-content div.deprecated.alert-danger.deprecated .versionmodified.deprecated, .rst-content div.alert.danger .admonition-title, .rst-content div.alert.danger.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-danger .admonition-title, .rst-content div.alert.admonition-danger.deprecated .versionmodified.deprecated, .rst-content div.alert.alert-danger .admonition-title, .rst-content div.alert.alert-danger.deprecated .versionmodified.deprecated {
-  background-color: rgba(241, 70, 104, 0.1);
-  border-left-color: #f14668;
+  background-color: #F45F4B;
+  border-left-color: #F45F4B;
 }
 
 [dir="rtl"] .rst-content .admonition.danger .admonition-title, [dir="rtl"] .rst-content .admonition.danger.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content .admonition.admonition-danger .admonition-title, [dir="rtl"] .rst-content .admonition.admonition-danger.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content .admonition.alert-danger .admonition-title, [dir="rtl"] .rst-content .admonition.alert-danger.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.deprecated.danger .admonition-title, [dir="rtl"] .rst-content div.deprecated.danger.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.deprecated.admonition-danger .admonition-title, [dir="rtl"] .rst-content div.deprecated.admonition-danger.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.deprecated.alert-danger .admonition-title, [dir="rtl"] .rst-content div.deprecated.alert-danger.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.alert.danger .admonition-title, [dir="rtl"] .rst-content div.alert.danger.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.alert.admonition-danger .admonition-title, [dir="rtl"] .rst-content div.alert.admonition-danger.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.alert.alert-danger .admonition-title, [dir="rtl"] .rst-content div.alert.alert-danger.deprecated .versionmodified.deprecated {
-  border-right-color: #f14668;
+  border-right-color: #F45F4B;
 }
 
 .rst-content .admonition.danger .admonition-title::before, .rst-content .admonition.danger.deprecated .versionmodified.deprecated::before, .rst-content .admonition.admonition-danger .admonition-title::before, .rst-content .admonition.admonition-danger.deprecated .versionmodified.deprecated::before, .rst-content .admonition.alert-danger .admonition-title::before, .rst-content .admonition.alert-danger.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.danger .admonition-title::before, .rst-content div.deprecated.danger.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-danger .admonition-title::before, .rst-content div.deprecated.admonition-danger.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.alert-danger .admonition-title::before, .rst-content div.deprecated.alert-danger.deprecated .versionmodified.deprecated::before, .rst-content div.alert.danger .admonition-title::before, .rst-content div.alert.danger.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-danger .admonition-title::before, .rst-content div.alert.admonition-danger.deprecated .versionmodified.deprecated::before, .rst-content div.alert.alert-danger .admonition-title::before, .rst-content div.alert.alert-danger.deprecated .versionmodified.deprecated::before {
-  color: #f14668;
-  font-family: "Font Awesome 5 Free";
-  content: "";
+  color: white;
+  font-family: "FontAwesome";
+  content: "";
 }
 
 .rst-content .admonition.admonition-bug, .rst-content div.deprecated.admonition-bug, .rst-content div.alert.admonition-bug {
   border-left-color: #b86bff;
+  background-color: rgba(184, 107, 255, 0.1);
 }
 
 [dir="rtl"] .rst-content .admonition.admonition-bug, [dir="rtl"] .rst-content div.deprecated.admonition-bug, [dir="rtl"] .rst-content div.alert.admonition-bug {
@@ -9675,7 +9556,7 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.admonition-bug .admonition-title, .rst-content .admonition.admonition-bug.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-bug .admonition-title, .rst-content div.deprecated.admonition-bug.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-bug .admonition-title, .rst-content div.alert.admonition-bug.deprecated .versionmodified.deprecated {
-  background-color: rgba(184, 107, 255, 0.1);
+  background-color: #b86bff;
   border-left-color: #b86bff;
 }
 
@@ -9684,36 +9565,38 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.admonition-bug .admonition-title::before, .rst-content .admonition.admonition-bug.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-bug .admonition-title::before, .rst-content div.deprecated.admonition-bug.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-bug .admonition-title::before, .rst-content div.alert.admonition-bug.deprecated .versionmodified.deprecated::before {
-  color: #b86bff;
-  font-family: "Font Awesome 5 Free";
+  color: white;
+  font-family: "FontAwesome";
   content: "";
 }
 
 .rst-content .admonition.admonition-example, .rst-content div.deprecated.admonition-example, .rst-content div.alert.admonition-example {
-  border-left-color: #008790;
+  border-left-color: #007ee7;
+  background-color: rgba(0, 126, 231, 0.1);
 }
 
 [dir="rtl"] .rst-content .admonition.admonition-example, [dir="rtl"] .rst-content div.deprecated.admonition-example, [dir="rtl"] .rst-content div.alert.admonition-example {
-  border-right-color: #008790;
+  border-right-color: #007ee7;
 }
 
 .rst-content .admonition.admonition-example .admonition-title, .rst-content .admonition.admonition-example.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-example .admonition-title, .rst-content div.deprecated.admonition-example.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-example .admonition-title, .rst-content div.alert.admonition-example.deprecated .versionmodified.deprecated {
-  background-color: rgba(0, 135, 144, 0.1);
-  border-left-color: #008790;
+  background-color: #007ee7;
+  border-left-color: #007ee7;
 }
 
 [dir="rtl"] .rst-content .admonition.admonition-example .admonition-title, [dir="rtl"] .rst-content .admonition.admonition-example.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.deprecated.admonition-example .admonition-title, [dir="rtl"] .rst-content div.deprecated.admonition-example.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.alert.admonition-example .admonition-title, [dir="rtl"] .rst-content div.alert.admonition-example.deprecated .versionmodified.deprecated {
-  border-right-color: #008790;
+  border-right-color: #007ee7;
 }
 
 .rst-content .admonition.admonition-example .admonition-title::before, .rst-content .admonition.admonition-example.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-example .admonition-title::before, .rst-content div.deprecated.admonition-example.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-example .admonition-title::before, .rst-content div.alert.admonition-example.deprecated .versionmodified.deprecated::before {
-  color: #008790;
-  font-family: "Font Awesome 5 Free";
+  color: white;
+  font-family: "FontAwesome";
   content: "";
 }
 
 .rst-content .admonition.admonition-quote, .rst-content .admonition.admonition-cite, .rst-content div.deprecated.admonition-quote, .rst-content div.deprecated.admonition-cite, .rst-content div.alert.admonition-quote, .rst-content div.alert.admonition-cite {
   border-left-color: #7a7a7a;
+  background-color: rgba(122, 122, 122, 0.1);
 }
 
 [dir="rtl"] .rst-content .admonition.admonition-quote, [dir="rtl"] .rst-content .admonition.admonition-cite, [dir="rtl"] .rst-content div.deprecated.admonition-quote, [dir="rtl"] .rst-content div.deprecated.admonition-cite, [dir="rtl"] .rst-content div.alert.admonition-quote, [dir="rtl"] .rst-content div.alert.admonition-cite {
@@ -9721,7 +9604,7 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.admonition-quote .admonition-title, .rst-content .admonition.admonition-quote.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-cite .admonition-title, .rst-content .admonition.admonition-cite.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-quote .admonition-title, .rst-content div.deprecated.admonition-quote.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-cite .admonition-title, .rst-content div.deprecated.admonition-cite.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-quote .admonition-title, .rst-content div.alert.admonition-quote.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-cite .admonition-title, .rst-content div.alert.admonition-cite.deprecated .versionmodified.deprecated {
-  background-color: rgba(122, 122, 122, 0.1);
+  background-color: #7a7a7a;
   border-left-color: #7a7a7a;
 }
 
@@ -9730,13 +9613,14 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.admonition-quote .admonition-title::before, .rst-content .admonition.admonition-quote.deprecated .versionmodified.deprecated::before, .rst-content .admonition.admonition-cite .admonition-title::before, .rst-content .admonition.admonition-cite.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-quote .admonition-title::before, .rst-content div.deprecated.admonition-quote.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-cite .admonition-title::before, .rst-content div.deprecated.admonition-cite.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-quote .admonition-title::before, .rst-content div.alert.admonition-quote.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-cite .admonition-title::before, .rst-content div.alert.admonition-cite.deprecated .versionmodified.deprecated::before {
-  color: #7a7a7a;
-  font-family: "Font Awesome 5 Free";
+  color: white;
+  font-family: "FontAwesome";
   content: "";
 }
 
 .rst-content .admonition.deprecated, .rst-content .admonition.admonition-deprecated, .rst-content div.deprecated.deprecated, .rst-content div.deprecated.admonition-deprecated, .rst-content div.alert.deprecated, .rst-content div.alert.admonition-deprecated {
   border-left-color: #e7cb00;
+  background-color: rgba(231, 203, 0, 0.1);
 }
 
 [dir="rtl"] .rst-content .admonition.deprecated, [dir="rtl"] .rst-content .admonition.admonition-deprecated, [dir="rtl"] .rst-content div.deprecated.deprecated, [dir="rtl"] .rst-content div.deprecated.admonition-deprecated, [dir="rtl"] .rst-content div.alert.deprecated, [dir="rtl"] .rst-content div.alert.admonition-deprecated {
@@ -9744,7 +9628,7 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.deprecated .admonition-title, .rst-content .admonition.deprecated.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-deprecated .admonition-title, .rst-content .admonition.admonition-deprecated.deprecated .versionmodified.deprecated, .rst-content div.deprecated.deprecated .admonition-title, .rst-content div.deprecated.deprecated.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-deprecated .admonition-title, .rst-content div.deprecated.admonition-deprecated.deprecated .versionmodified.deprecated, .rst-content div.alert.deprecated .admonition-title, .rst-content div.alert.deprecated.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-deprecated .admonition-title, .rst-content div.alert.admonition-deprecated.deprecated .versionmodified.deprecated {
-  background-color: rgba(231, 203, 0, 0.1);
+  background-color: #e7cb00;
   border-left-color: #e7cb00;
 }
 
@@ -9753,13 +9637,14 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.deprecated .admonition-title::before, .rst-content .admonition.deprecated.deprecated .versionmodified.deprecated::before, .rst-content .admonition.admonition-deprecated .admonition-title::before, .rst-content .admonition.admonition-deprecated.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.deprecated .admonition-title::before, .rst-content div.deprecated.deprecated.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-deprecated .admonition-title::before, .rst-content div.deprecated.admonition-deprecated.deprecated .versionmodified.deprecated::before, .rst-content div.alert.deprecated .admonition-title::before, .rst-content div.alert.deprecated.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-deprecated .admonition-title::before, .rst-content div.alert.admonition-deprecated.deprecated .versionmodified.deprecated::before {
-  color: #e7cb00;
-  font-family: "Font Awesome 5 Free";
+  color: white;
+  font-family: "FontAwesome";
   content: "";
 }
 
 .rst-content .admonition.experimental, .rst-content .admonition.admonition-experimental, .rst-content .admonition.admonition-experiment, .rst-content .admonition.admonition-experiments, .rst-content div.deprecated.experimental, .rst-content div.deprecated.admonition-experimental, .rst-content div.deprecated.admonition-experiment, .rst-content div.deprecated.admonition-experiments, .rst-content div.alert.experimental, .rst-content div.alert.admonition-experimental, .rst-content div.alert.admonition-experiment, .rst-content div.alert.admonition-experiments {
   border-left-color: #e7cb00;
+  background-color: rgba(231, 203, 0, 0.1);
 }
 
 [dir="rtl"] .rst-content .admonition.experimental, [dir="rtl"] .rst-content .admonition.admonition-experimental, [dir="rtl"] .rst-content .admonition.admonition-experiment, [dir="rtl"] .rst-content .admonition.admonition-experiments, [dir="rtl"] .rst-content div.deprecated.experimental, [dir="rtl"] .rst-content div.deprecated.admonition-experimental, [dir="rtl"] .rst-content div.deprecated.admonition-experiment, [dir="rtl"] .rst-content div.deprecated.admonition-experiments, [dir="rtl"] .rst-content div.alert.experimental, [dir="rtl"] .rst-content div.alert.admonition-experimental, [dir="rtl"] .rst-content div.alert.admonition-experiment, [dir="rtl"] .rst-content div.alert.admonition-experiments {
@@ -9767,7 +9652,7 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.experimental .admonition-title, .rst-content .admonition.experimental.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-experimental .admonition-title, .rst-content .admonition.admonition-experimental.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-experiment .admonition-title, .rst-content .admonition.admonition-experiment.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-experiments .admonition-title, .rst-content .admonition.admonition-experiments.deprecated .versionmodified.deprecated, .rst-content div.deprecated.experimental .admonition-title, .rst-content div.deprecated.experimental.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-experimental .admonition-title, .rst-content div.deprecated.admonition-experimental.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-experiment .admonition-title, .rst-content div.deprecated.admonition-experiment.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-experiments .admonition-title, .rst-content div.deprecated.admonition-experiments.deprecated .versionmodified.deprecated, .rst-content div.alert.experimental .admonition-title, .rst-content div.alert.experimental.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-experimental .admonition-title, .rst-content div.alert.admonition-experimental.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-experiment .admonition-title, .rst-content div.alert.admonition-experiment.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-experiments .admonition-title, .rst-content div.alert.admonition-experiments.deprecated .versionmodified.deprecated {
-  background-color: rgba(231, 203, 0, 0.1);
+  background-color: #e7cb00;
   border-left-color: #e7cb00;
 }
 
@@ -9776,8 +9661,8 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.experimental .admonition-title::before, .rst-content .admonition.experimental.deprecated .versionmodified.deprecated::before, .rst-content .admonition.admonition-experimental .admonition-title::before, .rst-content .admonition.admonition-experimental.deprecated .versionmodified.deprecated::before, .rst-content .admonition.admonition-experiment .admonition-title::before, .rst-content .admonition.admonition-experiment.deprecated .versionmodified.deprecated::before, .rst-content .admonition.admonition-experiments .admonition-title::before, .rst-content .admonition.admonition-experiments.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.experimental .admonition-title::before, .rst-content div.deprecated.experimental.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-experimental .admonition-title::before, .rst-content div.deprecated.admonition-experimental.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-experiment .admonition-title::before, .rst-content div.deprecated.admonition-experiment.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-experiments .admonition-title::before, .rst-content div.deprecated.admonition-experiments.deprecated .versionmodified.deprecated::before, .rst-content div.alert.experimental .admonition-title::before, .rst-content div.alert.experimental.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-experimental .admonition-title::before, .rst-content div.alert.admonition-experimental.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-experiment .admonition-title::before, .rst-content div.alert.admonition-experiment.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-experiments .admonition-title::before, .rst-content div.alert.admonition-experiments.deprecated .versionmodified.deprecated::before {
-  color: #e7cb00;
-  font-family: "Font Awesome 5 Free";
+  color: white;
+  font-family: "FontAwesome";
   content: "";
 }
 
@@ -9799,7 +9684,7 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
   position: relative;
   padding: 0.5rem 0.75rem 0.5rem 2.5rem;
   font-weight: 700;
-  background-color: rgba(202, 101, 0, 0.1);
+  background-color: #ca6500;
   border-left: 0.25rem solid #ca6500;
 }
 
@@ -9824,7 +9709,7 @@ html .rst-content .admonition-title:last-child.versionmodified.deprecated, html 
   width: 1.25rem;
   height: 1.25rem;
   color: #ca6500;
-  font-family: "Font Awesome 5 Free";
+  font-family: "FontAwesome";
   content: "\f12a";
 }
 
@@ -9835,253 +9720,6 @@ html .rst-content .admonition-title:last-child.versionmodified.deprecated, html 
 
 .rst-content .admonition-title + .tabbed-set:last-child, .rst-content .versionmodified.deprecated + .tabbed-set:last-child {
   margin-top: 0;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] {
-  padding-bottom: 0.5em;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-}
-
-@media screen and (min-width: 1216px) and (max-width: 1407px) {
-  .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] {
-    width: 52.5vw;
-  }
-}
-
-@media screen and (min-width: 1408px) {
-  .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] {
-    width: 46.2rem;
-  }
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt {
-  font-family: Menlo, Monaco, "Courier New", monospace;
-  font-size: 1.1rem;
-  padding: 1.1rem;
-  background-color: rgba(255, 146, 0, 0.1);
-  border-radius: 4px;
-  overflow-wrap: break-word;
-  position: relative;
-  padding-left: 3.3rem;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt:target::before {
-  background-color: #FFFFFF;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .property .pre {
-  color: #974c00;
-  font-size: inherit;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-prename {
-  padding: 0;
-  background-color: transparent;
-  font-weight: 200;
-  font-size: inherit;
-  color: #7a7a7a;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-name {
-  padding: 0;
-  background-color: transparent;
-  color: #FF9200;
-  font-weight: 600;
-  font-size: inherit;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-name ~ .property .pre {
-  color: #4a4a4a;
-  font-style: normal;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-name + a.reference.internal .viewcode-link {
-  position: static !important;
-  float: right;
-  margin-left: 0.5em;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-paren {
-  font-size: inherit;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-param {
-  font-size: inherit;
-  font-style: normal;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-param > .pre {
-  color: #343131;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-param > .n > .pre {
-  color: #343131;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-param > .o > .pre {
-  color: #FF9200;
-  padding-left: 0.2em;
-  padding-right: 0.2em;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-param .p .pre, .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-param .p + .n .pre, .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-param .p + .w + .n .pre {
-  color: #4a4a4a;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-param > .default_value > .pre {
-  color: #4a4a4a;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-param a {
-  font-weight: 550;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-param a:hover .pre, .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-param a:hover pre, .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > .sig-param a:hover code {
-  color: #ca6500 !important;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt .sig-param + .sig-paren, .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt .optional + .sig-paren {
-  position: relative;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt .sig-param + .sig-paren ~ *:not(a.reference.internal, .headerlink), .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt .optional + .sig-paren ~ *:not(a.reference.internal, .headerlink) {
-  position: relative;
-  left: -2.2rem;
-  max-width: calc(100% + 2.2rem - 4em);
-  display: inline-block;
-  vertical-align: top;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt .sig-param + .sig-paren ~ .headerlink, .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt .optional + .sig-paren ~ .headerlink {
-  bottom: 1.1rem;
-  right: 1.1rem;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt .autodoc_pydantic_validator_arrow::before {
-  content: "\a";
-  white-space: pre;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt .autodoc_pydantic_validator_arrow ~ .property::after {
-  content: "\a      ";
-  white-space: pre;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt .autodoc_pydantic_validator_arrow ~ .headerlink {
-  bottom: 1.1rem;
-  right: 1.1rem;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt .viewcode-link {
-  position: absolute;
-  top: 1.1rem;
-  right: 1.1rem;
-  color: #FF9200;
-  font-size: 0.825em;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt .viewcode-link:hover {
-  color: #ca6500;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt > a.headerlink {
-  font-size: 1em;
-  opacity: 1;
-  transform: translate(0);
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd {
-  margin: 1em;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd:empty {
-  padding-bottom: 0 !important;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > .field-list > dd > ul.simple {
-  margin-left: 0;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > .field-list > dd > ul.simple:first-child > li {
-  list-style: none;
-  margin-left: 0;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > .field-list > dd > dl > dt > strong, .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > .field-list > dd > ul.simple:first-child > li > p:first-child > strong, .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > .field-list > dd > p:first-child > strong {
-  font-family: Menlo, Monaco, "Courier New", monospace;
-  color: #343131;
-  font-weight: normal;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > .field-list > dd > dl > dt > .classifier, .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > .field-list > dd > ul.simple:first-child > li > p:first-child > .classifier, .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > .field-list > dd > p:first-child > .classifier {
-  font-family: Menlo, Monaco, "Courier New", monospace;
-  color: #4a4a4a;
-  overflow-wrap: break-word;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > .field-list > dd > dl > dt > a.reference > em, .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > .field-list > dd > ul.simple:first-child > li > p:first-child > a.reference > em, .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > .field-list > dd > p:first-child > a.reference > em {
-  font-family: Menlo, Monaco, "Courier New", monospace;
-  font-style: normal;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > .field-list > dd > dl > dt > strong::after {
-  content: ": ";
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > .field-list > dd > dl > dd, .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > .field-list > dd > ul.simple:first-child > li > p:not(:first-child) {
-  margin-top: 0;
-  margin-bottom: 0.5em;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] {
-  padding-bottom: 0;
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
-  border-radius: 4px;
-}
-
-@media screen and (min-width: 1216px) {
-  .rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] {
-    margin-left: 0;
-    width: 100%;
-  }
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dt {
-  border-radius: 0px;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd > dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] > dd {
-  margin-right: 1.5em;
-  margin-left: 1.5em;
-  padding-bottom: 0.75em;
-}
-
-.rst-content dl:not(.docutils):not(.field-list):not(.simple):not(.citation):not(.option-list):not(.footnote)[class] p {
-  hyphens: none;
-  text-align: unset;
-}
-
-.rst-content .pydantic_field .sig > .sig-name + .property:not(:last-of-type) a {
-  font-weight: bold;
-}
-
-.rst-content .pydantic_field .sig > .sig-name + .property:not(:last-of-type) .pre {
-  color: #4a4a4a;
-}
-
-.rst-content details.autodoc_pydantic_collapsable_json > summary {
-  max-width: 42.5rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.rst-content h1, .rst-content h2, .rst-content .toctree-wrapper .caption, .rst-content #index h3, .rst-content h3, .rst-content h4, .rst-content h5, .rst-content h6 {
-  overflow-wrap: break-word;
-}
-
-.rst-content .viewcode-back {
-  float: right;
-  color: #FF9200;
 }
 
 @media screen and (max-width: 768px) {
@@ -10482,43 +10120,9 @@ code {
   white-space: inherit;
 }
 
-html.writer-html4 .rst-content dl:not(.docutils) > dt, html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dt {
-  background: #FFEBD0;
-  border-top: 3px solid #ca6500;
-  color: #343131;
-}
-
-.rst-content .viewcode-link, .rst-content .viewcode-back {
-  color: #808080;
-}
-
 .rst-content .guilabel {
   background: #FFEBD0;
   border: 1px solid #808080;
-}
-
-.rst-content .seealso {
-  background: #e3e3e3;
-}
-
-.rst-content .seealso p.admonition-title {
-  background: #808080;
-}
-
-.rst-content .error, .rst-content .warning {
-  background: #FFEEED;
-}
-
-.rst-content .error p.admonition-title, .rst-content .warning p.admonition-title {
-  background: #F45F4B;
-}
-
-.rst-content .caution, .rst-content .note, .rst-content .important {
-  background: #FFEBD0;
-}
-
-.rst-content .caution p.admonition-title, .rst-content .note p.admonition-title, .rst-content .important p.admonition-title {
-  background: #FF9200;
 }
 
 .rst-content code.literal {
@@ -10528,5 +10132,9 @@ html.writer-html4 .rst-content dl:not(.docutils) > dt, html.writer-html5 .rst-co
 
 .rst-content dt code.literal {
   font-weight: 700;
+}
+
+.wy-table-responsive table td {
+  white-space: inherit;
 }
 
