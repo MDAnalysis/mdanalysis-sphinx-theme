@@ -81,6 +81,7 @@ napoleon_preprocess_types = True
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 # -- Options for HTML output -------------------------------------------------
+# If HTML theme settings isn't lines 86-110, remember to change customization.rst
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
@@ -90,8 +91,6 @@ html_theme = "mdanalysis_sphinx_theme"
 # relative to this directory. They are copied after the builtin static files,
 # so a file named 'default.css' will overwrite the builtin 'default.css'.
 html_static_path = ["_static"]
-
-# If HTML theme settings isn't lines 90-160, remember to change customization.rst
 
 # -- HTML theme settings ------------------------------------------------
 html_show_sourcelink = True
@@ -109,7 +108,7 @@ html_theme_options = {
     "mda_official": True,
 }
 
-# If HTML theme settings isn't lines 90-160, remember to change customization.rst
+# If HTML theme settings isn't lines 86-110, remember to change customization.rst
 
 language = "en"
 html_last_updated_fmt = ""
