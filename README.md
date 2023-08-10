@@ -6,21 +6,9 @@ This builds on [msmb_theme](https://github.com/msmbuilder/msmb_theme) to apply s
 
 [See example docs on RTD here](https://mdanalysis-sphinx-theme.readthedocs.io/en/latest/)
 
-### Modifications
+## Code of conduct
 
- - Styling tweaks in `msmb.css`
- - Styling for Jupyter notebooks
-
-### Jupyter CSS
-
-Jupyter css is committed to this repository. It is slightly modified from
-the upstream stylesheet. You can regenerate `jupyer.min.css`:
-
- - Ensure the `notebook/` submodule is initialized.
- - Apply `wrap-notebook-css.patch` to it.
- - Run `compile_jupyter_less.py` to turn the patched `less` files into
-   `css`.
-
+All members of the MDAnalysis community and participants in this UGM are expected to abide by the MDAnalysis [Code of Conduct](https://www.mdanalysis.org/pages/conduct/).
 
 ## Acknowledgements
 
