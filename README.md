@@ -8,7 +8,7 @@ This builds on [msmb_theme](https://github.com/msmbuilder/msmb_theme) to apply s
 
 ## Code of conduct
 
-All members of the MDAnalysis community and participants in this UGM are expected to abide by the MDAnalysis [Code of Conduct](https://www.mdanalysis.org/pages/conduct/).
+All members of the MDAnalysis community and participants are expected to abide by the MDAnalysis [Code of Conduct](https://www.mdanalysis.org/pages/conduct/).
 
 ## Acknowledgements
 
