@@ -10087,6 +10087,10 @@ main > .columns {
   background: #fcfcfc;
 }
 
+.wy-nav-top {
+  background: #343131;
+}
+
 .wy-side-nav-search {
   background-color: #FFFFFF;
 }
