@@ -33,7 +33,7 @@ The rules for this file:
 
 ### Changed
 <!-- Changes in existing functionality -->
-- Customised to MDAnalysis colours (PR #4, #5, #9)
+- Customised to MDAnalysis colours (PR #4, #5, #9, #13)
 
 ### Deprecated
 <!-- Soon-to-be removed features -->
