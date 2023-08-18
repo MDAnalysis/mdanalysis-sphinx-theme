@@ -70,7 +70,15 @@ setup(
         'Topic :: Documentation',
         'Topic :: Software Development :: Documentation',
     ],
-    install_requires=['sphinx_rtd_theme'],
+    install_requires=[
+        'sphinx_rtd_theme',
+        'sphinx>=6.2.1,<7.0',
+        'beautifulsoup4',
+        'python-slugify[unidecode]',
+        'css_html_js_minify',
+        'lxml',
+        'libsass'
+    ],
     entry_points={
         'sphinx.html_themes': [
             'mdanalysis_sphinx_theme = mdanalysis_sphinx_theme',
