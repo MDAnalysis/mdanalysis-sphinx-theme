@@ -38,7 +38,6 @@ def copy_mda_assets():
 
 copy_mda_assets()
 
-
 setup(
     name='mdanalysis_sphinx_theme',
     version=versioneer.get_version(),
@@ -49,7 +48,9 @@ setup(
     author_email='mdanalysis@numfocus.org',
     description='Modification to sphinx_rtd_theme',
     zip_safe=False,
-    packages=['mdanalysis_sphinx_theme'],
+    packages=[
+        'mdanalysis_sphinx_theme',
+    ],
     package_data={'mdanalysis_sphinx_theme': [
         'theme.conf',
         '*.html',
@@ -57,6 +58,9 @@ setup(
         'sass/*.*',
         'sass/*/*.*',
         'sass/bulma/sass/*/*.*',
+        'branding/*',
+        'branding/*/*',
+        'branding/*/*/*'
     ]},
     include_package_data=True,
     classifiers=[

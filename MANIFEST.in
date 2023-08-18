@@ -1,5 +1,6 @@
 include LICENSE
 recursive-include mdanalysis_sphinx_theme *
+recursive-include branding *
 include setup.cfg
 include versioneer.py
 include mdanalysis_sphinx_theme/_version.py
