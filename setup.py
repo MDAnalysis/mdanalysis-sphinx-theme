@@ -74,6 +74,7 @@ setup(
         'Topic :: Documentation',
         'Topic :: Software Development :: Documentation',
     ],
+    python_requires='>=3.9',
     install_requires=[
         'sphinx_rtd_theme',
         'sphinx>=6.2.1,<7.0',
