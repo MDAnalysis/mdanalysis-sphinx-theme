@@ -269,6 +269,9 @@ reStructuredText used to create these examples.</p>
 <span class="linenos">74</span><span class="k">def</span> <span class="nf">html_theme_path</span><span class="p">():</span>
 <span class="linenos">75</span>    <span class="k">return</span> <span class="p">[</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">))]</span>
 <span class="linenos">76</span>
+<span class="linenos">77</span>
+<span class="linenos">78</span><span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">_version</span>
+<span class="linenos">79</span><span class="n">__version__</span> <span class="o">=</span> <span class="n">_version</span><span class="o">.</span><span class="n">get_versions</span><span class="p">()[</span><span class="s1">&#39;version&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>It also works with existing Sphinx highlighting:</p>
@@ -664,7 +667,7 @@ source files for one Sphinx project.</p>
 
   <div role="contentinfo">
     <p>&#169; Copyright 2023, MDAnalysis.
-      <span class="lastupdated">Last updated on Aug 17, 2023.
+      <span class="lastupdated">Last updated on Aug 18, 2023.
       </span></p>
   </div>
 
