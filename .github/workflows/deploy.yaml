@@ -27,7 +27,7 @@ jobs:
           package_name: 'mdanalysis_sphinx_theme'
 
       - name: pypi_deploy
-        uses: MDAnalysis/pypi-deployments@main
+        uses: MDAnalysis/pypi-deployment@main
         if: github.event_name == 'release' && github.event.action == 'published'
         with:
           token: ${{ secrets.PYPI_API_TOKEN }}
