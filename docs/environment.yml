@@ -18,7 +18,7 @@ dependencies:
   - pandoc
   - wheel
   - sphinx-autobuild
-  - sphinx>=6.2.1,<7
+  - sphinx>=6.2.1
   - sphinx_rtd_theme
 
   - mdanalysis
