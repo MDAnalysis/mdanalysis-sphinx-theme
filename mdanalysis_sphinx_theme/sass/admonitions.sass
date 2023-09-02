@@ -81,9 +81,9 @@
   &.admonition-question, &.admonition-help, &.admonition-faq
       @include material_admonitions($cyan, "FontAwesome", "\f059")
   &.warning, &.caution, &.attention, &.admonition-warning, &.admonition-caution, &.admonition-attention
-      @include material_admonitions($orange, "FontAwesome", "\f071")
+      @include material_admonitions($mdanalysis-orange, "FontAwesome", "\f071")
   &.attention, &.admonition-attention, &.alert-warning
-      @include material_admonitions($yellow, "FontAwesome", "\f071")
+      @include material_admonitions($mdanalysis-orange, "FontAwesome", "\f071")
   &.error, &.admonition-failure, &.admonition-fail, &.admonition-missing, &.admonition-error
       @include material_admonitions($mdanalysis-orange-red, "FontAwesome", "\f057")
   &.danger, &.admonition-danger, &.alert-danger
@@ -95,9 +95,9 @@
   &.admonition-quote, &.admonition-cite
       @include material_admonitions($grey, "FontAwesome", "\f10e")
   &.deprecated, &.admonition-deprecated
-      @include material_admonitions($yellow, "FontAwesome", "\f017")
+      @include material_admonitions($grey, "FontAwesome", "\f017")
   &.experimental, &.admonition-experimental, &.admonition-experiment, &.admonition-experiments
-      @include material_admonitions($yellow, "FontAwesome", "\f492")
+      @include material_admonitions($mdanalysis-orange, "FontAwesome", "\f492")
 
 // Differences between deprecated and admonitions
 div.deprecated > p
