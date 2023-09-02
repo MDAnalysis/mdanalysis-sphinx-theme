@@ -432,7 +432,7 @@ a.brackets {
   }
   // Stdin cell
   >.input_area {
-    border-left: medium green solid !important;
+    border-left: medium $mdanalysis-gray solid !important;
     pre {
       padding: 1.25rem 1.5rem !important;
     }
@@ -446,12 +446,12 @@ a.brackets {
   }
   // Stderr cell
   >.stderr.output_area {
-    border-left: medium gray solid !important;
+    border-left: medium $grey-light solid !important;
     background: #fee !important;
   }
   // Stdout cell
   >:not(.stderr).output_area {
-    border-left: medium gray solid !important;
+    border-left: medium $grey-light solid !important;
     background: $body-background-color !important;
   }
 }
