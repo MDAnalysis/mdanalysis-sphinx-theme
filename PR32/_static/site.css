@@ -9105,7 +9105,7 @@ ul {
 }
 
 .rst-content .nbinput > .input_area {
-  border-left: medium green solid !important;
+  border-left: medium #808080 solid !important;
 }
 
 .rst-content .nbinput > .input_area pre {
@@ -9117,12 +9117,12 @@ ul {
 }
 
 .rst-content .nboutput > .stderr.output_area {
-  border-left: medium gray solid !important;
+  border-left: medium #b5b5b5 solid !important;
   background: #fee !important;
 }
 
 .rst-content .nboutput > :not(.stderr).output_area {
-  border-left: medium gray solid !important;
+  border-left: medium #b5b5b5 solid !important;
   background: #FFFFFF !important;
 }
 
