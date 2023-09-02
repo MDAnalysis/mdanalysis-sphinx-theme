@@ -12,6 +12,9 @@
       [dir="rtl"] &
         border-right-color: $color
 
+      // Text color
+      color: $white
+
       // Admonition icon
       &::before
         // color: $color
@@ -63,9 +66,9 @@
     max-width: calc(80ex - 2  * #{$admonition-margin})
 
   &.note, &.admonition-note
-      @include material_admonitions($grey-light, "FontAwesome", "\f05a")
+      @include material_admonitions($mdanalysis-gray, "FontAwesome", "\f05a")
   &.seealso, &.admonition-seealso
-      @include material_admonitions($grey-light, "FontAwesome", "\f06e")
+      @include material_admonitions($mdanalysis-gray, "FontAwesome", "\f06e")
   &.admonition-abstract, &.admonition-summary, &.admonition-tldr
       @include material_admonitions($cyan, "FontAwesome", "\f543")
   &.admonition-info, &.alert-info
@@ -93,9 +96,9 @@
   &.admonition-example
       @include material_admonitions($blue, "FontAwesome", "\f0c5")
   &.admonition-quote, &.admonition-cite
-      @include material_admonitions($grey-light, "FontAwesome", "\f10e")
+      @include material_admonitions($mdanalysis-gray, "FontAwesome", "\f10e")
   &.deprecated, &.admonition-deprecated
-      @include material_admonitions($grey-light, "FontAwesome", "\f017")
+      @include material_admonitions($mdanalysis-gray, "FontAwesome", "\f017")
   &.experimental, &.admonition-experimental, &.admonition-experiment, &.admonition-experiments
       @include material_admonitions($mdanalysis-orange, "FontAwesome", "\f492")
 
@@ -138,7 +141,7 @@ div.deprecated > p
     left: 0.75rem
     width: 1.25rem
     height: 1.25rem
-    color: $accent
+    // color: $accent
     font-family: "FontAwesome"
     content: "\f12a"
 
