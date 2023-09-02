@@ -82,7 +82,9 @@ setup(
         'python-slugify[unidecode]',
         'css_html_js_minify',
         'lxml',
-        'libsass'
+        'libsass',
+        'readthedocs-sphinx-search',
+        
     ],
     entry_points={
         'sphinx.html_themes': [
