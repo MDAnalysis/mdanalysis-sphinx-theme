@@ -8222,7 +8222,6 @@ html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(
   display: flow-root;
   padding-left: 0.75rem;
   color: #4a4a4a;
-  border-left: 0.25rem solid #7a7a7a;
 }
 
 [dir="rtl"] .rst-content blockquote {
@@ -8240,7 +8239,8 @@ html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(
   border-right: none;
 }
 
-.rst-content ul {
+.rst-content blockquote
+ul {
   list-style-type: disc;
 }
 
@@ -9393,22 +9393,22 @@ html .rst-content .admonition:not(div.deprecated) > :last-child, html .rst-conte
 }
 
 .rst-content .admonition.important, .rst-content .admonition.admonition-important, .rst-content div.deprecated.important, .rst-content div.deprecated.admonition-important, .rst-content div.alert.important, .rst-content div.alert.admonition-important {
-  border-left-color: #01a901;
-  background-color: rgba(1, 169, 1, 0.1);
+  border-left-color: #FF9200;
+  background-color: rgba(255, 146, 0, 0.1);
 }
 
 [dir="rtl"] .rst-content .admonition.important, [dir="rtl"] .rst-content .admonition.admonition-important, [dir="rtl"] .rst-content div.deprecated.important, [dir="rtl"] .rst-content div.deprecated.admonition-important, [dir="rtl"] .rst-content div.alert.important, [dir="rtl"] .rst-content div.alert.admonition-important {
-  border-right-color: #01a901;
+  border-right-color: #FF9200;
 }
 
 .rst-content .admonition.important .admonition-title, .rst-content .admonition.important.deprecated .versionmodified.deprecated, .rst-content .admonition.admonition-important .admonition-title, .rst-content .admonition.admonition-important.deprecated .versionmodified.deprecated, .rst-content div.deprecated.important .admonition-title, .rst-content div.deprecated.important.deprecated .versionmodified.deprecated, .rst-content div.deprecated.admonition-important .admonition-title, .rst-content div.deprecated.admonition-important.deprecated .versionmodified.deprecated, .rst-content div.alert.important .admonition-title, .rst-content div.alert.important.deprecated .versionmodified.deprecated, .rst-content div.alert.admonition-important .admonition-title, .rst-content div.alert.admonition-important.deprecated .versionmodified.deprecated {
-  background-color: #01a901;
-  border-left-color: #01a901;
+  background-color: #FF9200;
+  border-left-color: #FF9200;
   color: white;
 }
 
 [dir="rtl"] .rst-content .admonition.important .admonition-title, [dir="rtl"] .rst-content .admonition.important.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content .admonition.admonition-important .admonition-title, [dir="rtl"] .rst-content .admonition.admonition-important.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.deprecated.important .admonition-title, [dir="rtl"] .rst-content div.deprecated.important.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.deprecated.admonition-important .admonition-title, [dir="rtl"] .rst-content div.deprecated.admonition-important.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.alert.important .admonition-title, [dir="rtl"] .rst-content div.alert.important.deprecated .versionmodified.deprecated, [dir="rtl"] .rst-content div.alert.admonition-important .admonition-title, [dir="rtl"] .rst-content div.alert.admonition-important.deprecated .versionmodified.deprecated {
-  border-right-color: #01a901;
+  border-right-color: #FF9200;
 }
 
 .rst-content .admonition.important .admonition-title::before, .rst-content .admonition.important.deprecated .versionmodified.deprecated::before, .rst-content .admonition.admonition-important .admonition-title::before, .rst-content .admonition.admonition-important.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.important .admonition-title::before, .rst-content div.deprecated.important.deprecated .versionmodified.deprecated::before, .rst-content div.deprecated.admonition-important .admonition-title::before, .rst-content div.deprecated.admonition-important.deprecated .versionmodified.deprecated::before, .rst-content div.alert.important .admonition-title::before, .rst-content div.alert.important.deprecated .versionmodified.deprecated::before, .rst-content div.alert.admonition-important .admonition-title::before, .rst-content div.alert.admonition-important.deprecated .versionmodified.deprecated::before {
