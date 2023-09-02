@@ -414,7 +414,7 @@ a.brackets {
   }
   >.output_area, >.input_area {
     border: None !important;
-    @include z-depth(2);
+    @include z-depth(1);
   }
   .highlight {
     width: 100%;
