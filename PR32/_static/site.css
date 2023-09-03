@@ -10239,6 +10239,10 @@ code {
   white-space: inherit;
 }
 
+.dataTables_wrapper.no-footer .wy-table-responsive {
+  overflow: unset;
+}
+
 div[role=navigation] > .wy-breadcrumbs {
   margin: 0;
 }
