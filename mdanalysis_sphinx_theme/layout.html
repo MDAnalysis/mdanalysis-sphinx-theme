@@ -4,7 +4,7 @@
   {% set _favicon_url = '_static/logo/mda_favicon.ico' %}
 {% endif %}
 
-{% if theme_favicon_url|tobool %}
+{% if theme_favicon_url != '' %}
   {% set _favicon_url = theme_favicon_url %}
 {% endif %}
 
@@ -25,7 +25,7 @@
 
 {% if theme_mda_official|tobool %}
   {% set _logo_url = '_static/logo/mda_logo.png' %}
-{% elif theme_logo_url|tobool %}
+{% elif theme_logo_url != '' %}
   {% set _logo_url = theme_logo_url %}
 {% endif %}
 
