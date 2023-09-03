@@ -9089,7 +9089,7 @@ ul {
 
 .rst-content .nbinput > .output_area, .rst-content .nbinput > .input_area, .rst-content .nboutput > .output_area, .rst-content .nboutput > .input_area {
   border: None !important;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 
 .rst-content .nbinput .highlight, .rst-content .nboutput .highlight {
