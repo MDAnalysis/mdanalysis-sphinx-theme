@@ -4,10 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
-    types: [opened, edited, synchronize, reopened]
   release:
     types: [published]
   workflow_dispatch:
@@ -20,28 +16,16 @@ jobs:
       run:
         shell: bash -l {0}
     steps:
-      - name: Check user permission
-        id: check
-        uses: actions-cool/check-user-permission@main
-        with:
-          require: 'write'
-
       - name: Checkout
         uses: actions/checkout@v3
         with:
           submodules: 'true'
 
-      - name: Cache conda
-        uses: actions/cache@v3.3.1
-        with:
-          path: ~/conda_pkgs_dir
-          key: ${{ runner.os }}-conda-${{hashFiles('docs/environment.yml') }}
       - name: setup micromamba
         uses: mamba-org/setup-micromamba@v1
         with:
           environment-file: docs/environment.yml
           environment-name: docs
-          cache-environment: true
 
       - name: Install current theme in dev mode
         run: |
@@ -57,13 +41,6 @@ jobs:
         run: |
           cd docs
           make html
-
-      - name: upload doc artifact
-        if: success()
-        uses: actions/upload-artifact@v2
-        with:
-          path: docs/_build/html
-          retention-days: 3
 
       - name: Checkout gh-pages
         if: success()
@@ -81,14 +58,6 @@ jobs:
           rm -rf deploy/dev
           mv docs/_build/html deploy/dev
 
-      - name: Prepare PR deployment
-        if: success() && github.event_name == 'pull_request'
-        env:
-          PR: ${{ github.event.number }}
-        run: |
-          rm -rf deploy/PR${PR}
-          mv docs/_build/html deploy/PR${PR}
-
       - name: Prepare release deployment
         if: success() && github.event_name == 'release'
         env:
@@ -100,7 +69,7 @@ jobs:
           ln -s deploy/${GITHUB_REF} deploy/latest
 
       - name: Deploy to GitHub Pages
-        if: success() && (steps.check.outputs.check-result == 'true')
+        if: success()
         uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: gh-pages
@@ -110,24 +79,3 @@ jobs:
           keep_history: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Find Comment
-        if: success() && github.event_name == 'pull_request' && (steps.check.outputs.check-result == 'true')
-        uses: peter-evans/find-comment@v2
-        id: fc
-        with:
-          issue-number: ${{ github.event.pull_request.number }}
-          comment-author: 'github-actions[bot]'
-          body-includes: Example docs for this PR
-
-      - name: Create or update comment
-        if: success() && github.event_name == 'pull_request' && (steps.check.outputs.check-result == 'true')
-        uses: peter-evans/create-or-update-comment@v3
-        env:
-          PR: ${{ github.event.number }}
-        with:
-          comment-id: ${{ steps.fc.outputs.comment-id }}
-          issue-number: ${{ github.event.pull_request.number }}
-          body: |
-            Example docs for this PR [rendered here](https://mdanalysis.org/mdanalysis-sphinx-theme/PR${{ github.event.number }})
-          edit-mode: replace
