@@ -20,6 +20,14 @@ jobs:
       run:
         shell: bash -l {0}
     steps:
+      - name: Check user permission
+        id: check
+        uses: scherermichael-oss/action-has-permission@master
+        with:
+          required-permission: write
+        env:
+          GITHUB_TOKEN: $
+
       - name: Checkout
         uses: actions/checkout@v3
         with:
@@ -30,16 +38,12 @@ jobs:
         with:
           path: ~/conda_pkgs_dir
           key: ${{ runner.os }}-conda-${{hashFiles('docs/environment.yml') }}
-
-      - uses: conda-incubator/setup-miniconda@v2
-        name: Install dependencies
+      - name: setup micromamba
+        uses: mamba-org/setup-micromamba@v1
         with:
           environment-file: docs/environment.yml
-          activate-environment: docs
-          auto-activate-base: false
-          miniforge-version: latest
-          miniforge-variant: Mambaforge
-          use-mamba: true
+          environment-name: docs
+          cache-environment: true
 
       - name: Install current theme in dev mode
         run: |
@@ -55,6 +59,13 @@ jobs:
         run: |
           cd docs
           make html
+
+      - name: upload doc artifact
+        if: success()
+        uses: actions/upload-artifact@v2
+        with:
+          path: docs/_build/html
+          retention-days: 3
 
       - name: Checkout gh-pages
         if: success()
@@ -91,7 +102,7 @@ jobs:
           ln -s deploy/${GITHUB_REF} deploy/latest
 
       - name: Deploy to GitHub Pages
-        if: success()
+        if: success() && steps.check.outputs.has-permission
         uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: gh-pages
@@ -103,7 +114,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Find Comment
-        if: success() && github.event_name == 'pull_request'
+        if: success() && github.event_name == 'pull_request' && steps.check.outputs.has-permission
         uses: peter-evans/find-comment@v2
         id: fc
         with:
@@ -112,7 +123,7 @@ jobs:
           body-includes: Example docs for this PR
 
       - name: Create or update comment
-        if: success() && github.event_name == 'pull_request'
+        if: success() && github.event_name == 'pull_request' && steps.check.outputs.has-permission
         uses: peter-evans/create-or-update-comment@v3
         env:
           PR: ${{ github.event.number }}
