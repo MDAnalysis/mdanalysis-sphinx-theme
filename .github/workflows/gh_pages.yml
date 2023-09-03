@@ -22,11 +22,9 @@ jobs:
     steps:
       - name: Check user permission
         id: check
-        uses: scherermichael-oss/action-has-permission@master
+        uses: actions-cool/check-user-permission@main
         with:
-          required-permission: write
-        env:
-          GITHUB_TOKEN: $
+          require: 'write'
 
       - name: Checkout
         uses: actions/checkout@v3
@@ -102,7 +100,7 @@ jobs:
           ln -s deploy/${GITHUB_REF} deploy/latest
 
       - name: Deploy to GitHub Pages
-        if: success() && steps.check.outputs.has-permission
+        if: success() && (steps.check.outputs.check-result == 'true')
         uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: gh-pages
@@ -114,7 +112,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Find Comment
-        if: success() && github.event_name == 'pull_request' && steps.check.outputs.has-permission
+        if: success() && github.event_name == 'pull_request' && (steps.check.outputs.check-result == 'true')
         uses: peter-evans/find-comment@v2
         id: fc
         with:
@@ -123,7 +121,7 @@ jobs:
           body-includes: Example docs for this PR
 
       - name: Create or update comment
-        if: success() && github.event_name == 'pull_request' && steps.check.outputs.has-permission
+        if: success() && github.event_name == 'pull_request' && (steps.check.outputs.check-result == 'true')
         uses: peter-evans/create-or-update-comment@v3
         env:
           PR: ${{ github.event.number }}
