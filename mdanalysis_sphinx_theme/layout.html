@@ -34,7 +34,7 @@
 {% set _root_doc = root_doc|default(master_doc) %}
 <a href="{{ pathto(_root_doc) }}"{% if not theme_logo_only %} class="icon icon-home"{% endif %}>
   {% if not theme_logo_only %}{{ project }}{% endif %}
-  {%- if _logo_url %}
+  {%- if _logo_url != "" %}
     <img src="{{ _logo_url }}" class="logo" alt="{{ _('Logo') }}"/>
   {%- endif %}
 </a>
