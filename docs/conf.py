@@ -107,7 +107,6 @@ html_theme_options = {
     "repo_url": "https://github.com/mdanalysis/mdanalysis-sphinx-theme/",
     "repo_name": "mdanalysis-sphinx-theme",
     "mda_official": True,
-    "no_favicon": False,
 }
 
 # If HTML theme settings isn't lines 90-160, remember to change customization.rst

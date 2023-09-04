@@ -1,19 +1,17 @@
-{% set _favicon_url = '_static/logo/placeholder_favicon.svg' %}
-
 {% if theme_mda_official|tobool %}
-  {% set _favicon_url = '_static/logo/mda_favicon.ico' %}
+  {% if favicon_url == '' %}
+    {% set _favicon_url = '_static/logo/mda_favicon.ico' %}
+  {% endif %}
 {% endif %}
 
-{% if theme_favicon_url != '' %}
-  {% set _favicon_url = theme_favicon_url %}
+{% if favicon_url != '' %}
+  {% set _favicon_url = favicon_url %}
 {% endif %}
 
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" integrity="sha512-b1ASx0WHgVFL5ZQhTgiPWX+68KjS38Jk87jg7pe+qC7q9YkEtFq0z7xCglv7qGIs/68d3mAp+StfC8WKC5SSAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  {% if not theme_no_favicon|tobool %}
-    <link rel="shortcut icon" href="{{ pathto(_favicon_url, 1) }}">
-  {% endif %}
+  <link rel="shortcut icon" href="{{ pathto(_favicon_url, 1) }}">
 </head>
 
 {% extends "sphinx_rtd_theme/layout.html" %}
@@ -24,9 +22,13 @@
 {% set _logo_url = '_static/logo/placeholder_logo.png' %}
 
 {% if theme_mda_official|tobool %}
-  {% set _logo_url = '_static/logo/mda_logo.png' %}
-{% elif theme_logo_url != '' %}
-  {% set _logo_url = theme_logo_url %}
+  {% if logo_url == '' %}
+    {% set _logo_url = '_static/logo/mda_logo.png' %}
+  {% endif %}
+{% endif %}
+
+{% if logo_url != '' %}
+  {% set _logo_url = logo_url %}
 {% endif %}
 
 {% set _root_doc = root_doc|default(master_doc) %}
