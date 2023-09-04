@@ -4,10 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
-    types: [opened, edited, synchronize, reopened]
   release:
     types: [published]
   workflow_dispatch:
@@ -25,21 +21,11 @@ jobs:
         with:
           submodules: 'true'
 
-      - name: Cache conda
-        uses: actions/cache@v3.3.1
-        with:
-          path: ~/conda_pkgs_dir
-          key: ${{ runner.os }}-conda-${{hashFiles('docs/environment.yml') }}
-
-      - uses: conda-incubator/setup-miniconda@v2
-        name: Install dependencies
+      - name: setup micromamba
+        uses: mamba-org/setup-micromamba@v1
         with:
           environment-file: docs/environment.yml
-          activate-environment: docs
-          auto-activate-base: false
-          miniforge-version: latest
-          miniforge-variant: Mambaforge
-          use-mamba: true
+          environment-name: docs
 
       - name: Install current theme in dev mode
         run: |
@@ -72,14 +58,6 @@ jobs:
           rm -rf deploy/dev
           mv docs/_build/html deploy/dev
 
-      - name: Prepare PR deployment
-        if: success() && github.event_name == 'pull_request'
-        env:
-          PR: ${{ github.event.number }}
-        run: |
-          rm -rf deploy/PR${PR}
-          mv docs/_build/html deploy/PR${PR}
-
       - name: Prepare release deployment
         if: success() && github.event_name == 'release'
         env:
@@ -101,24 +79,3 @@ jobs:
           keep_history: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Find Comment
-        if: success() && github.event_name == 'pull_request'
-        uses: peter-evans/find-comment@v2
-        id: fc
-        with:
-          issue-number: ${{ github.event.pull_request.number }}
-          comment-author: 'github-actions[bot]'
-          body-includes: Example docs for this PR
-
-      - name: Create or update comment
-        if: success() && github.event_name == 'pull_request'
-        uses: peter-evans/create-or-update-comment@v3
-        env:
-          PR: ${{ github.event.number }}
-        with:
-          comment-id: ${{ steps.fc.outputs.comment-id }}
-          issue-number: ${{ github.event.pull_request.number }}
-          body: |
-            Example docs for this PR [rendered here](https://mdanalysis.org/mdanalysis-sphinx-theme/PR${{ github.event.number }})
-          edit-mode: replace
