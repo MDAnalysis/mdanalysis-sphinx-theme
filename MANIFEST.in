@@ -4,3 +4,4 @@ recursive-include branding *
 include setup.cfg
 include versioneer.py
 include mdanalysis_sphinx_theme/_version.py
+include AUTHORS.md CHANGELOG.md README.md
