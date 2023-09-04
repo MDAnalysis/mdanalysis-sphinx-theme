@@ -30,6 +30,6 @@ u = mda.Universe(PSF, DCD)
 
 ## Current version of MDAnalysis ##
 
-- Which version are you using? (run `python -c "import MDAnalysis as mda; print(mda.__version__)"`)
+- Which version are you using? (run `python -c "import mdanalysis_sphinx_theme as mst; print(mst.__version__)"`)
 - Which version of Python (`python -V`)?
 - Which operating system?
