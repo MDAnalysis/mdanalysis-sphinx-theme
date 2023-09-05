@@ -47,6 +47,8 @@ setup(
     author='MDAnalysis',
     author_email='mdanalysis@numfocus.org',
     description='Modification to sphinx_rtd_theme',
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
     zip_safe=False,
     packages=[
         'mdanalysis_sphinx_theme',
