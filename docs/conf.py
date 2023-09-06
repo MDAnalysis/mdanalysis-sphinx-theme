@@ -103,10 +103,32 @@ html_sidebars = {
 
 # material theme options (see theme.conf for more information)
 html_theme_options = {
-    "base_url": "https://mdanalysis.org/mdanalysis-sphinx-theme/",
-    "repo_url": "https://github.com/mdanalysis/mdanalysis-sphinx-theme/",
-    "repo_name": "mdanalysis-sphinx-theme",
+    # whether to apply official MDAnalysis styling
+    # e.g. using the official MDAnalysis logo and favicon
+    # and using the MDAnalysis privacy policy
     "mda_official": True,
+
+    # other options inherited from sphinx_rtd_theme
+    # Only display logo and not the project name on sidebar
+    "logo_only": True,
+    # Display the version number on the sidebar
+    "display_version": True,
+    # Where to display "next" and "previous" buttons
+    "prev_next_buttons_location": "bottom",
+    # Add an icon next to external links
+    "style_external_links": False,
+    # The background colour of the search area in the navigation bar
+    "style_nav_header_background": "white",
+    # If enabled, navigation entries are not expandable
+    "collapse_navigation": True,
+    # If enabled, the navigation bar scrolls with the main page
+    "sticky_navigation": True,
+    # Maximum depth of the contents tree -- set to -1 for unlimited
+    "navigation_depth": 4,
+    # Whether to include hidden toctrees in the navigation bar
+    "includehidden": True,
+    # Whether to hide page subheadings from navigation
+    "titles_only": False,
 }
 
 # If HTML theme settings isn't lines 90-160, remember to change customization.rst

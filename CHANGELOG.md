@@ -26,6 +26,7 @@ The rules for this file:
 
 ### Fixed
 <!-- Bug fixes -->
+- Fixed documentation and added bibtex docs (PR #53, Issues #10, #26)
 
 ### Changed
 <!-- Changes in existing functionality -->
@@ -35,6 +36,16 @@ The rules for this file:
 
 ### Removed
 <!-- Removed features -->
+
+## v1.0.1
+### Authors
+<!-- GitHub usernames of contributors to this release -->
+- lilyminium
+- IAlibay
+
+### Added
+- Atom license details (PR #47)
+- Pin to sphinx_rtd_theme (PR #38)
 
 ## v1.0.0
 

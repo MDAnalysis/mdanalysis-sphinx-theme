@@ -47,33 +47,50 @@ or ``theme.conf`` for more details.
     html_theme = "mdanalysis_sphinx_theme"
 
     # (Optional) Logo in PNG format.
-    # If not provided, will default to the generic OpenFF logo with text
-    html_logo = "_static/images/logos/openforcefield_v1_white.png"
+    # If not provided and mda_official is False, no logo will be added.
+    # If not provided and mda_official is True, the MDAnalysis logo will be used.
+    html_logo = "_static/logo/placeholder_logo.png"
 
     # (Optional) favicon.
-    # If not provided, will default to the generic OpenFF logo
-    html_favicon = "_static/images/favicon.svg"
+    # If not provided and mda_official is False, will default to a placeholder favicon.
+    # If not provided and mda_official is True, will default to the MDAnalysis favicon.
+    html_favicon = "_static/logo/placeholder_favicon.svg"
 
     # Theme options are theme-specific and customize the look and feel of a
     # theme further.
     html_theme_options = {
-        # Repository integration
-        # Set the repo url for the link to appear
-        "repo_url": "https://github.com/openforcefield/openff-toolkit",
-        # The name of the repo. If must be set if repo_url is set
-        "repo_name": "openff-toolkit",
-        # Must be one of github, gitlab or bitbucket
-        "repo_type": "github",
-        # Colour for sidebar captions and other accents. One of
-        # openff-blue, openff-toolkit-blue, openff-dataset-yellow,
-        # openff-evaluator-orange, aquamarine, lilac, amaranth, grape,
-        # violet, pink, pale-green, green, crimson, eggplant, turquoise,
-        # or a tuple of three ints in the range [0, 255] corresponding to
-        # a position in RGB space.
-        "color_accent": "openff-toolkit-blue",
-        # Content Minification for deployment
-        "html_minify": True,
-        "css_minify": True,
+        # ===== mdanalysis-sphinx-theme options =====
+        # whether to apply official MDAnalysis styling
+        # e.g. using the official MDAnalysis logo and favicon
+        # and using the MDAnalysis privacy policy
+        "mda_official": False,
+
+        # ===== inherited options =====
+        # For more details, please see
+        # https://sphinx-rtd-theme.readthedocs.io/en/stable/
+        # Default values are shown below
+        
+        # Only display logo and not the project name on sidebar
+        "logo_only": True,
+        # Display the version number on the sidebar
+        "display_version": True,
+        # Where to display "next" and "previous" buttons
+        "prev_next_buttons_location": "bottom",
+        # Add an icon next to external links
+        "style_external_links": False,
+        # The background colour of the search area in the navigation bar
+        "style_nav_header_background": "white",
+        # If enabled, navigation entries are not expandable
+        "collapse_navigation": True,
+        # If enabled, the navigation bar scrolls with the main page
+        "sticky_navigation": True,
+        # Maximum depth of the contents tree -- set to -1 for unlimited
+        "navigation_depth": 4,
+        # Whether to include hidden toctrees in the navigation bar
+        "includehidden": True,
+        # Whether to hide page subheadings from navigation
+        "titles_only": False,
+
     }
 
     # Custom sidebar templates, must be a dictionary that maps document names
@@ -83,11 +100,13 @@ or ``theme.conf`` for more details.
         "**": ["globaltoc.html", "localtoc.html", "searchbox.html"]
     }
 
+
 .. toctree::
     :caption: Basic Use
     :maxdepth: 1
 
     customization
+    writing-references
     specimen
     additional_samples
     subpage/index
