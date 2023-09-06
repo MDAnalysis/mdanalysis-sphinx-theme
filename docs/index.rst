@@ -100,7 +100,7 @@ or ``theme.conf`` for more details.
         "**": ["globaltoc.html", "localtoc.html", "searchbox.html"]
     }
 
-}
+
 .. toctree::
     :caption: Basic Use
     :maxdepth: 1
