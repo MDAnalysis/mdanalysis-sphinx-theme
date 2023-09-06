@@ -106,6 +106,7 @@ or ``theme.conf`` for more details.
     :maxdepth: 1
 
     customization
+    writing-references
     specimen
     additional_samples
     subpage/index
