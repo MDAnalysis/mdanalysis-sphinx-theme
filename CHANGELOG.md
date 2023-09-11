@@ -20,6 +20,7 @@ The rules for this file:
 
 ### Authors
 <!-- GitHub usernames of contributors to this release -->
+- ianmkenney
 
 ### Added
 <!-- New added features -->
@@ -30,6 +31,7 @@ The rules for this file:
 
 ### Changed
 <!-- Changes in existing functionality -->
+- Allow favicon override when using mda_official (PR #37, Issue #35)
 
 ### Deprecated
 <!-- Soon-to-be removed features -->
