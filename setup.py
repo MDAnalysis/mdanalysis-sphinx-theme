@@ -47,6 +47,8 @@ setup(
     author='MDAnalysis',
     author_email='mdanalysis@numfocus.org',
     description='Modification to sphinx_rtd_theme',
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
     zip_safe=False,
     packages=[
         'mdanalysis_sphinx_theme',
@@ -76,7 +78,7 @@ setup(
     ],
     python_requires='>=3.9',
     install_requires=[
-        'sphinx_rtd_theme',
+        'sphinx_rtd_theme>=1.2',
         'sphinx>=6.2.1',
         'beautifulsoup4',
         'python-slugify[unidecode]',

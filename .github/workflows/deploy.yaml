@@ -16,7 +16,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+        with:
+          submodules: 'true'
 
       - name: testpypi_deploy
         uses: MDAnalysis/pypi-deployment@main
@@ -24,6 +26,7 @@ jobs:
         with:
           token: ${{ secrets.TESTPYPI_UPLOAD_TOKEN }}
           test_submission: true
+          tests: false
           package_name: 'mdanalysis_sphinx_theme'
 
       - name: pypi_deploy
@@ -31,5 +34,6 @@ jobs:
         if: github.event_name == 'release' && github.event.action == 'published'
         with:
           token: ${{ secrets.PYPI_UPLOAD_TOKEN }}
+          tests: false
           package_name: 'mdanalysis_sphinx_theme'
 

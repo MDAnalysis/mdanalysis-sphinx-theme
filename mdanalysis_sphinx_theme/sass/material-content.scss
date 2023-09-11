@@ -311,7 +311,7 @@ blockquote {
   display: flow-root;
   padding-left: px2rem(12px);
   color: $grey-dark;
-  border-left: px2rem(4px) solid $grey;
+  // border-left: px2rem(4px) solid $grey;
 
   // Adjust for right-to-left languages
   [dir="rtl"] & {
@@ -321,6 +321,20 @@ blockquote {
     border-left: initial;
   }
 }
+
+// No border for block quotes inside a list,
+// these are probably sub items
+li > blockquote {
+  border-left: none;
+
+  // Adjust for right-to-left languages
+  [dir="rtl"] & {
+    border-right: none;
+  }
+}
+
+// No border for blockquotes that *are* a list...
+blockquote 
 
 // Unordered list
 ul {

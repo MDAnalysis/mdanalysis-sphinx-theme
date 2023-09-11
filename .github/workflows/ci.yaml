@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  package_check:
+    if: "github.repository == 'MDAnalysis/mdanalysis-sphinx-theme'"
+    name: some packaging checks
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: 'true'
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: build
+        shell: bash
+        run: |
+          pipx run build
+
+      - name: twine check
+        shell: bash
+        run: |
+          pipx run twine check --strict ./dist/*tar.gz
+
+      - name: pip check
+        shell: bash
+        run: |
+          pip install -e .
+          pip check
