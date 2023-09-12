@@ -1,9 +1,13 @@
-{% set _favicon_url = '_static/logo/placeholder_favicon.svg' %}
+{% set _favicon_url = '' %}
 
 {% if theme_mda_official|tobool %}
-  {% set _favicon_url = '_static/logo/mda_favicon.ico' %}
-{% elif theme_favicon_url|tobool %}
-  {% set _favicon_url = theme_favicon_url %}
+  {% if favicon_url == '' %}
+    {% set _favicon_url = '_static/logo/mda_favicon.ico' %}
+  {% endif %}
+{% endif %}
+
+{% if favicon_url != '' %}
+  {% set _favicon_url = favicon_url %}
 {% endif %}
 
 <head>
