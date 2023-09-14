@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from setuptools import setup
+from setuptools import setup, find_namespace_packages
 from pathlib import Path
 import shutil
 import versioneer
@@ -50,9 +50,7 @@ setup(
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     zip_safe=False,
-    packages=[
-        'mdanalysis_sphinx_theme',
-    ],
+    packages=find_namespace_packages(),
     package_data={'mdanalysis_sphinx_theme': [
         'theme.conf',
         '*.html',
