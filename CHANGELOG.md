@@ -16,28 +16,22 @@ The rules for this file:
   * accompany each entry with github issue/PR number (Issue #xyz)
 -->
 
-## [Unreleased]
+## v1.1.0
 
 ### Authors
 <!-- GitHub usernames of contributors to this release -->
 - ianmkenney
-
-### Added
-<!-- New added features -->
+- lilyminium
 
 ### Fixed
 <!-- Bug fixes -->
 - Fixed documentation and added bibtex docs (PR #53, Issues #10, #26)
+- Fixed non-inclusion of versions javascript (PR #55)
+- Fixed warning for package directories (Issue #52, PR #56)
 
 ### Changed
 <!-- Changes in existing functionality -->
 - Allow favicon override when using mda_official (PR #37, Issue #35)
-
-### Deprecated
-<!-- Soon-to-be removed features -->
-
-### Removed
-<!-- Removed features -->
 
 ## v1.0.1
 ### Authors
