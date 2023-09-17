@@ -118,7 +118,7 @@ html_theme_options = {
     # Add an icon next to external links
     "style_external_links": False,
     # The background colour of the search area in the navigation bar
-    "style_nav_header_background": "white",
+    "style_nav_header_background": "#272525",
     # If enabled, navigation entries are not expandable
     "collapse_navigation": True,
     # If enabled, the navigation bar scrolls with the main page
