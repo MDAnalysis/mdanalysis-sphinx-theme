@@ -35,6 +35,7 @@ The rules for this file:
 ### Authors
 <!-- GitHub usernames of contributors to this release -->
 - ianmkenney
+- ialibay
 - lilyminium
 
 ### Fixed
@@ -42,6 +43,7 @@ The rules for this file:
 - Fixed documentation and added bibtex docs (PR #53, Issues #10, #26)
 - Fixed non-inclusion of versions javascript (PR #55)
 - Fixed warning for package directories (Issue #52, PR #56)
+- Fix long descriptions issue (Issue #49, PR #51)
 
 ### Changed
 <!-- Changes in existing functionality -->
