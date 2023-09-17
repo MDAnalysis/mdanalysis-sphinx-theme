@@ -20,9 +20,11 @@ The rules for this file:
 
 ### Authors
 <!-- GitHub usernames of contributors to this release -->
+- lilyminium
 
 ### Fixed
 <!-- Bug fixes -->
+- Fixed mobile rendering by changing the bar default background to gray (Issue #59, PR #60)
 
 ### Changed
 <!-- Changes in existing functionality -->
