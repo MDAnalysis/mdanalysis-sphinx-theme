@@ -15,6 +15,22 @@ The rules for this file:
     * YYYY-MM-DD date format (following ISO 8601)
   * accompany each entry with github issue/PR number (Issue #xyz)
 -->
+## [Unreleased]
+
+### Authors
+<!-- GitHub usernames of contributors to this release -->
+
+### Authors
+<!-- GitHub usernames of reviewers of this release -->
+
+### Fixed
+<!-- Bug fixes -->
+
+### Changed
+<!-- Changes in existing functionality -->
+
+### Removed
+<!-- Removed features -->
 
 ## v1.2.0
 
