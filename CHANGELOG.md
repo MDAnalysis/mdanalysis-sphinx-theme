@@ -16,21 +16,19 @@ The rules for this file:
   * accompany each entry with github issue/PR number (Issue #xyz)
 -->
 
-## [Unreleased]
+## v1.2.0
 
 ### Authors
 <!-- GitHub usernames of contributors to this release -->
 - lilyminium
 
+### Reviewers
+- IAlibay
+- RMeli
+
 ### Fixed
 <!-- Bug fixes -->
-- Fixed mobile rendering by changing the bar default background to gray (Issue #59, PR #60)
-
-### Changed
-<!-- Changes in existing functionality -->
-
-### Removed
-<!-- Removed features -->
+- Fixed mobile rendering by changing the bar default background to gray (Issue #59, PR #60, PR #61)
 
 ## v1.1.0
 
