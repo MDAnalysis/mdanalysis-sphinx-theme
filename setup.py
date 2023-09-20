@@ -7,6 +7,7 @@ import shutil
 import warnings
 import versioneer
 
+
 def dynamic_author_list():
     """Generate __authors__ from AUTHORS
 
@@ -86,6 +87,7 @@ def copy_mda_assets():
 
     shutil.copy(mda_logo, static_logos / 'mda_logo.png')
     shutil.copy(mda_favicon, static_logos / 'mda_favicon.ico')
+
 
 if __name__ == '__main__':
     try:
