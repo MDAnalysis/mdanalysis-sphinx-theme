@@ -19,9 +19,10 @@ import os
 import sys
 
 sys.path.insert(0, os.path.abspath("."))
+import mdanalysis_sphinx_theme
 
 copyright = "2023, MDAnalysis"
-author = "MDAnalysis"
+author = mdanalysis_sphinx_theme.__authors__
 
 # -- General configuration ---------------------------------------------------
 
