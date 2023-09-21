@@ -36,10 +36,6 @@ def dynamic_author_list():
     authors.remove("Lily Wang")
 
     authors = ["Lily Wang"] + authors
-    authors.remove('Elizabeth J. Denning')
-    authors.remove('Oliver Beckstein')
-    authors = (['Naveen Michaud-Agrawal', 'Elizabeth J. Denning']
-               + authors + ['Oliver Beckstein'])
 
     # Write the authors.py file.
     out_path = current_dir / "mdanalysis_sphinx_theme" / "authors.py"
