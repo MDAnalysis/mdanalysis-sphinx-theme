@@ -22,7 +22,7 @@ sys.path.insert(0, os.path.abspath("."))
 import mdanalysis_sphinx_theme  # noqa: E402
 
 copyright = "2023, MDAnalysis"
-author = mdanalysis_sphinx_theme.__authors__
+author = ", ".join(mdanalysis_sphinx_theme.__authors__)
 
 # -- General configuration ---------------------------------------------------
 
