@@ -25,6 +25,18 @@ Configuration Options
    and other common features. For example, if a logo and a favicon
    are not specified, the MDAnalysis logo and favicon are used.
 
+``sidebar_logo_background``
+   The colour of the background of the logo in the sidebar.
+   This can be a hex string (e.g. ``'#ffffff'``) or any of
+   the named colours (``mdanalysis-orange``, ``mdanalysis-code-orange``,
+   ``white``, ``dark-gray``)
+
+``mobile_navbar_background``
+   The colour of the top navigation header in mobile format.
+   This can be a hex string (e.g. ``'#ffffff'``) or any of
+   the named colours (``mdanalysis-orange``, ``mdanalysis-code-orange``,
+   ``white``, ``dark-gray``)
+
 
 .. _`MDAnalysis privacy policy`: https://www.mdanalysis.org/pages/privacy/
 

@@ -28,6 +28,12 @@ def setup(app):
     }
 
 
+def hex_to_rgb(hex):
+    """Convert a hex color to RGB"""
+    hex = hex.lstrip("#")
+    return tuple(int(hex[i : i + 2], 16) for i in (0, 2, 4))
+
+
 def compile_css(app, exception):
     """Compile Bulma SASS into CSS"""
     if exception is not None:
@@ -56,7 +62,7 @@ def compile_css(app, exception):
     custom_sass_functions = {}
     for option, default in theme_defaults.items():
         theme_option = config.get(option, default)
-        color = COLORS[theme_option]
+        color = COLORS.get(theme_option, hex_to_rgb(theme_option))
         function_colors[option] = color
 
     if config.get("css_minify", False):

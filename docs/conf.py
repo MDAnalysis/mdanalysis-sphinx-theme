@@ -117,6 +117,10 @@ html_theme_options = {
     "mda_official": True,
     # Extra navigation links to show on the sidebar, before the table of contents
     "extra_nav_links": extra_nav_links,
+    # The background colour of the logo area in the navigation bar
+    "sidebar_logo_background": "#ffffff",
+    # The background colour of the top navigation bar on mobile
+    "mobile_navbar_background": "dark-gray",
 
     # other options inherited from sphinx_rtd_theme
     # Only display logo and not the project name on sidebar
@@ -127,10 +131,6 @@ html_theme_options = {
     "prev_next_buttons_location": "bottom",
     # Add an icon next to external links
     "style_external_links": False,
-    # The background colour of the logo area in the navigation bar
-    "sidebar_logo_background": "white",
-    # The background colour of the top navigation bar on mobile
-    "mobile_navbar_background": "dark-gray",
     # If enabled, navigation entries are not expandable
     "collapse_navigation": True,
     # If enabled, the navigation bar scrolls with the main page
