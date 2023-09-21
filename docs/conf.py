@@ -19,9 +19,10 @@ import os
 import sys
 
 sys.path.insert(0, os.path.abspath("."))
+import mdanalysis_sphinx_theme  # noqa: E402
 
-copyright = "2023, MDAnalysis"
-author = "MDAnalysis"
+authors = ", ".join(mdanalysis_sphinx_theme.__authors__)
+copyright = "2023, " + authors
 
 # -- General configuration ---------------------------------------------------
 
