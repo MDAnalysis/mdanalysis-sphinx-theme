@@ -26,7 +26,7 @@ def dynamic_author_list():
     with open(author_file, "r") as f:
         lines = [x.strip() for x in f.readlines()]
 
-    pattern = r"^- ([\w ']+) @[\w_-]+$"
+    pattern = r"^- ([\w '.]+) @[\w_-]+$"
     for line in lines:
         match = re.match(pattern, line)
         if match:
@@ -34,6 +34,16 @@ def dynamic_author_list():
 
     authors.sort(key=lambda name: name.split()[-1])
     authors.remove("Lily Wang")
+    prior_authors = [
+        "Matthew Harrigan",
+        "Robert T. McGibbon",
+        "Christian Schwantes",
+        "Martin K. Scherer",
+        "Joshua A. Mitchell",
+        "Simon Boothroyd",
+    ]
+    for name in prior_authors:
+        authors.remove(name)
 
     authors = ["Lily Wang"] + authors
 
