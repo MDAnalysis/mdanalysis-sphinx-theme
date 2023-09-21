@@ -5,7 +5,7 @@ import os
 import pathlib
 
 import sass
-from sass import SassColor
+from sass import SassColor, SassFunction
 from sphinx.util import console
 
 from ._version import get_versions
@@ -37,6 +37,12 @@ def setup(app):
     }
 
 
+def hex_to_rgb(hex):
+    """Convert a hex color to RGB"""
+    hex = hex.lstrip("#")
+    return tuple(int(hex[i : i + 2], 16) for i in (0, 2, 4))
+
+
 def compile_css(app, exception):
     """Compile Bulma SASS into CSS"""
     if exception is not None:
@@ -49,29 +55,46 @@ def compile_css(app, exception):
     if not dest.parent.exists():
         return
 
-    accent_color = app.config["html_theme_options"].get(
-        "color_accent", "mdanalysis-orange"
-    )
-    accent_color = {
+    config = app.config["html_theme_options"]
+    COLORS = {
         "mdanalysis-orange": (255, 146, 0),
-    }.get(accent_color, accent_color)
+        "mdanalysis-code-orange": (202, 101, 0),
+        "white": (255, 255, 255),
+        "dark-gray": (52, 49, 49),
+    }
+    theme_defaults = {
+        "color_accent": "mdanalysis-code-orange",
+        "sidebar_logo_background": "white",
+        "mobile_navbar_background": "dark-gray",
+    }
+    function_colors = {}
+    custom_sass_functions = {}
+    for option, default in theme_defaults.items():
+        theme_option = config.get(option, default)
+        if theme_option in COLORS:
+            color = COLORS[theme_option]
+        else:
+            color = hex_to_rgb(theme_option)
+        function_colors[option] = color
 
-    if app.config["html_theme_options"].get("css_minify", False):
+    if config.get("css_minify", False):
         output_style = "compressed"
         source_comments = False
     else:
         output_style = "expanded"
         source_comments = True
 
+    custom_sass_functions["mobile_navbar_background"] = lambda: SassColor(*function_colors["mobile_navbar_background"], 1)
+    custom_sass_functions["sidebar_logo_background"] = lambda: SassColor(*function_colors["sidebar_logo_background"], 1)
+    custom_sass_functions["color_accent"] = lambda: SassColor(*function_colors["color_accent"], 1)
+    custom_sass_functions["hyphenate"] = lambda: config.get(
+        "html_hyphenate_and_justify", False
+    )
+
     css = sass.compile(
         filename=str(src),
         output_style=output_style,
-        custom_functions={
-            "accent_color": lambda: SassColor(*accent_color, 1),
-            "hyphenate": lambda: app.config["html_theme_options"].get(
-                "html_hyphenate_and_justify", False
-            ),
-        },
+        custom_functions=custom_sass_functions,
     )
 
     print(f"Writing compiled SASS to {console.colorize('blue', str(dest))}")

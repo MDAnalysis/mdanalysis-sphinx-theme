@@ -10,7 +10,7 @@ This site's options are:
 
 .. literalinclude:: conf.py
    :language: python
-   :lines: 104-132
+   :lines: 104-145
    :lineno-start: 104
    :linenos:
 
@@ -24,6 +24,25 @@ Configuration Options
    If True, this adds a footer with the `MDAnalysis privacy policy`_
    and other common features. For example, if a logo and a favicon
    are not specified, the MDAnalysis logo and favicon are used.
+
+``sidebar_logo_background``
+   The colour of the background of the logo in the sidebar.
+   This can be a hex string (e.g. ``'#ffffff'``) or any of
+   the named colours (``mdanalysis-orange``, ``mdanalysis-code-orange``,
+   ``white``, ``dark-gray``)
+
+``mobile_navbar_background``
+   The colour of the top navigation header in mobile format.
+   This can be a hex string (e.g. ``'#ffffff'``) or any of
+   the named colours (``mdanalysis-orange``, ``mdanalysis-code-orange``,
+   ``white``, ``dark-gray``)
+
+``extra_nav_options``
+   This is a dictionary of additional navigation links.
+   They appear *before* the rest of the tables of contents
+   in the sidebar. The keys are the labels of the links,
+   and the values are the URLs.
+
 
 
 .. _`MDAnalysis privacy policy`: https://www.mdanalysis.org/pages/privacy/

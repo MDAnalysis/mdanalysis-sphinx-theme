@@ -97,10 +97,18 @@ html_static_path = ["_static"]
 # -- HTML theme settings ------------------------------------------------
 html_show_sourcelink = True
 html_sidebars = {
-    "**": ["globaltoc.html", "localtoc.html", "searchbox.html"],
+    "**": ["globaltoc.html", "localtoc.html", "searchbox.html", "navigation.html"],
     "customization": ["globaltoc.html", "searchbox.html"],
     "subpage/second-subsubpage": ["globaltoc.html", "searchbox.html"],
 }
+
+html_theme = "mdanalysis_sphinx_theme"
+
+extra_nav_links = {}
+extra_nav_links["MDAnalysis"] = "http://mdanalysis.org"
+extra_nav_links["MDAnalysis docs"] = "http://docs.mdanalysis.org"
+extra_nav_links["@mdanalysis"] = "https://twitter.com/mdanalysis"
+
 
 # material theme options (see theme.conf for more information)
 html_theme_options = {
@@ -108,6 +116,12 @@ html_theme_options = {
     # e.g. using the official MDAnalysis logo and favicon
     # and using the MDAnalysis privacy policy
     "mda_official": True,
+    # Extra navigation links to show on the sidebar, before the table of contents
+    "extra_nav_links": extra_nav_links,
+    # The background colour of the logo area in the navigation bar
+    "sidebar_logo_background": "#ffffff",
+    # The background colour of the top navigation bar on mobile
+    "mobile_navbar_background": "dark-gray",
 
     # other options inherited from sphinx_rtd_theme
     # Only display logo and not the project name on sidebar
@@ -118,8 +132,6 @@ html_theme_options = {
     "prev_next_buttons_location": "bottom",
     # Add an icon next to external links
     "style_external_links": False,
-    # The background colour of the search area in the navigation bar
-    "style_nav_header_background": "#272525",
     # If enabled, navigation entries are not expandable
     "collapse_navigation": True,
     # If enabled, the navigation bar scrolls with the main page

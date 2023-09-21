@@ -27,9 +27,12 @@ The rules for this file:
 ### Added
 <!-- New added features -->
 - Added authors to documentation footer (Issue #43, PR #64)
+- Added navigation options (Issue #67, PR #68)
 
 ### Fixed
 <!-- Bug fixes -->
+- Fixed background and navbar issue so they can now be
+  specified separately (Issue #66, PR #68)
 
 ### Changed
 <!-- Changes in existing functionality -->
