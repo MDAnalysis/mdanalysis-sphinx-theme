@@ -37,6 +37,13 @@ Configuration Options
    the named colours (``mdanalysis-orange``, ``mdanalysis-code-orange``,
    ``white``, ``dark-gray``)
 
+``extra_nav_options``
+   This is a dictionary of additional navigation links.
+   They appear *before* the rest of the tables of contents
+   in the sidebar. The keys are the labels of the links,
+   and the values are the URLs.
+
+
 
 .. _`MDAnalysis privacy policy`: https://www.mdanalysis.org/pages/privacy/
 
