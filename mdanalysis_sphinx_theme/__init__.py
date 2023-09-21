@@ -1,5 +1,6 @@
 """MDAnalysis Sphinx theme."""
 
+import logging
 import os
 import pathlib
 
@@ -8,6 +9,14 @@ from sass import SassColor, SassFunction
 from sphinx.util import console
 
 from ._version import get_versions
+
+logger = logging.getLogger(__name__)
+
+try:
+    from .authors import __authors__
+except ImportError:
+    logger.info('Could not find authors.py, __authors__ will be empty.')
+    __authors__ = []
 
 __version__ = get_versions()["version"]
 del get_versions
