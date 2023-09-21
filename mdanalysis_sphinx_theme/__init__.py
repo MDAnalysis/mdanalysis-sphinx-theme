@@ -45,12 +45,12 @@ def compile_css(app, exception):
         "mdanalysis-orange": (255, 146, 0),
         "mdanalysis-code-orange": (202, 101, 0),
         "white": (255, 255, 255),
-        "readthedocs-dark-gray": (52, 49, 49),
+        "dark-gray": (52, 49, 49),
     }
     theme_defaults = {
         "color_accent": "mdanalysis-code-orange",
         "sidebar_logo_background": "white",
-        "mobile_navbar_background": "readthedocs-dark-gray",
+        "mobile_navbar_background": "dark-gray",
     }
     function_colors = {}
     for option, default in theme_defaults.items():

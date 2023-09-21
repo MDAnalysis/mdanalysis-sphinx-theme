@@ -117,8 +117,10 @@ html_theme_options = {
     "prev_next_buttons_location": "bottom",
     # Add an icon next to external links
     "style_external_links": False,
-    # The background colour of the search area in the navigation bar
-    "style_nav_header_background": "#272525",
+    # The background colour of the logo area in the navigation bar
+    "sidebar_logo_background": "white",
+    # The background colour of the top navigation bar on mobile
+    "mobile_navbar_background": "dark-gray",
     # If enabled, navigation entries are not expandable
     "collapse_navigation": True,
     # If enabled, the navigation bar scrolls with the main page
