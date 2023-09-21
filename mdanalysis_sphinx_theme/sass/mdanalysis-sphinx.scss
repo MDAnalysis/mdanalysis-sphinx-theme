@@ -3,11 +3,11 @@
 }
 
 .wy-nav-top {
-    background: $readthedocs-dark-gray;
+    background: mobile_navbar_background();
 }
 
 .wy-side-nav-search {
-    background-color: $mdanalysis-white;
+    background-color: sidebar_logo_background();
 
     > a {
         color: $readthedocs-dark-gray;

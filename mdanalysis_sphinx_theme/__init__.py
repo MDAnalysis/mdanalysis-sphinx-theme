@@ -40,29 +40,42 @@ def compile_css(app, exception):
     if not dest.parent.exists():
         return
 
-    accent_color = app.config["html_theme_options"].get(
-        "color_accent", "mdanalysis-orange"
-    )
-    accent_color = {
+    config = app.config["html_theme_options"]
+    COLORS = {
         "mdanalysis-orange": (255, 146, 0),
-    }.get(accent_color, accent_color)
+        "mdanalysis-code-orange": (202, 101, 0),
+        "white": (255, 255, 255),
+        "readthedocs-dark-gray": (52, 49, 49),
+    }
+    theme_defaults = {
+        "color_accent": "mdanalysis-code-orange",
+        "sidebar_logo_background": "white",
+        "mobile_navbar_background": "readthedocs-dark-gray",
+    }
+    function_colors = {}
+    for option, default in theme_defaults.items():
+        theme_option = config.get(option, default)
+        function_colors[option] = COLORS[theme_option]
 
-    if app.config["html_theme_options"].get("css_minify", False):
+    if config.get("css_minify", False):
         output_style = "compressed"
         source_comments = False
     else:
         output_style = "expanded"
         source_comments = True
 
+    custom_sass_functions = {
+        option: lambda: SassColor(*function_colors[option], 1)
+        for option in theme_defaults.keys()
+    }
+    custom_sass_functions["hyphenate"] = lambda: config.get(
+        "html_hyphenate_and_justify", False
+    )
+
     css = sass.compile(
         filename=str(src),
         output_style=output_style,
-        custom_functions={
-            "accent_color": lambda: SassColor(*accent_color, 1),
-            "hyphenate": lambda: app.config["html_theme_options"].get(
-                "html_hyphenate_and_justify", False
-            ),
-        },
+        custom_functions=custom_sass_functions,
     )
 
     print(f"Writing compiled SASS to {console.colorize('blue', str(dest))}")
