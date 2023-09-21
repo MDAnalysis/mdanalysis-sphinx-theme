@@ -19,9 +19,14 @@ The rules for this file:
 
 ### Authors
 <!-- GitHub usernames of contributors to this release -->
+- lilyminium
 
-### Authors
+### Reviewers
 <!-- GitHub usernames of reviewers of this release -->
+
+### Added
+<!-- New added features -->
+- Added authors to documentation footer (Issue #43, PR #64)
 
 ### Fixed
 <!-- Bug fixes -->

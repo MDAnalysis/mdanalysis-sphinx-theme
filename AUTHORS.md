@@ -23,7 +23,7 @@ The rules for this file:
 - Robert T. McGibbon @rmcgibbo
 - Christian Schwantes @schwancr
 - Martin K. Scherer @marscher
-- Josh A. Mitchell @Yoshanuikabundi
+- Joshua A. Mitchell @Yoshanuikabundi
 - Simon Boothroyd @SimonBoothroyd
 
 **2023**
