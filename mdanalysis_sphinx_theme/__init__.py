@@ -62,7 +62,10 @@ def compile_css(app, exception):
     custom_sass_functions = {}
     for option, default in theme_defaults.items():
         theme_option = config.get(option, default)
-        color = COLORS.get(theme_option, hex_to_rgb(theme_option))
+        if theme_option in COLORS:
+            color = COLORS[theme_option]
+        else:
+            color = hex_to_rgb(theme_option)
         function_colors[option] = color
 
     if config.get("css_minify", False):
