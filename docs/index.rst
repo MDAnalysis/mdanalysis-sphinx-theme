@@ -64,6 +64,8 @@ or ``theme.conf`` for more details.
         # e.g. using the official MDAnalysis logo and favicon
         # and using the MDAnalysis privacy policy
         "mda_official": False,
+        # Extra navigation links to show on the sidebar, before the table of contents
+        "extra_nav_links": extra_nav_links,
 
         # ===== inherited options =====
         # For more details, please see

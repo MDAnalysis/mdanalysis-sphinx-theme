@@ -4,7 +4,7 @@ import os
 import pathlib
 
 import sass
-from sass import SassColor
+from sass import SassColor, SassFunction
 from sphinx.util import console
 
 from ._version import get_versions
@@ -53,9 +53,11 @@ def compile_css(app, exception):
         "mobile_navbar_background": "dark-gray",
     }
     function_colors = {}
+    custom_sass_functions = {}
     for option, default in theme_defaults.items():
         theme_option = config.get(option, default)
-        function_colors[option] = COLORS[theme_option]
+        color = COLORS[theme_option]
+        function_colors[option] = color
 
     if config.get("css_minify", False):
         output_style = "compressed"
@@ -64,10 +66,9 @@ def compile_css(app, exception):
         output_style = "expanded"
         source_comments = True
 
-    custom_sass_functions = {
-        option: lambda: SassColor(*function_colors[option], 1)
-        for option in theme_defaults.keys()
-    }
+    custom_sass_functions["mobile_navbar_background"] = lambda: SassColor(*function_colors["mobile_navbar_background"], 1)
+    custom_sass_functions["sidebar_logo_background"] = lambda: SassColor(*function_colors["sidebar_logo_background"], 1)
+    custom_sass_functions["color_accent"] = lambda: SassColor(*function_colors["color_accent"], 1)
     custom_sass_functions["hyphenate"] = lambda: config.get(
         "html_hyphenate_and_justify", False
     )

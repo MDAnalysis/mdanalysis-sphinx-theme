@@ -7,7 +7,7 @@
 }
 
 .wy-side-nav-search {
-    background-color: sidebar_logo_background();
+    background-color: $sidebar-logo-background;
 
     > a {
         color: $readthedocs-dark-gray;

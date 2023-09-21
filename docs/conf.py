@@ -96,10 +96,18 @@ html_static_path = ["_static"]
 # -- HTML theme settings ------------------------------------------------
 html_show_sourcelink = True
 html_sidebars = {
-    "**": ["globaltoc.html", "localtoc.html", "searchbox.html"],
+    "**": ["globaltoc.html", "localtoc.html", "searchbox.html", "navigation.html"],
     "customization": ["globaltoc.html", "searchbox.html"],
     "subpage/second-subsubpage": ["globaltoc.html", "searchbox.html"],
 }
+
+html_theme = "mdanalysis_sphinx_theme"
+
+extra_nav_links = {}
+extra_nav_links["MDAnalysis"] = "http://mdanalysis.org"
+extra_nav_links["MDAnalysis docs"] = "http://docs.mdanalysis.org"
+extra_nav_links["@mdanalysis"] = "https://twitter.com/mdanalysis"
+
 
 # material theme options (see theme.conf for more information)
 html_theme_options = {
@@ -107,6 +115,8 @@ html_theme_options = {
     # e.g. using the official MDAnalysis logo and favicon
     # and using the MDAnalysis privacy policy
     "mda_official": True,
+    # Extra navigation links to show on the sidebar, before the table of contents
+    "extra_nav_links": extra_nav_links,
 
     # other options inherited from sphinx_rtd_theme
     # Only display logo and not the project name on sidebar
