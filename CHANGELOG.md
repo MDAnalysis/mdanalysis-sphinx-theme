@@ -15,7 +15,7 @@ The rules for this file:
     * YYYY-MM-DD date format (following ISO 8601)
   * accompany each entry with github issue/PR number (Issue #xyz)
 -->
-## [Unreleased]
+## v1.3.0
 
 ### Authors
 <!-- GitHub usernames of contributors to this release -->
@@ -23,6 +23,7 @@ The rules for this file:
 
 ### Reviewers
 <!-- GitHub usernames of reviewers of this release -->
+- IAlibay
 
 ### Added
 <!-- New added features -->
@@ -34,11 +35,6 @@ The rules for this file:
 - Fixed background and navbar issue so they can now be
   specified separately (Issue #66, PR #68)
 
-### Changed
-<!-- Changes in existing functionality -->
-
-### Removed
-<!-- Removed features -->
 
 ## v1.2.0
 
