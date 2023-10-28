@@ -142,7 +142,7 @@ if __name__ == '__main__':
         python_requires='>=3.9',
         install_requires=[
             'sphinx_rtd_theme>=1.2',
-            'sphinx>=6.2.1,<7.0',
+            'sphinx>=6.2.1,<8.0',
             'beautifulsoup4',
             'python-slugify[unidecode]',
             'css_html_js_minify',
