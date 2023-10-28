@@ -13,6 +13,9 @@ jobs:
     if: "github.repository == 'MDAnalysis/mdanalysis-sphinx-theme'"
     name: some packaging checks
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.10", "3.11", "3.12"]
 
     steps:
       - uses: actions/checkout@v4
@@ -21,7 +24,7 @@ jobs:
 
       - uses: actions/setup-python@v4
         with:
-          python-version: "3.12"
+          python-version: ${{ matrix.python-version }}
 
       - name: build
         shell: bash
