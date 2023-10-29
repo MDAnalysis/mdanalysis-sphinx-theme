@@ -16,7 +16,7 @@ jobs:
     permissions:
       id-token: write
     if: |
-      "github.repository == 'MDAnalysis/mdanalysis-sphinx-theme'" &&
+      github.repository == 'MDAnalysis/mdanalysis-sphinx-theme' &&
       (github.event_name == 'push' && startsWith(github.ref, 'refs/tags/'))
     name: Build, upload, and test pure Python wheels to TestPyPi
     runs-on: ubuntu-latest
@@ -41,7 +41,7 @@ jobs:
     permissions:
       id-token: write
     if: |
-      "github.repository == 'MDAnalysis/mdanalysis-sphinx-theme'" &&
+      github.repository == 'MDAnalysis/mdanalysis-sphinx-theme' &&
       (github.event_name == 'release' && github.event.action == 'published')
     name: Build, upload, and test pure Python wheels to PyPi
     runs-on: ubuntu-latest
