@@ -17,7 +17,7 @@ jobs:
       id-token: write
     if: |
       github.repository == 'MDAnalysis/mdanalysis-sphinx-theme' &&
-      (github.event_name == 'push' && startsWith(github.ref, 'refs/tags/'))
+      (github.event_name != 'push' && startsWith(github.ref, 'refs/tags/'))
     name: Build, upload, and test pure Python wheels to TestPyPi
     runs-on: ubuntu-latest
 
@@ -26,13 +26,13 @@ jobs:
         with:
           submodules: 'true'
 
-      - name: testpypi_deploy
-        uses: MDAnalysis/pypi-deployment@main
-        with:
-          test_submission: true
-          tests: false
-          package_name: 'mdanalysis_sphinx_theme'
-          module_name: 'mdanalysis_sphinx_theme'
+      #- name: testpypi_deploy
+      #  uses: MDAnalysis/pypi-deployment@main
+      #  with:
+      #    test_submission: true
+      #    tests: false
+      #    package_name: 'mdanalysis_sphinx_theme'
+      #    module_name: 'mdanalysis_sphinx_theme'
 
   pypi_push:
     environment:
@@ -42,7 +42,7 @@ jobs:
       id-token: write
     if: |
       github.repository == 'MDAnalysis/mdanalysis-sphinx-theme' &&
-      (github.event_name == 'release' && github.event.action == 'published')
+      (github.event_name != 'release' && github.event.action == 'published')
     name: Build, upload, and test pure Python wheels to PyPi
     runs-on: ubuntu-latest
 
@@ -51,10 +51,10 @@ jobs:
         with:
           submodules: 'true'
 
-      - name: pypi_deploy
-        uses: MDAnalysis/pypi-deployment@main
-        with:
-          tests: false
-          package_name: 'mdanalysis_sphinx_theme'
-          module_name: 'mdanalysis_sphinx_theme'
+      #- name: pypi_deploy
+      #  uses: MDAnalysis/pypi-deployment@main
+      #  with:
+      #    tests: false
+      #    package_name: 'mdanalysis_sphinx_theme'
+      #    module_name: 'mdanalysis_sphinx_theme'
 
