@@ -37,6 +37,23 @@ The rules for this file:
 <!-- Removed features -->
 
 
+## v1.3.1
+
+### Authors
+<!-- GitHub usernames of contributors to this release -->
+- lilyminium
+- IAlibay
+
+### Reviewers
+<!-- GitHub usernames of reviewers of this release -->
+- lilyminium
+
+### Removed
+<!-- Removed features -->
+- Upper Sphinx<7 pin.
+
+
+
 ## v1.3.0
 
 ### Authors
