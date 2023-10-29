@@ -16,27 +16,6 @@ The rules for this file:
   * accompany each entry with github issue/PR number (Issue #xyz)
 -->
 
-## [Unreleased]
-
-### Authors
-<!-- GitHub usernames of contributors to this release -->
-
-### Reviewers
-<!-- GitHub usernames of reviewers of this release -->
-
-### Added
-<!-- New added features -->
-
-### Fixed
-<!-- Bug fixes -->
-
-### Changed
-<!-- Changes in existing functionality -->
-
-### Removed
-<!-- Removed features -->
-
-
 ## v1.3.1
 
 ### Authors
@@ -48,9 +27,12 @@ The rules for this file:
 <!-- GitHub usernames of reviewers of this release -->
 - lilyminium
 
+### Fixed
+- Changed PyPI deployment to use OpenID Connect (PR #72, #77)
+
 ### Removed
 <!-- Removed features -->
-- Upper Sphinx<7 pin.
+- Upper Sphinx<7 pin (PR #74)
 
 
 
