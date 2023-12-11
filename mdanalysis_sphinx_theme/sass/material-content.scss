@@ -368,6 +368,7 @@ ol {
   li {
     margin-bottom: 0.5em;
     margin-left: px2em(20px);
+    list-style: disc;
 
     // Adjust for right-to-left languages
     [dir="rtl"] & {
