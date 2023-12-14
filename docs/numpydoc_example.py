@@ -128,13 +128,15 @@ def foo(var1, var2, *args, long_var_name="hi", **kwargs):
     pass
 
 
+
 class TestClassDocumentation:
     """
     This is an example docstring of a class.
 
     Unordered list:
 
-    * item 1
+    * multi-line
+      item 1
     * item 2
         * sub-item 3
 
