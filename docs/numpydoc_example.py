@@ -131,7 +131,7 @@ def foo(var1, var2, *args, long_var_name="hi", **kwargs):
 class TestClassDocumentation:
     """
     This is an example docstring of a class.
-    
+
     Unordered list:
 
     * item 1
