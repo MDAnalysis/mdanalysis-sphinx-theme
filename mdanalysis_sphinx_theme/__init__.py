@@ -107,5 +107,5 @@ def html_theme_path():
     return [os.path.dirname(os.path.abspath(__file__))]
 
 
-from . import _version
-__version__ = _version.get_versions()['version']
+from importlib.metadata import version
+__version__ = version("mdanalysis_sphinx_theme")
