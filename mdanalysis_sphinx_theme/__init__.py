@@ -8,8 +8,6 @@ import sass
 from sass import SassColor, SassFunction
 from sphinx.util import console
 
-from ._version import get_versions
-
 logger = logging.getLogger(__name__)
 
 try:
@@ -18,8 +16,9 @@ except ImportError:
     logger.info('Could not find authors.py, __authors__ will be empty.')
     __authors__ = []
 
-__version__ = get_versions()["version"]
-del get_versions
+
+from importlib.metadata import version
+__version__ = version("mdanalysis_sphinx_theme")
 
 
 def setup(app):
@@ -106,6 +105,3 @@ def compile_css(app, exception):
 def html_theme_path():
     return [os.path.dirname(os.path.abspath(__file__))]
 
-
-from importlib.metadata import version
-__version__ = version("mdanalysis_sphinx_theme")
