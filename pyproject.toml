@@ -1,0 +1,91 @@
+[build-system]
+requires = [
+  "setuptools >= 40.9.0",
+  "versioningit",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mdanalysis_sphinx_theme"
+description = "Modification to sphinx_rtd_theme"
+license = {file = "LICENSE" }
+authors = [
+    {name = "MDAnalysis", email = "mdanalysis@numfocus.org"},
+]
+maintainers = [
+    {name = "MDAnalysis", email = "mdanalysis@numfocus.org"},
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+    "Environment :: Console",
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Topic :: Documentation",
+    "Topic :: Software Development :: Documentation",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+readme = {file = "README.md", content-type = "text/markdown"}
+requires-python = ">=3.9"
+dependencies = [
+    "sphinx_rtd_theme>=1.3",
+    "sphinx>=6.2.1",
+    "beautifulsoup4",
+    "python-slugify[unidecode]",
+    "css_html_js_minify",
+    "lxml",
+    "libsass",
+]
+dynamic = [
+    "version",
+]
+
+[project.urls]
+source = "https://github.com/MDAnalysis/mdanalysis-sphinx-theme"
+
+[project.entry-points."sphinx.html_themes"]
+mdanalysis_sphinx_theme = "mdanalysis_sphinx_theme"
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = true
+
+[tool.setuptools.packages.find]
+namespaces = true
+include=["mdanalysis_sphinx_theme"]
+
+[tool.setuptools.package-data]
+mdanalysis_sphinx_theme = [
+    "theme.conf",
+    "*.html",
+    "static/*/*.*",
+    "sass/*.*",
+    "sass/*/*.*",
+    "sass/bulma/sass/*/*.*",
+    "branding/*",
+    "branding/*/*",
+    "branding/*/*/*",
+]
+
+[tool.versioningit]
+default-version = "1+unknown"
+
+[tool.versioningit.vcs]
+method = "git"
+# the below line expects tags to look like '1.0.2'.
+# if prefixing with a v, e.g. 'v1.0.2', change it to ["v*"]
+match = ["v*"]
+
+[tool.versioningit.tag2version]
+rmprefix = "v"
+
+[tool.versioningit.format]
+distance = "{base_version}+{distance}.{vcs}{rev}"
+dirty = "{base_version}+{distance}.{vcs}{rev}.dirty"
+distance-dirty = "{base_version}+{distance}.{vcs}{rev}.dirty"

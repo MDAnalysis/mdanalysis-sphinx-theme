@@ -19,7 +19,7 @@ The rules for this file:
 ## [Unreleased]
 
 ### Authors
-<!-- GitHub usernames of contributors to this release -->
+IAlibay
 
 ### Reviewers
 <!-- GitHub usernames of reviewers of this release -->
@@ -31,7 +31,7 @@ The rules for this file:
 <!-- Bug fixes -->
 
 ### Changed
-<!-- Changes in existing functionality -->
+- Modernized packaging to be PEP518 compliant.
 
 ### Removed
 <!-- Removed features -->
