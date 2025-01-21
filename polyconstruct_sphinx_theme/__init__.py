@@ -56,8 +56,8 @@ def compile_css(app, exception):
 
     config = app.config["html_theme_options"]
     COLORS = {
-        "mdanalysis-orange": (255, 146, 0),
-        "mdanalysis-code-orange": (202, 101, 0),
+        "mdanalysis-orange": (17, 146, 232),
+        "mdanalysis-code-orange": (69, 137, 255),
         "white": (255, 255, 255),
         "dark-gray": (52, 49, 49),
     }
