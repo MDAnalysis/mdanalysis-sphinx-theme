@@ -19,7 +19,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>autodoc_pydantic API Docs &mdash; MDAnalysis Sphinx theme</title>
@@ -150,10 +150,10 @@
 <span id="autodoc-pydantic-example"></span><h1>autodoc_pydantic API Docs<a class="headerlink" href="#autodoc-pydantic-api-docs" title="Permalink to this heading"></a></h1>
 <section id="source">
 <h2>Source<a class="headerlink" href="#source" title="Permalink to this heading"></a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseSettings</span><span class="p">,</span> <span class="n">Field</span><span class="p">,</span> <span class="n">validator</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span><span class="w"> </span><span class="nn">pydantic</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseSettings</span><span class="p">,</span> <span class="n">Field</span><span class="p">,</span> <span class="n">validator</span>
 <span class="linenos"> 2</span>
 <span class="linenos"> 3</span>
-<span class="linenos"> 4</span><span class="k">class</span> <span class="nc">ExampleSettings</span><span class="p">(</span><span class="n">BaseSettings</span><span class="p">):</span>
+<span class="linenos"> 4</span><span class="k">class</span><span class="w"> </span><span class="nc">ExampleSettings</span><span class="p">(</span><span class="n">BaseSettings</span><span class="p">):</span>
 <span class="linenos"> 5</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Document your project settings very conveniently. Applies like wise</span>
 <span class="linenos"> 6</span><span class="sd">    to pydantic models.</span>
 <span class="linenos"> 7</span>
@@ -178,17 +178,17 @@
 <span class="linenos">26</span>    <span class="p">)</span>
 <span class="linenos">27</span>
 <span class="linenos">28</span>    <span class="nd">@validator</span><span class="p">(</span><span class="s2">&quot;field_with_validator_and_alias&quot;</span><span class="p">,</span> <span class="s2">&quot;field_plain_with_validator&quot;</span><span class="p">)</span>
-<span class="linenos">29</span>    <span class="k">def</span> <span class="nf">check_max_length_ten</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
+<span class="linenos">29</span>    <span class="k">def</span><span class="w"> </span><span class="nf">check_max_length_ten</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
 <span class="linenos">30</span><span class="w">        </span><span class="sd">&quot;&quot;&quot;Show corresponding field with link/anchor.&quot;&quot;&quot;</span>
 <span class="linenos">31</span>
 <span class="linenos">32</span>        <span class="k">if</span> <span class="ow">not</span> <span class="nb">len</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
 <span class="linenos">33</span>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;No more than 10 characters allowed&quot;</span><span class="p">)</span>
 <span class="linenos">34</span>
-<span class="linenos">35</span>    <span class="k">class</span> <span class="nc">Config</span><span class="p">:</span>
+<span class="linenos">35</span>    <span class="k">class</span><span class="w"> </span><span class="nc">Config</span><span class="p">:</span>
 <span class="linenos">36</span>        <span class="n">env_prefix</span> <span class="o">=</span> <span class="s2">&quot;foo_&quot;</span>
 <span class="linenos">37</span>        <span class="n">allow_mutation</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="linenos">38</span>
-<span class="linenos">39</span>    <span class="k">def</span> <span class="nf">method_without_sig</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">BaseSettings</span><span class="p">:</span>
+<span class="linenos">39</span>    <span class="k">def</span><span class="w"> </span><span class="nf">method_without_sig</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">BaseSettings</span><span class="p">:</span>
 <span class="linenos">40</span>        <span class="k">return</span> <span class="n">BaseSettings</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -210,7 +210,7 @@
 
   <div role="contentinfo">
     <p>&#169; Copyright 2023, Lily Wang, Irfan Alibay, Ian Kenney.
-      <span class="lastupdated">Last updated on Nov 12, 2024.
+      <span class="lastupdated">Last updated on Jul 25, 2025.
       </span></p>
   </div>
 

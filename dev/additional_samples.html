@@ -19,7 +19,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>additional_samples_with_very_long_name &mdash; MDAnalysis Sphinx theme</title>
@@ -215,28 +215,28 @@ reStructuredText used to create these examples.</p>
 <p>Here’s an included example with line numbers.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">  1</span><span class="sd">&quot;&quot;&quot;MDAnalysis Sphinx theme.&quot;&quot;&quot;</span>
 <span class="linenos">  2</span>
-<span class="linenos">  3</span><span class="kn">import</span> <span class="nn">logging</span>
-<span class="linenos">  4</span><span class="kn">import</span> <span class="nn">os</span>
-<span class="linenos">  5</span><span class="kn">import</span> <span class="nn">pathlib</span>
+<span class="linenos">  3</span><span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
+<span class="linenos">  4</span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="linenos">  5</span><span class="kn">import</span><span class="w"> </span><span class="nn">pathlib</span>
 <span class="linenos">  6</span>
-<span class="linenos">  7</span><span class="kn">import</span> <span class="nn">sass</span>
-<span class="linenos">  8</span><span class="kn">from</span> <span class="nn">sass</span> <span class="kn">import</span> <span class="n">SassColor</span><span class="p">,</span> <span class="n">SassFunction</span>
-<span class="linenos">  9</span><span class="kn">from</span> <span class="nn">sphinx.util</span> <span class="kn">import</span> <span class="n">console</span>
+<span class="linenos">  7</span><span class="kn">import</span><span class="w"> </span><span class="nn">sass</span>
+<span class="linenos">  8</span><span class="kn">from</span><span class="w"> </span><span class="nn">sass</span><span class="w"> </span><span class="kn">import</span> <span class="n">SassColor</span><span class="p">,</span> <span class="n">SassFunction</span>
+<span class="linenos">  9</span><span class="kn">from</span><span class="w"> </span><span class="nn">sphinx.util</span><span class="w"> </span><span class="kn">import</span> <span class="n">console</span>
 <span class="linenos"> 10</span>
 <span class="linenos"> 11</span><span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 <span class="linenos"> 12</span>
 <span class="linenos"> 13</span><span class="k">try</span><span class="p">:</span>
-<span class="linenos"> 14</span>    <span class="kn">from</span> <span class="nn">.authors</span> <span class="kn">import</span> <span class="n">__authors__</span>
+<span class="linenos"> 14</span>    <span class="kn">from</span><span class="w"> </span><span class="nn">.authors</span><span class="w"> </span><span class="kn">import</span> <span class="n">__authors__</span>
 <span class="linenos"> 15</span><span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
 <span class="linenos"> 16</span>    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Could not find authors.py, __authors__ will be empty.&#39;</span><span class="p">)</span>
 <span class="linenos"> 17</span>    <span class="n">__authors__</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="linenos"> 18</span>
 <span class="linenos"> 19</span>
-<span class="linenos"> 20</span><span class="kn">from</span> <span class="nn">importlib.metadata</span> <span class="kn">import</span> <span class="n">version</span>
+<span class="linenos"> 20</span><span class="kn">from</span><span class="w"> </span><span class="nn">importlib.metadata</span><span class="w"> </span><span class="kn">import</span> <span class="n">version</span>
 <span class="linenos"> 21</span><span class="n">__version__</span> <span class="o">=</span> <span class="n">version</span><span class="p">(</span><span class="s2">&quot;mdanalysis_sphinx_theme&quot;</span><span class="p">)</span>
 <span class="linenos"> 22</span>
 <span class="linenos"> 23</span>
-<span class="linenos"> 24</span><span class="k">def</span> <span class="nf">setup</span><span class="p">(</span><span class="n">app</span><span class="p">):</span>
+<span class="linenos"> 24</span><span class="k">def</span><span class="w"> </span><span class="nf">setup</span><span class="p">(</span><span class="n">app</span><span class="p">):</span>
 <span class="linenos"> 25</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Setup connects events to the sitemap builder&quot;&quot;&quot;</span>
 <span class="linenos"> 26</span>    <span class="n">app</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s2">&quot;build-finished&quot;</span><span class="p">,</span> <span class="n">compile_css</span><span class="p">)</span>
 <span class="linenos"> 27</span>
@@ -251,13 +251,13 @@ reStructuredText used to create these examples.</p>
 <span class="linenos"> 36</span>    <span class="p">}</span>
 <span class="linenos"> 37</span>
 <span class="linenos"> 38</span>
-<span class="linenos"> 39</span><span class="k">def</span> <span class="nf">hex_to_rgb</span><span class="p">(</span><span class="nb">hex</span><span class="p">):</span>
+<span class="linenos"> 39</span><span class="k">def</span><span class="w"> </span><span class="nf">hex_to_rgb</span><span class="p">(</span><span class="nb">hex</span><span class="p">):</span>
 <span class="linenos"> 40</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Convert a hex color to RGB&quot;&quot;&quot;</span>
 <span class="linenos"> 41</span>    <span class="nb">hex</span> <span class="o">=</span> <span class="nb">hex</span><span class="o">.</span><span class="n">lstrip</span><span class="p">(</span><span class="s2">&quot;#&quot;</span><span class="p">)</span>
 <span class="linenos"> 42</span>    <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="nb">hex</span><span class="p">[</span><span class="n">i</span> <span class="p">:</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">2</span><span class="p">],</span> <span class="mi">16</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
 <span class="linenos"> 43</span>
 <span class="linenos"> 44</span>
-<span class="linenos"> 45</span><span class="k">def</span> <span class="nf">compile_css</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="n">exception</span><span class="p">):</span>
+<span class="linenos"> 45</span><span class="k">def</span><span class="w"> </span><span class="nf">compile_css</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="n">exception</span><span class="p">):</span>
 <span class="linenos"> 46</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Compile Bulma SASS into CSS&quot;&quot;&quot;</span>
 <span class="linenos"> 47</span>    <span class="k">if</span> <span class="n">exception</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos"> 48</span>        <span class="k">return</span>
@@ -317,7 +317,7 @@ reStructuredText used to create these examples.</p>
 <span class="linenos">102</span>        <span class="nb">print</span><span class="p">(</span><span class="n">css</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">f</span><span class="p">)</span>
 <span class="linenos">103</span>
 <span class="linenos">104</span>
-<span class="linenos">105</span><span class="k">def</span> <span class="nf">html_theme_path</span><span class="p">():</span>
+<span class="linenos">105</span><span class="k">def</span><span class="w"> </span><span class="nf">html_theme_path</span><span class="p">():</span>
 <span class="linenos">106</span>    <span class="k">return</span> <span class="p">[</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">))]</span>
 <span class="linenos">107</span>
 </pre></div>
@@ -328,7 +328,7 @@ reStructuredText used to create these examples.</p>
 <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </pre></div>
 </div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">hello</span><span class="p">():</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">hello</span><span class="p">():</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Greet.&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="s2">&quot;Hello World&quot;</span>
 </pre></div>
@@ -563,8 +563,8 @@ This also references the second item <a class="footnote-reference brackets" href
 <table class="docutils align-default" id="id7" style="width: 50%">
 <caption><span class="caption-text">50% width list table</span><a class="headerlink" href="#id7" title="Permalink to this table"></a></caption>
 <colgroup>
-<col style="width: 20.0%" />
-<col style="width: 80.0%" />
+<col style="width: 20%" />
+<col style="width: 80%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>One fifth width column</p></th>
@@ -715,7 +715,7 @@ source files for one Sphinx project.</p>
 
   <div role="contentinfo">
     <p>&#169; Copyright 2023, Lily Wang, Irfan Alibay, Ian Kenney.
-      <span class="lastupdated">Last updated on Nov 12, 2024.
+      <span class="lastupdated">Last updated on Jul 25, 2025.
       </span></p>
   </div>
 
