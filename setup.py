@@ -48,7 +48,8 @@ def dynamic_author_list():
     out_path = current_dir / "mdanalysis_sphinx_theme" / "authors.py"
     author_lines = "\n".join([f'    u"{name}",' for name in authors])
     template = f"""\
-#-*- coding:utf-8 -*-
+# -*- coding:utf-8 -*-
+
 # This file is generated from the AUTHORS file during the installation process.
 # Do not edit it as your changes will be overwritten.
 __authors__ = [

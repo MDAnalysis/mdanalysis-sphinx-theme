@@ -9,8 +9,6 @@ extend over multiple lines, the closing three quotation marks must be on
 a line by itself, preferably preceded by a blank line.
 
 """
-from __future__ import absolute_import, division, print_function
-
 import os  # standard library imports first
 
 import matplotlib as mpl
@@ -128,3 +126,37 @@ def foo(var1, var2, *args, long_var_name="hi", **kwargs):
     # But for function, method and module, there should be no blank lines
     # after closing the docstring.
     pass
+
+
+
+class TestClassDocumentation:
+    """
+    This is an example docstring of a class.
+
+    Unordered list:
+
+    * multi-line
+      item 1
+    * item 2
+        * sub-item 3
+
+    .. note::
+        This is a note inside a class docstring.
+
+    Parameters
+    ----------
+    filename : str
+        The name of the file to be read.
+
+    """
+
+    def __init__(self, filename: str):
+        """Initialize the class.
+
+        Parameters
+        ----------
+        filename : str
+            The name of the file to be read.
+
+        """
+        self.filename = filename
