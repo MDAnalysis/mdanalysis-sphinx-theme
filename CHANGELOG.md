@@ -20,6 +20,7 @@ The rules for this file:
 
 ### Authors
 <!-- GitHub usernames of contributors to this release -->
+- IAlibay
 - lilyminium
 
 ### Reviewers
@@ -34,7 +35,7 @@ The rules for this file:
 - always add bullet for unordered list (#82)
 
 ### Changed
-<!-- Changes in existing functionality -->
+- Modernized packaging to be PEP518 compliant.
 
 ### Removed
 <!-- Removed features -->
