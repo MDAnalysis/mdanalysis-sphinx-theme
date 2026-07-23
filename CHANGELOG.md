@@ -22,6 +22,7 @@ The rules for this file:
 <!-- GitHub usernames of contributors to this release -->
 - IAlibay
 - lilyminium
+- orbeckst
 
 ### Reviewers
 <!-- GitHub usernames of reviewers of this release -->
@@ -37,6 +38,7 @@ The rules for this file:
 - always add bullet for unordered list (#82)
 
 ### Changed
+- Bumped minimum required sphinx to 7.2.0 (#75, PR #100)
 - Modernized packaging to be PEP518 compliant.
 
 ### Removed
