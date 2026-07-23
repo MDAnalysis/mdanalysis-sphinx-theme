@@ -19,16 +19,20 @@ The rules for this file:
 ## [Unreleased]
 
 ### Authors
-IAlibay
+<!-- GitHub usernames of contributors to this release -->
+- IAlibay
+- lilyminium
 
 ### Reviewers
 <!-- GitHub usernames of reviewers of this release -->
+- orbeckst
 
 ### Added
 <!-- New added features -->
 
 ### Fixed
 <!-- Bug fixes -->
+- always add bullet for unordered list (#82)
 
 ### Changed
 - Modernized packaging to be PEP518 compliant.
