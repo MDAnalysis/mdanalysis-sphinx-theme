@@ -19,17 +19,23 @@ The rules for this file:
 ## [Unreleased]
 
 ### Authors
+<!-- GitHub usernames of contributors to this release -->
 - IAlibay
+- lilyminium
 - orbeckst
 
 ### Reviewers
 <!-- GitHub usernames of reviewers of this release -->
+- IAlibay
+- orbeckst
 
 ### Added
 <!-- New added features -->
+- additional example text for unordered list (PR #83)
 
 ### Fixed
 <!-- Bug fixes -->
+- always add bullet for unordered list (#82)
 
 ### Changed
 - Bumped minimum required sphinx to 7.2.0 (#75, PR #100)
