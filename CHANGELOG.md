@@ -19,7 +19,8 @@ The rules for this file:
 ## [Unreleased]
 
 ### Authors
-IAlibay
+- IAlibay
+- orbeckst
 
 ### Reviewers
 <!-- GitHub usernames of reviewers of this release -->
@@ -31,6 +32,7 @@ IAlibay
 <!-- Bug fixes -->
 
 ### Changed
+- Bumped minimum required sphinx to 7.2.0 (#75, PR #100)
 - Modernized packaging to be PEP518 compliant.
 
 ### Removed
