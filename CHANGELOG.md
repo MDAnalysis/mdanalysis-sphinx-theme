@@ -25,10 +25,12 @@ The rules for this file:
 
 ### Reviewers
 <!-- GitHub usernames of reviewers of this release -->
+- IAlibay
 - orbeckst
 
 ### Added
 <!-- New added features -->
+- additional example text for unordered list (PR #83)
 
 ### Fixed
 <!-- Bug fixes -->
