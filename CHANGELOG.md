@@ -22,6 +22,7 @@ The rules for this file:
 <!-- GitHub usernames of contributors to this release -->
 - IAlibay
 - lilyminium
+- orbeckst
 
 ### Reviewers
 <!-- GitHub usernames of reviewers of this release -->
@@ -37,6 +38,8 @@ The rules for this file:
 - always add bullet for unordered list (#82)
 
 ### Changed
+- support Python 3.14
+- removed Python 3.9 and 3.10
 - Modernized packaging to be PEP518 compliant.
 
 ### Removed
