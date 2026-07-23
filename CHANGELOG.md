@@ -20,15 +20,18 @@ The rules for this file:
 
 ### Authors
 <!-- GitHub usernames of contributors to this release -->
+- lilyminium
 
 ### Reviewers
 <!-- GitHub usernames of reviewers of this release -->
+- orbeckst
 
 ### Added
 <!-- New added features -->
 
 ### Fixed
 <!-- Bug fixes -->
+- always add bullet for unordered list (#82)
 
 ### Changed
 <!-- Changes in existing functionality -->
