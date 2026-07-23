@@ -14,7 +14,7 @@ dependencies:
   - nbconvert
   - ipykernel
   - autodoc-pydantic
-  - myst-parser~=1.0
+  - myst-parser
   - pandoc
   - wheel
   - sphinx-autobuild
