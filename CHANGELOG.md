@@ -19,7 +19,8 @@ The rules for this file:
 ## [Unreleased]
 
 ### Authors
-IAlibay
+- IAlibay
+- orbeckst
 
 ### Reviewers
 <!-- GitHub usernames of reviewers of this release -->
@@ -31,6 +32,8 @@ IAlibay
 <!-- Bug fixes -->
 
 ### Changed
+- support Python 3.14
+- removed Python 3.9 and 3.10
 - Modernized packaging to be PEP518 compliant.
 
 ### Removed
