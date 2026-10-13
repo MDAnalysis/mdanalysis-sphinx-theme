@@ -38,6 +38,8 @@ The rules for this file:
 - always add bullet for unordered list (#82)
 
 ### Changed
+- support Python 3.14
+- removed Python 3.9 and 3.10
 - Bumped minimum required sphinx to 7.2.0 (#75, PR #100)
 - Modernized packaging to be PEP518 compliant.
 
