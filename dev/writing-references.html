@@ -17,23 +17,23 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="./">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Writing references &mdash; MDAnalysis Sphinx theme</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/site.css" />
       <link rel="stylesheet" type="text/css" href="_static/autodoc_pydantic.css" />
       <link rel="stylesheet" type="text/css" href="_static/css/rtd_sphinx_search.min.css" />
 
   
-      <script src="_static/jquery.js"></script>
-      <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-      <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-      <script src="_static/doctools.js"></script>
-      <script src="_static/sphinx_highlight.js"></script>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="_static/js/rtd_search_config.js"></script>
       <script src="_static/js/rtd_sphinx_search.min.js"></script>
       <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -150,16 +150,16 @@
            <div itemprop="articleBody">
              
   <section id="writing-references">
-<h1>Writing references<a class="headerlink" href="#writing-references" title="Permalink to this heading"></a></h1>
+<h1>Writing references<a class="headerlink" href="#writing-references" title="Link to this heading"></a></h1>
 <p>If you want to add references to your documentation,
 you can use the <a class="reference external" href="https://sphinxcontrib-bibtex.readthedocs.io/en/latest/">sphinxcontrib-bibtex</a> extension.</p>
 <p>Please refer to the <a class="reference external" href="https://sphinxcontrib-bibtex.readthedocs.io/en/latest/">sphinxcontrib-bibtex</a> documentation
 for full details. However, some notes and tips are provided
 below for compatibility with the <code class="docutils literal notranslate"><span class="pre">mdanalysis-sphinx-theme</span></code>.</p>
 <section id="basic-use">
-<h2>Basic use<a class="headerlink" href="#basic-use" title="Permalink to this heading"></a></h2>
+<h2>Basic use<a class="headerlink" href="#basic-use" title="Link to this heading"></a></h2>
 <section id="setting-up-the-reference-file">
-<h3>Setting up the reference file<a class="headerlink" href="#setting-up-the-reference-file" title="Permalink to this heading"></a></h3>
+<h3>Setting up the reference file<a class="headerlink" href="#setting-up-the-reference-file" title="Link to this heading"></a></h3>
 <p>Generally references should be provided as a BibTeX <code class="docutils literal notranslate"><span class="pre">.bib</span></code> file.
 In MDAnalysis, this is traditionally called <code class="docutils literal notranslate"><span class="pre">references.bib</span></code> and
 is placed in the same directory as the <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>.
@@ -167,15 +167,15 @@ For an example, see the <a class="reference external" href="https://github.com/M
 <p>The extension and the <code class="docutils literal notranslate"><span class="pre">references.bib</span></code> file should then added to
 the <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file as below:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s1">&#39;sphinxcontrib.bibtex&#39;</span><span class="p">,</span>
+    <span class="s1">'sphinxcontrib.bibtex'</span><span class="p">,</span>
 <span class="p">]</span>
 
-<span class="n">bibtex_bibfiles</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;references.bib&#39;</span><span class="p">]</span>
+<span class="n">bibtex_bibfiles</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'references.bib'</span><span class="p">]</span>
 </pre></div>
 </div>
 </section>
 <section id="citing-references-in-text">
-<h3>Citing references in text<a class="headerlink" href="#citing-references-in-text" title="Permalink to this heading"></a></h3>
+<h3>Citing references in text<a class="headerlink" href="#citing-references-in-text" title="Link to this heading"></a></h3>
 <p>References can be cited in text using <code class="docutils literal notranslate"><span class="pre">:cite:</span></code> or <code class="docutils literal notranslate"><span class="pre">:footcite:</span></code>.
 Which one to use depends on if you want to display a <strong>“local”</strong>
 or a <strong>“global”</strong> bibliography. A <strong>global</strong> bibliography
@@ -219,7 +219,7 @@ Please see the <a class="reference external" href="https://github.com/MDAnalysis
 
   <div role="contentinfo">
     <p>&#169; Copyright 2023, Lily Wang, Irfan Alibay, Ian Kenney.
-      <span class="lastupdated">Last updated on Sep 04, 2025.
+      <span class="lastupdated">Last updated on Oct 13, 2026.
       </span></p>
   </div>
 

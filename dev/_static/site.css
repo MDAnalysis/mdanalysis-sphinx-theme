@@ -8270,6 +8270,7 @@ ul {
 .rst-content ol li {
   margin-bottom: 0.5em;
   margin-left: 1.25em;
+  list-style: disc;
 }
 
 [dir="rtl"] .rst-content ul li, [dir="rtl"] .rst-content ol li {

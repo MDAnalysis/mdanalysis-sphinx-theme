@@ -17,22 +17,22 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>numpydoc_example &mdash; MDAnalysis Sphinx theme</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/site.css" />
       <link rel="stylesheet" type="text/css" href="../_static/autodoc_pydantic.css" />
       <link rel="stylesheet" type="text/css" href="../_static/css/rtd_sphinx_search.min.css" />
 
   
-      <script src="../_static/jquery.js"></script>
-      <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-      <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-      <script src="../_static/doctools.js"></script>
-      <script src="../_static/sphinx_highlight.js"></script>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../_static/js/rtd_search_config.js"></script>
       <script src="../_static/js/rtd_sphinx_search.min.js"></script>
       <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -140,19 +140,17 @@
            <div itemprop="articleBody">
              
   <h1>Source code for numpydoc_example</h1><div class="highlight"><pre>
-<span></span><span class="sd">&quot;&quot;&quot;Docstring for the example.py module.</span>
+<span></span><span class="sd">"""Docstring for the example.py module.</span>
 
 <span class="sd">Modules names should have short, all-lowercase names.  The module name may</span>
 <span class="sd">have underscores if this improves readability.</span>
 
 <span class="sd">Every module should have a docstring at the very top of the file.  The</span>
-<span class="sd">module&#39;s docstring may extend over multiple lines.  If your docstring does</span>
+<span class="sd">module's docstring may extend over multiple lines.  If your docstring does</span>
 <span class="sd">extend over multiple lines, the closing three quotation marks must be on</span>
 <span class="sd">a line by itself, preferably preceded by a blank line.</span>
 
-<span class="sd">&quot;&quot;&quot;</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">__future__</span><span class="w"> </span><span class="kn">import</span> <span class="n">absolute_import</span><span class="p">,</span> <span class="n">division</span><span class="p">,</span> <span class="n">print_function</span>
-
+<span class="sd">"""</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>  <span class="c1"># standard library imports first</span>
 
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mpl</span>
@@ -178,8 +176,10 @@
 <span class="c1"># numpy module itself, unabbreviated.</span>
 
 
-<div class="viewcode-block" id="foo"><a class="viewcode-back" href="../numpydoc_example.html#numpydoc_example.foo">[docs]</a><span class="k">def</span><span class="w"> </span><span class="nf">foo</span><span class="p">(</span><span class="n">var1</span><span class="p">,</span> <span class="n">var2</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">long_var_name</span><span class="o">=</span><span class="s2">&quot;hi&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Summarize the function in one line.</span>
+<div class="viewcode-block" id="foo">
+<a class="viewcode-back" href="../numpydoc_example.html#numpydoc_example.foo">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">foo</span><span class="p">(</span><span class="n">var1</span><span class="p">,</span> <span class="n">var2</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">long_var_name</span><span class="o">=</span><span class="s2">"hi"</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">"""Summarize the function in one line.</span>
 
 <span class="sd">    Several sentences providing an extended description. Refer to</span>
 <span class="sd">    variables using back-ticks, e.g. `var`.</span>
@@ -196,7 +196,7 @@
 <span class="sd">        detail, e.g. ``(N,) ndarray`` or ``array_like``.</span>
 <span class="sd">    *args : iterable</span>
 <span class="sd">        Other arguments.</span>
-<span class="sd">    long_var_name : {&#39;hi&#39;, &#39;ho&#39;}, optional</span>
+<span class="sd">    long_var_name : {'hi', 'ho'}, optional</span>
 <span class="sd">        Choices in brackets, default first when optional.</span>
 <span class="sd">    **kwargs : dict</span>
 <span class="sd">        Keyword arguments.</span>
@@ -221,7 +221,7 @@
 <span class="sd">    Raises</span>
 <span class="sd">    ------</span>
 <span class="sd">    BadException</span>
-<span class="sd">        Because you shouldn&#39;t have done that.</span>
+<span class="sd">        Because you shouldn't have done that.</span>
 
 <span class="sd">    See Also</span>
 <span class="sd">    --------</span>
@@ -247,10 +247,10 @@
 <span class="sd">    Cite the relevant literature, e.g. [1]_.  You may also cite these</span>
 <span class="sd">    references in the notes section above.</span>
 
-<span class="sd">    .. [1] O. McNoleg, &quot;The integration of GIS, remote sensing,</span>
+<span class="sd">    .. [1] O. McNoleg, "The integration of GIS, remote sensing,</span>
 <span class="sd">       expert systems and adaptive co-kriging for environmental habitat</span>
 <span class="sd">       modelling of the Highland Haggis using object-oriented, fuzzy-logic</span>
-<span class="sd">       and neural-network techniques,&quot; Computers &amp; Geosciences, vol. 22,</span>
+<span class="sd">       and neural-network techniques," Computers &amp; Geosciences, vol. 22,</span>
 <span class="sd">       pp. 585-588, 1996.</span>
 
 <span class="sd">    Examples</span>
@@ -261,15 +261,53 @@
 <span class="sd">    &gt;&gt;&gt; a = [1, 2, 3]</span>
 <span class="sd">    &gt;&gt;&gt; print([x + 3 for x in a])</span>
 <span class="sd">    [4, 5, 6]</span>
-<span class="sd">    &gt;&gt;&gt; print(&quot;a\nb&quot;)</span>
+<span class="sd">    &gt;&gt;&gt; print("a\nb")</span>
 <span class="sd">    a</span>
 <span class="sd">    b</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
     <span class="c1"># After closing class docstring, there should be one blank line to</span>
     <span class="c1"># separate following codes (according to PEP257).</span>
     <span class="c1"># But for function, method and module, there should be no blank lines</span>
     <span class="c1"># after closing the docstring.</span>
     <span class="k">pass</span></div>
+
+
+
+
+<div class="viewcode-block" id="TestClassDocumentation">
+<a class="viewcode-back" href="../numpydoc_example.html#numpydoc_example.TestClassDocumentation">[docs]</a>
+<span class="k">class</span><span class="w"> </span><span class="nc">TestClassDocumentation</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">"""</span>
+<span class="sd">    This is an example docstring of a class.</span>
+
+<span class="sd">    Unordered list:</span>
+
+<span class="sd">    * multi-line</span>
+<span class="sd">      item 1</span>
+<span class="sd">    * item 2</span>
+<span class="sd">        * sub-item 3</span>
+
+<span class="sd">    .. note::</span>
+<span class="sd">        This is a note inside a class docstring.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    filename : str</span>
+<span class="sd">        The name of the file to be read.</span>
+
+<span class="sd">    """</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">"""Initialize the class.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        filename : str</span>
+<span class="sd">            The name of the file to be read.</span>
+
+<span class="sd">        """</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">filename</span> <span class="o">=</span> <span class="n">filename</span></div>
+
 </pre></div>
 
            </div>
@@ -280,7 +318,7 @@
 
   <div role="contentinfo">
     <p>&#169; Copyright 2023, Lily Wang, Irfan Alibay, Ian Kenney.
-      <span class="lastupdated">Last updated on Sep 04, 2025.
+      <span class="lastupdated">Last updated on Oct 13, 2026.
       </span></p>
   </div>
 

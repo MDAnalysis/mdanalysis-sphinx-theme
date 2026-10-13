@@ -17,23 +17,23 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="./">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MDAnalysis Sphinx theme Quickstart &mdash; MDAnalysis Sphinx theme</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/site.css" />
       <link rel="stylesheet" type="text/css" href="_static/autodoc_pydantic.css" />
       <link rel="stylesheet" type="text/css" href="_static/css/rtd_sphinx_search.min.css" />
 
   
-      <script src="_static/jquery.js"></script>
-      <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-      <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-      <script src="_static/doctools.js"></script>
-      <script src="_static/sphinx_highlight.js"></script>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="_static/js/rtd_search_config.js"></script>
       <script src="_static/js/rtd_sphinx_search.min.js"></script>
       <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -142,11 +142,11 @@
            <div itemprop="articleBody">
              
   <section id="mdanalysis-sphinx-theme-quickstart">
-<span id="quickstart"></span><h1>MDAnalysis Sphinx theme Quickstart<a class="headerlink" href="#mdanalysis-sphinx-theme-quickstart" title="Permalink to this heading"></a></h1>
+<span id="quickstart"></span><h1>MDAnalysis Sphinx theme Quickstart<a class="headerlink" href="#mdanalysis-sphinx-theme-quickstart" title="Link to this heading"></a></h1>
 <p>This theme provides a responsive theme for Sphinx documentation by the Open Force Field Initiative.
 It is inspired by <a class="reference external" href="https://bashtage.github.io/sphinx-material/">Material for Sphinx</a> and <a class="reference external" href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a>, but has been rewritten with the <a class="reference external" href="https://bulma.io">Bulma</a> CSS framework to remove any JavaScript dependencies.</p>
 <section id="getting-started">
-<h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this heading"></a></h2>
+<h2>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading"></a></h2>
 <p>Install from git</p>
 <div class="highlight-shell-session notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>git+https://github.com/mdanalysis/mdanalysis-sphinx-theme.git@main
 </pre></div>
@@ -163,26 +163,26 @@ It is inspired by <a class="reference external" href="https://bashtage.github.io
 </pre></div>
 </div>
 <p>Update your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> with the required changes:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;mdanalysis_sphinx_theme&quot;</span><span class="p">)</span>
-<span class="n">html_theme</span> <span class="o">=</span> <span class="s2">&quot;mdanalysis_sphinx_theme&quot;</span>
-<span class="n">html_sidebars</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;**&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;globaltoc.html&quot;</span><span class="p">,</span> <span class="s2">&quot;localtoc.html&quot;</span><span class="p">,</span> <span class="s2">&quot;searchbox.html&quot;</span><span class="p">]}</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"mdanalysis_sphinx_theme"</span><span class="p">)</span>
+<span class="n">html_theme</span> <span class="o">=</span> <span class="s2">"mdanalysis_sphinx_theme"</span>
+<span class="n">html_sidebars</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"**"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"globaltoc.html"</span><span class="p">,</span> <span class="s2">"localtoc.html"</span><span class="p">,</span> <span class="s2">"searchbox.html"</span><span class="p">]}</span>
 </pre></div>
 </div>
 <p>There are a lot more ways to customize this theme. See <a class="reference internal" href="customization.html#customization"><span class="std std-ref">Customization</span></a>
 or <code class="docutils literal notranslate"><span class="pre">theme.conf</span></code> for more details.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Enable the theme itself</span>
-<span class="n">extensions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;mdanalysis_sphinx_theme&quot;</span><span class="p">)</span>
-<span class="n">html_theme</span> <span class="o">=</span> <span class="s2">&quot;mdanalysis_sphinx_theme&quot;</span>
+<span class="n">extensions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"mdanalysis_sphinx_theme"</span><span class="p">)</span>
+<span class="n">html_theme</span> <span class="o">=</span> <span class="s2">"mdanalysis_sphinx_theme"</span>
 
 <span class="c1"># (Optional) Logo in PNG format.</span>
 <span class="c1"># If not provided and mda_official is False, no logo will be added.</span>
 <span class="c1"># If not provided and mda_official is True, the MDAnalysis logo will be used.</span>
-<span class="n">html_logo</span> <span class="o">=</span> <span class="s2">&quot;_static/logo/placeholder_logo.png&quot;</span>
+<span class="n">html_logo</span> <span class="o">=</span> <span class="s2">"_static/logo/placeholder_logo.png"</span>
 
 <span class="c1"># (Optional) favicon.</span>
 <span class="c1"># If not provided and mda_official is False, will default to a placeholder favicon.</span>
 <span class="c1"># If not provided and mda_official is True, will default to the MDAnalysis favicon.</span>
-<span class="n">html_favicon</span> <span class="o">=</span> <span class="s2">&quot;_static/logo/placeholder_favicon.svg&quot;</span>
+<span class="n">html_favicon</span> <span class="o">=</span> <span class="s2">"_static/logo/placeholder_favicon.svg"</span>
 
 <span class="c1"># Theme options are theme-specific and customize the look and feel of a</span>
 <span class="c1"># theme further.</span>
@@ -191,13 +191,13 @@ or <code class="docutils literal notranslate"><span class="pre">theme.conf</span
     <span class="c1"># whether to apply official MDAnalysis styling</span>
     <span class="c1"># e.g. using the official MDAnalysis logo and favicon</span>
     <span class="c1"># and using the MDAnalysis privacy policy</span>
-    <span class="s2">&quot;mda_official&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="s2">"mda_official"</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
     <span class="c1"># The background colour of the logo area in the navigation bar</span>
-    <span class="s2">&quot;sidebar_logo_background&quot;</span><span class="p">:</span> <span class="s2">&quot;white&quot;</span><span class="p">,</span>
+    <span class="s2">"sidebar_logo_background"</span><span class="p">:</span> <span class="s2">"white"</span><span class="p">,</span>
     <span class="c1"># The background colour of the top navigation bar on mobile</span>
-    <span class="s2">&quot;mobile_navbar_background&quot;</span><span class="p">:</span> <span class="s2">&quot;dark-gray&quot;</span><span class="p">,</span>
+    <span class="s2">"mobile_navbar_background"</span><span class="p">:</span> <span class="s2">"dark-gray"</span><span class="p">,</span>
     <span class="c1"># Extra navigation links to show on the sidebar, before the table of contents</span>
-    <span class="s2">&quot;extra_nav_links&quot;</span><span class="p">:</span> <span class="n">extra_nav_links</span><span class="p">,</span>
+    <span class="s2">"extra_nav_links"</span><span class="p">:</span> <span class="n">extra_nav_links</span><span class="p">,</span>
 
     <span class="c1"># ===== inherited options =====</span>
     <span class="c1"># For more details, please see</span>
@@ -205,23 +205,23 @@ or <code class="docutils literal notranslate"><span class="pre">theme.conf</span
     <span class="c1"># Default values are shown below</span>
 
     <span class="c1"># Only display logo and not the project name on sidebar</span>
-    <span class="s2">&quot;logo_only&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s2">"logo_only"</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
     <span class="c1"># Display the version number on the sidebar</span>
-    <span class="s2">&quot;display_version&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-    <span class="c1"># Where to display &quot;next&quot; and &quot;previous&quot; buttons</span>
-    <span class="s2">&quot;prev_next_buttons_location&quot;</span><span class="p">:</span> <span class="s2">&quot;bottom&quot;</span><span class="p">,</span>
+    <span class="s2">"display_version"</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="c1"># Where to display "next" and "previous" buttons</span>
+    <span class="s2">"prev_next_buttons_location"</span><span class="p">:</span> <span class="s2">"bottom"</span><span class="p">,</span>
     <span class="c1"># Add an icon next to external links</span>
-    <span class="s2">&quot;style_external_links&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="s2">"style_external_links"</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
     <span class="c1"># If enabled, navigation entries are not expandable</span>
-    <span class="s2">&quot;collapse_navigation&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s2">"collapse_navigation"</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
     <span class="c1"># If enabled, the navigation bar scrolls with the main page</span>
-    <span class="s2">&quot;sticky_navigation&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s2">"sticky_navigation"</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
     <span class="c1"># Maximum depth of the contents tree -- set to -1 for unlimited</span>
-    <span class="s2">&quot;navigation_depth&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+    <span class="s2">"navigation_depth"</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
     <span class="c1"># Whether to include hidden toctrees in the navigation bar</span>
-    <span class="s2">&quot;includehidden&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s2">"includehidden"</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
     <span class="c1"># Whether to hide page subheadings from navigation</span>
-    <span class="s2">&quot;titles_only&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="s2">"titles_only"</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
 
 <span class="p">}</span>
 
@@ -229,7 +229,7 @@ or <code class="docutils literal notranslate"><span class="pre">theme.conf</span
 <span class="c1"># to template names.</span>
 <span class="n">html_sidebars</span> <span class="o">=</span> <span class="p">{</span>
     <span class="c1"># By default, show everything</span>
-    <span class="s2">&quot;**&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;globaltoc.html&quot;</span><span class="p">,</span> <span class="s2">&quot;localtoc.html&quot;</span><span class="p">,</span> <span class="s2">&quot;searchbox.html&quot;</span><span class="p">]</span>
+    <span class="s2">"**"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"globaltoc.html"</span><span class="p">,</span> <span class="s2">"localtoc.html"</span><span class="p">,</span> <span class="s2">"searchbox.html"</span><span class="p">]</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -263,7 +263,7 @@ or <code class="docutils literal notranslate"><span class="pre">theme.conf</span
 </ul>
 </div>
 <section id="index">
-<h3>Index<a class="headerlink" href="#index" title="Permalink to this heading"></a></h3>
+<h3>Index<a class="headerlink" href="#index" title="Link to this heading"></a></h3>
 <p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p>
 </section>
 </section>
@@ -280,7 +280,7 @@ or <code class="docutils literal notranslate"><span class="pre">theme.conf</span
 
   <div role="contentinfo">
     <p>&#169; Copyright 2023, Lily Wang, Irfan Alibay, Ian Kenney.
-      <span class="lastupdated">Last updated on Sep 04, 2025.
+      <span class="lastupdated">Last updated on Oct 13, 2026.
       </span></p>
   </div>
 

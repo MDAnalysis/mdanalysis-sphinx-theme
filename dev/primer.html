@@ -17,23 +17,23 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="./">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>reStructuredText Primer &mdash; MDAnalysis Sphinx theme</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/site.css" />
       <link rel="stylesheet" type="text/css" href="_static/autodoc_pydantic.css" />
       <link rel="stylesheet" type="text/css" href="_static/css/rtd_sphinx_search.min.css" />
 
   
-      <script src="_static/jquery.js"></script>
-      <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-      <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-      <script src="_static/doctools.js"></script>
-      <script src="_static/sphinx_highlight.js"></script>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="_static/js/rtd_search_config.js"></script>
       <script src="_static/js/rtd_sphinx_search.min.js"></script>
       <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -169,7 +169,7 @@
            <div itemprop="articleBody">
              
   <section id="restructuredtext-primer">
-<span id="rst-primer"></span><h1>reStructuredText Primer<a class="headerlink" href="#restructuredtext-primer" title="Permalink to this heading"></a></h1>
+<span id="rst-primer"></span><h1>reStructuredText Primer<a class="headerlink" href="#restructuredtext-primer" title="Link to this heading"></a></h1>
 <p>reStructuredText is the default plaintext markup language used by Sphinx.  This
 section is a brief introduction to reStructuredText (reST) concepts and syntax,
 intended to provide authors with enough information to author documents
@@ -182,14 +182,14 @@ document link to the description of the individual constructs in the reST
 reference.</p>
 </div>
 <section id="paragraphs">
-<h2>Paragraphs<a class="headerlink" href="#paragraphs" title="Permalink to this heading"></a></h2>
-<p>The paragraph (<a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#paragraphs">ref</a>) is the most basic block in a reST
+<h2>Paragraphs<a class="headerlink" href="#paragraphs" title="Link to this heading"></a></h2>
+<p>The paragraph (<a class="extlink-duref reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#paragraphs">ref</a>) is the most basic block in a reST
 document.  Paragraphs are simply chunks of text separated by one or more blank
 lines.  As in Python, indentation is significant in reST, so all lines of the
 same paragraph must be left-aligned to the same level of indentation.</p>
 </section>
 <section id="inline-markup">
-<span id="rst-inline-markup"></span><h2>Inline markup<a class="headerlink" href="#inline-markup" title="Permalink to this heading"></a></h2>
+<span id="rst-inline-markup"></span><h2>Inline markup<a class="headerlink" href="#inline-markup" title="Link to this heading"></a></h2>
 <p>The standard reST inline markup is quite simple: use</p>
 <ul class="simple">
 <li><p>one asterisk: <code class="docutils literal notranslate"><span class="pre">*text*</span></code> for emphasis (italics),</p></li>
@@ -210,8 +210,8 @@ backslash escaped space to work around that: <code class="docutils literal notra
 roles. Refer to <a class="reference internal" href="#rst-roles-alt"><span class="std std-ref">Roles</span></a> for more information.</p>
 </section>
 <section id="lists-and-quote-like-blocks">
-<h2>Lists and Quote-like blocks<a class="headerlink" href="#lists-and-quote-like-blocks" title="Permalink to this heading"></a></h2>
-<p>List markup (<a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#bullet-lists">ref</a>) is natural: just place an asterisk at
+<h2>Lists and Quote-like blocks<a class="headerlink" href="#lists-and-quote-like-blocks" title="Link to this heading"></a></h2>
+<p>List markup (<a class="extlink-duref reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#bullet-lists">ref</a>) is natural: just place an asterisk at
 the start of a paragraph and indent properly.  The same goes for numbered
 lists; they can also be autonumbered using a <code class="docutils literal notranslate"><span class="pre">#</span></code> sign:</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="m">*</span> This is a bulleted list.
@@ -261,7 +261,7 @@ parent list items by blank lines:</p>
 </li>
 <li><p>and here the parent list continues</p></li>
 </ul>
-<p>Definition lists (<a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#definition-lists">ref</a>) are created as follows:</p>
+<p>Definition lists (<a class="extlink-duref reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#definition-lists">ref</a>) are created as follows:</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>term (up to a line of text)
    Definition of the term, which must be indented
 
@@ -279,9 +279,9 @@ next term
 </dd>
 </dl>
 <p>Note that the term cannot have more than one line of text.</p>
-<p>Quoted paragraphs (<a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#block-quotes">ref</a>) are created by just indenting
+<p>Quoted paragraphs (<a class="extlink-duref reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#block-quotes">ref</a>) are created by just indenting
 them more than the surrounding paragraphs.</p>
-<p>Line blocks (<a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#line-blocks">ref</a>) are a way of preserving line breaks:</p>
+<p>Line blocks (<a class="extlink-duref reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#line-blocks">ref</a>) are a way of preserving line breaks:</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="o">|</span> These lines are
 <span class="o">|</span> broken exactly like in
 <span class="o">|</span> the source file.
@@ -294,16 +294,16 @@ them more than the surrounding paragraphs.</p>
 </div>
 <p>There are also several more special blocks available:</p>
 <ul class="simple">
-<li><p>field lists (<a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#field-lists">ref</a>, with caveats noted in
+<li><p>field lists (<a class="extlink-duref reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#field-lists">ref</a>, with caveats noted in
 <a class="reference internal" href="#rst-field-lists"><span class="std std-ref">Field Lists</span></a>)</p></li>
-<li><p>option lists (<a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#option-lists">ref</a>)</p></li>
-<li><p>quoted literal blocks (<a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#quoted-literal-blocks">ref</a>)</p></li>
-<li><p>doctest blocks (<a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#doctest-blocks">ref</a>)</p></li>
+<li><p>option lists (<a class="extlink-duref reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#option-lists">ref</a>)</p></li>
+<li><p>quoted literal blocks (<a class="extlink-duref reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#quoted-literal-blocks">ref</a>)</p></li>
+<li><p>doctest blocks (<a class="extlink-duref reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#doctest-blocks">ref</a>)</p></li>
 </ul>
 </section>
 <section id="literal-blocks">
-<span id="rst-literal-blocks"></span><h2>Literal blocks<a class="headerlink" href="#literal-blocks" title="Permalink to this heading"></a></h2>
-<p>Literal code blocks (<a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#literal-blocks">ref</a>) are introduced by ending a
+<span id="rst-literal-blocks"></span><h2>Literal blocks<a class="headerlink" href="#literal-blocks" title="Link to this heading"></a></h2>
+<p>Literal code blocks (<a class="extlink-duref reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#literal-blocks">ref</a>) are introduced by ending a
 paragraph with the special marker <code class="docutils literal notranslate"><span class="pre">::</span></code>.  The literal block must be indented
 (and, like all paragraphs, separated from the surrounding ones by blank
 lines):</p>
@@ -336,14 +336,14 @@ colon.</p></li>
 <p>That way, the second sentence in the above example’s first paragraph would be
 rendered as “The next paragraph is a code sample:”.</p>
 <p>Code highlighting can be enabled for these literal blocks on a document-wide
-basis using the <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-highlight" title="(in Sphinx v8.3.0)"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">highlight</span></code></a> directive and on a project-wide basis
+basis using the <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-highlight" title="(in Sphinx v9.1.1)"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">highlight</span></code></a> directive and on a project-wide basis
 using the <code class="docutils literal notranslate"><span class="pre">highlight_language</span></code> configuration option. The
-<a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-code-block" title="(in Sphinx v8.3.0)"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">code-block</span></code></a> directive can be used to set highlighting on a
+<a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-code-block" title="(in Sphinx v9.1.1)"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">code-block</span></code></a> directive can be used to set highlighting on a
 block-by-block basis. These directives are discussed later.</p>
 </section>
 <section id="doctest-blocks">
-<span id="rst-doctest-blocks"></span><h2>Doctest blocks<a class="headerlink" href="#doctest-blocks" title="Permalink to this heading"></a></h2>
-<p>Doctest blocks (<a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#doctest-blocks">ref</a>) are interactive Python sessions
+<span id="rst-doctest-blocks"></span><h2>Doctest blocks<a class="headerlink" href="#doctest-blocks" title="Link to this heading"></a></h2>
+<p>Doctest blocks (<a class="extlink-duref reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#doctest-blocks">ref</a>) are interactive Python sessions
 cut-and-pasted into docstrings. They do not require the
 <a class="reference internal" href="#rst-literal-blocks"><span class="std std-ref">literal blocks</span></a> syntax. The doctest block must end
 with a blank line and should <em>not</em> end with with an unused prompt:</p>
@@ -357,8 +357,8 @@ with a blank line and should <em>not</em> end with with an unused prompt:</p>
 </div>
 </section>
 <section id="tables">
-<span id="rst-tables"></span><h2>Tables<a class="headerlink" href="#tables" title="Permalink to this heading"></a></h2>
-<p>For <em>grid tables</em> (<a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#grid-tables">ref</a>), you have to “paint” the cell
+<span id="rst-tables"></span><h2>Tables<a class="headerlink" href="#tables" title="Link to this heading"></a></h2>
+<p>For <em>grid tables</em> (<a class="extlink-duref reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#grid-tables">ref</a>), you have to “paint” the cell
 grid yourself.  They look like this:</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>+------------------------+------------+----------+----------+
 <span class="o">|</span> Header row, column 1   | Header 2   | Header 3 | Header 4 |
@@ -392,7 +392,7 @@ grid yourself.  They look like this:</p>
 </tr>
 </tbody>
 </table>
-<p><em>Simple tables</em> (<a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#simple-tables">ref</a>) are easier to write, but
+<p><em>Simple tables</em> (<a class="extlink-duref reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#simple-tables">ref</a>) are easier to write, but
 limited: they must contain more than one row, and the first column cells cannot
 contain multiple lines.  They look like this:</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>=====  =====  =======
@@ -435,9 +435,9 @@ True   True   True
 <em>explicit markup block</em>. Refer to table directives in the Sphinx documentation for more information.</p>
 </section>
 <section id="hyperlinks">
-<h2>Hyperlinks<a class="headerlink" href="#hyperlinks" title="Permalink to this heading"></a></h2>
+<h2>Hyperlinks<a class="headerlink" href="#hyperlinks" title="Link to this heading"></a></h2>
 <section id="external-links">
-<h3>External links<a class="headerlink" href="#external-links" title="Permalink to this heading"></a></h3>
+<h3>External links<a class="headerlink" href="#external-links" title="Link to this heading"></a></h3>
 <p>Use <code class="docutils literal notranslate"><span class="pre">`Link</span> <span class="pre">text</span> <span class="pre">&lt;https://domain.invalid/&gt;`_</span></code> for inline web links.  If the
 link text should be the web address, you don’t need special markup at all, the
 parser finds links and mail addresses in ordinary text.</p>
@@ -445,7 +445,7 @@ parser finds links and mail addresses in ordinary text.</p>
 <p class="admonition-title">Important</p>
 <p>There must be a space between the link text and the opening &lt; for the URL.</p>
 </div>
-<p>You can also separate the link and the target definition (<a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#hyperlink-targets">ref</a>), like this:</p>
+<p>You can also separate the link and the target definition (<a class="extlink-duref reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#hyperlink-targets">ref</a>), like this:</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>This is a paragraph that contains <span class="s">`a link`_</span>.
 
 <span class="p">..</span> <span class="nt">_a link:</span> https://domain.invalid/
@@ -454,14 +454,14 @@ parser finds links and mail addresses in ordinary text.</p>
 <p>This is a paragraph that contains <a class="reference external" href="https://domain.invalid/">a link</a>.</p>
 </section>
 <section id="internal-links">
-<h3>Internal links<a class="headerlink" href="#internal-links" title="Permalink to this heading"></a></h3>
+<h3>Internal links<a class="headerlink" href="#internal-links" title="Link to this heading"></a></h3>
 <p>Internal linking is done via a special reST role provided by Sphinx, see the
 section on specific markup.</p>
 </section>
 </section>
 <section id="sections">
-<h2>Sections<a class="headerlink" href="#sections" title="Permalink to this heading"></a></h2>
-<p>Section headers (<a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#sections">ref</a>) are created by underlining (and
+<h2>Sections<a class="headerlink" href="#sections" title="Link to this heading"></a></h2>
+<p>Section headers (<a class="extlink-duref reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#sections">ref</a>) are created by underlining (and
 optionally overlining) the section title with a punctuation character, at least
 as long as the text:</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="gh">=================</span>
@@ -486,21 +486,21 @@ documentation), and use a deeper nesting level, but keep in mind that most
 target formats (HTML, LaTeX) have a limited supported nesting depth.</p>
 </section>
 <section id="field-lists">
-<span id="rst-field-lists"></span><h2>Field Lists<a class="headerlink" href="#field-lists" title="Permalink to this heading"></a></h2>
-<p>Field lists (<a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#field-lists">ref</a>) are sequences of fields marked up like
+<span id="rst-field-lists"></span><h2>Field Lists<a class="headerlink" href="#field-lists" title="Link to this heading"></a></h2>
+<p>Field lists (<a class="extlink-duref reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#field-lists">ref</a>) are sequences of fields marked up like
 this:</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="nc">:fieldname:</span> Field content
 </pre></div>
 </div>
 <p>They are commonly used in Python documentation:</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>def my_function(my_arg, my_other_arg):
-    &quot;&quot;&quot;A function just for me.
+    """A function just for me.
 
     <span class="nc">:param my_arg:</span> The first of my arguments.
     <span class="nc">:param my_other_arg:</span> The second of my arguments.
 
     <span class="nc">:returns:</span> A message (just for me, of course).
-    &quot;&quot;&quot;
+    """
 </pre></div>
 </div>
 <p>Sphinx extends standard docutils behavior and intercepts field lists specified
@@ -508,27 +508,27 @@ at the beginning of documents.  Refer to field lists in the Sphinx documentation
 information.</p>
 </section>
 <section id="roles">
-<span id="rst-roles-alt"></span><h2>Roles<a class="headerlink" href="#roles" title="Permalink to this heading"></a></h2>
-<p>A role or “custom interpreted text role” (<a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#roles">ref</a>) is an inline
+<span id="rst-roles-alt"></span><h2>Roles<a class="headerlink" href="#roles" title="Link to this heading"></a></h2>
+<p>A role or “custom interpreted text role” (<a class="extlink-duref reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#roles">ref</a>) is an inline
 piece of explicit markup. It signifies that that the enclosed text should be
 interpreted in a specific way.  Sphinx uses this to provide semantic markup and
 cross-referencing of identifiers, as described in the appropriate section.  The
 general syntax is <code class="docutils literal notranslate"><span class="pre">:rolename:`content`</span></code>.</p>
 <p>Docutils supports the following roles:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/roles.html#emphasis">emphasis</a> – equivalent of <code class="docutils literal notranslate"><span class="pre">*emphasis*</span></code> (<em>emphasis</em>)</p></li>
-<li><p><a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/roles.html#strong">strong</a> – equivalent of <code class="docutils literal notranslate"><span class="pre">**strong**</span></code> (<strong>strong</strong>)</p></li>
-<li><p><a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/roles.html#literal">literal</a> – equivalent of <code class="docutils literal notranslate"><span class="pre">``literal``</span></code> (<code class="docutils literal notranslate"><span class="pre">literal</span></code>)</p></li>
-<li><p><a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/roles.html#subscript">subscript</a> – subscript text (subscript<sub>subscript</sub>)</p></li>
-<li><p><a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/roles.html#superscript">superscript</a> – superscript text (superscript<sup>superscript</sup>)</p></li>
-<li><p><a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/roles.html#title-reference">title-reference</a> – for titles of books, periodicals, and other
+<li><p><a class="extlink-durole reference external" href="http://docutils.sourceforge.net/docs/ref/rst/roles.html#emphasis">emphasis</a> – equivalent of <code class="docutils literal notranslate"><span class="pre">*emphasis*</span></code> (<em>emphasis</em>)</p></li>
+<li><p><a class="extlink-durole reference external" href="http://docutils.sourceforge.net/docs/ref/rst/roles.html#strong">strong</a> – equivalent of <code class="docutils literal notranslate"><span class="pre">**strong**</span></code> (<strong>strong</strong>)</p></li>
+<li><p><a class="extlink-durole reference external" href="http://docutils.sourceforge.net/docs/ref/rst/roles.html#literal">literal</a> – equivalent of <code class="docutils literal notranslate"><span class="pre">``literal``</span></code> (<code class="docutils literal notranslate"><span class="pre">literal</span></code>)</p></li>
+<li><p><a class="extlink-durole reference external" href="http://docutils.sourceforge.net/docs/ref/rst/roles.html#subscript">subscript</a> – subscript text (subscript<sub>subscript</sub>)</p></li>
+<li><p><a class="extlink-durole reference external" href="http://docutils.sourceforge.net/docs/ref/rst/roles.html#superscript">superscript</a> – superscript text (superscript<sup>superscript</sup>)</p></li>
+<li><p><a class="extlink-durole reference external" href="http://docutils.sourceforge.net/docs/ref/rst/roles.html#title-reference">title-reference</a> – for titles of books, periodicals, and other
 materials</p></li>
 </ul>
 <p>Refer to roles in the Sphinx documentation for roles added by Sphinx.</p>
 </section>
 <section id="explicit-markup">
-<h2>Explicit Markup<a class="headerlink" href="#explicit-markup" title="Permalink to this heading"></a></h2>
-<p>“Explicit markup” (<a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#explicit-markup-blocks">ref</a>) is used in reST for
+<h2>Explicit Markup<a class="headerlink" href="#explicit-markup" title="Link to this heading"></a></h2>
+<p>“Explicit markup” (<a class="extlink-duref reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#explicit-markup-blocks">ref</a>) is used in reST for
 most constructs that need special handling, such as footnotes,
 specially-highlighted paragraphs, comments, and generic directives.</p>
 <p>An explicit markup block begins with a line starting with <code class="docutils literal notranslate"><span class="pre">..</span></code> followed by
@@ -538,16 +538,16 @@ normal paragraphs.  This may all sound a bit complicated, but it is intuitive
 enough when you write it.)</p>
 </section>
 <section id="directives">
-<span id="rst-directives"></span><h2>Directives<a class="headerlink" href="#directives" title="Permalink to this heading"></a></h2>
-<p>A directive (<a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#directives">ref</a>) is a generic block of explicit markup.
+<span id="rst-directives"></span><h2>Directives<a class="headerlink" href="#directives" title="Link to this heading"></a></h2>
+<p>A directive (<a class="extlink-duref reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#directives">ref</a>) is a generic block of explicit markup.
 Along with roles, it is one of the extension mechanisms of reST, and Sphinx
 makes heavy use of it.</p>
 <p>Docutils supports the following directives:</p>
 <ul class="simple">
-<li><p>Admonitions: <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#attention">attention</a>, <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#caution">caution</a>, <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#danger">danger</a>,
-<a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#error">error</a>, <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#hint">hint</a>, <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#important">important</a>, <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#note">note</a>,
-<a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#tip">tip</a>, <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#warning">warning</a> and the generic
-<a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#admonitions">admonition</a>.  (Most themes style only “note” and
+<li><p>Admonitions: <a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#attention">attention</a>, <a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#caution">caution</a>, <a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#danger">danger</a>,
+<a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#error">error</a>, <a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#hint">hint</a>, <a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#important">important</a>, <a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#note">note</a>,
+<a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#tip">tip</a>, <a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#warning">warning</a> and the generic
+<a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#admonitions">admonition</a>.  (Most themes style only “note” and
 “warning” specially.)</p></li>
 </ul>
 <div class="admonition attention">
@@ -589,52 +589,52 @@ makes heavy use of it.</p>
 <ul>
 <li><p>Images:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#image">image</a> (see also <a class="reference internal" href="#images">Images</a> below)</p></li>
-<li><p><a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#figure">figure</a> (an image with caption and optional legend)</p></li>
+<li><p><a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#image">image</a> (see also <a class="reference internal" href="#images">Images</a> below)</p></li>
+<li><p><a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#figure">figure</a> (an image with caption and optional legend)</p></li>
 </ul>
 </li>
 <li><p>Additional body elements:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#table-of-contents">contents</a> (a local, i.e. for the current file
+<li><p><a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#table-of-contents">contents</a> (a local, i.e. for the current file
 only, table of contents)</p></li>
-<li><p><a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#container">container</a> (a container with a custom class, useful to generate an
+<li><p><a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#container">container</a> (a container with a custom class, useful to generate an
 outer <code class="docutils literal notranslate"><span class="pre">&lt;div&gt;</span></code> in HTML)</p></li>
-<li><p><a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#rubric">rubric</a> (a heading without relation to the document sectioning)</p></li>
-<li><p><a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#topic">topic</a>, <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#sidebar">sidebar</a> (special highlighted body elements)</p></li>
-<li><p><a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#parsed-literal">parsed-literal</a> (literal block that supports inline markup)</p></li>
-<li><p><a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#epigraph">epigraph</a> (a block quote with optional attribution line)</p></li>
-<li><p><a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#highlights">highlights</a>, <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#pull-quote">pull-quote</a> (block quotes with their own
+<li><p><a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#rubric">rubric</a> (a heading without relation to the document sectioning)</p></li>
+<li><p><a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#topic">topic</a>, <a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#sidebar">sidebar</a> (special highlighted body elements)</p></li>
+<li><p><a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#parsed-literal">parsed-literal</a> (literal block that supports inline markup)</p></li>
+<li><p><a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#epigraph">epigraph</a> (a block quote with optional attribution line)</p></li>
+<li><p><a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#highlights">highlights</a>, <a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#pull-quote">pull-quote</a> (block quotes with their own
 class attribute)</p></li>
-<li><p><a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#compound-paragraph">compound</a> (a compound paragraph)</p></li>
+<li><p><a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#compound-paragraph">compound</a> (a compound paragraph)</p></li>
 </ul>
 </li>
 <li><p>Special tables:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#table">table</a> (a table with title)</p></li>
-<li><p><a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#csv-table">csv-table</a> (a table generated from comma-separated values)</p></li>
-<li><p><a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#list-table">list-table</a> (a table generated from a list of lists)</p></li>
+<li><p><a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#table">table</a> (a table with title)</p></li>
+<li><p><a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#csv-table">csv-table</a> (a table generated from comma-separated values)</p></li>
+<li><p><a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#list-table">list-table</a> (a table generated from a list of lists)</p></li>
 </ul>
 </li>
 <li><p>Special directives:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#raw-data-pass-through">raw</a> (include raw target-format markup)</p></li>
-<li><p><a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#include">include</a> (include reStructuredText from another file) – in Sphinx,
+<li><p><a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#raw-data-pass-through">raw</a> (include raw target-format markup)</p></li>
+<li><p><a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#include">include</a> (include reStructuredText from another file) – in Sphinx,
 when given an absolute include file path, this directive takes it as
 relative to the source directory</p></li>
-<li><p><a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#class">class</a> (assign a class attribute to the next element) <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p></li>
+<li><p><a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#class">class</a> (assign a class attribute to the next element) <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p></li>
 </ul>
 </li>
 <li><p>HTML specifics:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#meta">meta</a>
+<li><p><a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#meta">meta</a>
 (generation of HTML <code class="docutils literal notranslate"><span class="pre">&lt;meta&gt;</span></code> tags, see also <a class="reference internal" href="#html-meta"><span class="std std-ref">HTML Metadata</span></a> below)</p></li>
-<li><p><a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#metadata-document-title">title</a> (override document title)</p></li>
+<li><p><a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#metadata-document-title">title</a> (override document title)</p></li>
 </ul>
 </li>
 <li><p>Influencing markup:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#default-role">default-role</a> (set a new default role)</p></li>
-<li><p><a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#role">role</a> (create a new role)</p></li>
+<li><p><a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#default-role">default-role</a> (set a new default role)</p></li>
+<li><p><a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#role">role</a> (create a new role)</p></li>
 </ul>
 <p>Since these are only per-file, better use Sphinx’s facilities for setting the
 <code class="docutils literal notranslate"><span class="pre">default_role</span></code>.</p>
@@ -642,8 +642,8 @@ relative to the source directory</p></li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Do <em>not</em> use the directives <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#sectnum">sectnum</a>, <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#header">header</a> and
-<a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#footer">footer</a>.</p>
+<p>Do <em>not</em> use the directives <a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#sectnum">sectnum</a>, <a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#header">header</a> and
+<a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#footer">footer</a>.</p>
 </div>
 <p>Directives added by Sphinx are described in directives in the Sphinx documentation.</p>
 <p>Basically, a directive consists of a name, arguments, options and content.
@@ -665,8 +665,8 @@ to the same level as the directive content.</p>
 the directive start.</p>
 </section>
 <section id="images">
-<h2>Images<a class="headerlink" href="#images" title="Permalink to this heading"></a></h2>
-<p>reST supports an image directive (<a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#image">ref</a>), used like so:</p>
+<h2>Images<a class="headerlink" href="#images" title="Link to this heading"></a></h2>
+<p>reST supports an image directive (<a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#image">ref</a>), used like so:</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">image</span><span class="p">::</span> gnu.png
    (options)
 </pre></div>
@@ -707,8 +707,8 @@ latter.  Supported image types and choosing priority are defined at
 </div>
 </section>
 <section id="footnotes">
-<h2>Footnotes<a class="headerlink" href="#footnotes" title="Permalink to this heading"></a></h2>
-<p>For footnotes (<a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#footnotes">ref</a>), use <code class="docutils literal notranslate"><span class="pre">[#name]_</span></code> to mark the footnote
+<h2>Footnotes<a class="headerlink" href="#footnotes" title="Link to this heading"></a></h2>
+<p>For footnotes (<a class="extlink-duref reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#footnotes">ref</a>), use <code class="docutils literal notranslate"><span class="pre">[#name]_</span></code> to mark the footnote
 location, and add the footnote body at the bottom of the document after a
 “Footnotes” rubric heading, like so:</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>Lorem ipsum <span class="s">[#f1]_</span> dolor sit amet ... <span class="s">[#f2]_</span>
@@ -723,8 +723,8 @@ location, and add the footnote body at the bottom of the document after a
 footnotes without names (<code class="docutils literal notranslate"><span class="pre">[#]_</span></code>).</p>
 </section>
 <section id="citations">
-<h2>Citations<a class="headerlink" href="#citations" title="Permalink to this heading"></a></h2>
-<p>Standard reST citations (<a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#citations">ref</a>) are supported, with the
+<h2>Citations<a class="headerlink" href="#citations" title="Link to this heading"></a></h2>
+<p>Standard reST citations (<a class="extlink-duref reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#citations">ref</a>) are supported, with the
 additional feature that they are “global”, i.e. all citations can be referenced
 from all files.  Use them like so:</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>Lorem ipsum <span class="s">[Ref]_</span> dolor sit amet.
@@ -736,8 +736,8 @@ from all files.  Use them like so:</p>
 numeric or begins with <code class="docutils literal notranslate"><span class="pre">#</span></code>.</p>
 </section>
 <section id="substitutions">
-<h2>Substitutions<a class="headerlink" href="#substitutions" title="Permalink to this heading"></a></h2>
-<p>reST supports “substitutions” (<a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#substitution-definitions">ref</a>), which
+<h2>Substitutions<a class="headerlink" href="#substitutions" title="Link to this heading"></a></h2>
+<p>reST supports “substitutions” (<a class="extlink-duref reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#substitution-definitions">ref</a>), which
 are pieces of text and/or markup referred to in the text by <code class="docutils literal notranslate"><span class="pre">|name|</span></code>.  They
 are defined like footnotes with explicit markup blocks, like this:</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">|name|</span> <span class="ow">replace</span><span class="p">::</span> replacement <span class="ge">*text*</span>
@@ -748,7 +748,7 @@ are defined like footnotes with explicit markup blocks, like this:</p>
              <span class="nc">:alt:</span> Warning!
 </pre></div>
 </div>
-<p>See the <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#substitution-definitions">reST reference for substitutions</a>
+<p>See the <a class="extlink-duref reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#substitution-definitions">reST reference for substitutions</a>
 for details.</p>
 <p id="index-0">If you want to use some substitutions for all documents, put them into
 <code class="docutils literal notranslate"><span class="pre">rst_prolog</span></code> or <code class="docutils literal notranslate"><span class="pre">rst_epilog</span></code> or put them into a separate file
@@ -759,9 +759,9 @@ as a standalone document.)</p>
 <p>Sphinx defines some default substitutions.</p>
 </section>
 <section id="comments">
-<h2>Comments<a class="headerlink" href="#comments" title="Permalink to this heading"></a></h2>
+<h2>Comments<a class="headerlink" href="#comments" title="Link to this heading"></a></h2>
 <p>Every explicit markup block which isn’t a valid markup construct (like the
-footnotes above) is regarded as a comment (<a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#comments">ref</a>).  For
+footnotes above) is regarded as a comment (<a class="extlink-duref reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#comments">ref</a>).  For
 example:</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="c">.. This is a comment.</span>
 </pre></div>
@@ -776,8 +776,8 @@ example:</p>
 </div>
 </section>
 <section id="html-metadata">
-<span id="html-meta"></span><h2>HTML Metadata<a class="headerlink" href="#html-metadata" title="Permalink to this heading"></a></h2>
-<p>The <code class="xref rst rst-dir docutils literal notranslate"><span class="pre">meta</span></code> directive (<a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#meta">ref</a>) allows specifying the HTML
+<span id="html-meta"></span><h2>HTML Metadata<a class="headerlink" href="#html-metadata" title="Link to this heading"></a></h2>
+<p>The <code class="xref rst rst-dir docutils literal notranslate"><span class="pre">meta</span></code> directive (<a class="extlink-dudir reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#meta">ref</a>) allows specifying the HTML
 <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta">metadata element</a> of a Sphinx documentation page.  For example, the
 directive:</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">meta</span><span class="p">::</span>
@@ -786,8 +786,8 @@ directive:</p>
 </pre></div>
 </div>
 <p>will generate the following HTML output:</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;description&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;The Sphinx documentation builder&quot;</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;keywords&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;Sphinx, documentation, builder&quot;</span><span class="p">&gt;</span>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"description"</span> <span class="na">content</span><span class="o">=</span><span class="s">"The Sphinx documentation builder"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"keywords"</span> <span class="na">content</span><span class="o">=</span><span class="s">"Sphinx, documentation, builder"</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 <p>Also, Sphinx will add the keywords as specified in the meta directive to the
@@ -808,25 +808,25 @@ configurations:</p>
 </ul>
 </section>
 <section id="source-encoding">
-<h2>Source encoding<a class="headerlink" href="#source-encoding" title="Permalink to this heading"></a></h2>
+<h2>Source encoding<a class="headerlink" href="#source-encoding" title="Link to this heading"></a></h2>
 <p>Since the easiest way to include special characters like em dashes or copyright
 signs in reST is to directly write them as Unicode characters, one has to
 specify an encoding.  Sphinx assumes source files to be encoded in UTF-8 by
 default; you can change this with the <code class="docutils literal notranslate"><span class="pre">source_encoding</span></code> config value.</p>
 </section>
 <section id="gotchas">
-<h2>Gotchas<a class="headerlink" href="#gotchas" title="Permalink to this heading"></a></h2>
+<h2>Gotchas<a class="headerlink" href="#gotchas" title="Link to this heading"></a></h2>
 <p>There are some problems one commonly runs into while authoring reST documents:</p>
 <ul class="simple">
 <li><p><strong>Separation of inline markup:</strong> As said above, inline markup spans must be
 separated from the surrounding text by non-word characters, you have to use a
-backslash-escaped space to get around that.  See <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#substitution-definitions">the reference</a> for the details.</p></li>
+backslash-escaped space to get around that.  See <a class="extlink-duref reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#substitution-definitions">the reference</a> for the details.</p></li>
 <li><p><strong>No nested inline markup:</strong> Something like <code class="docutils literal notranslate"><span class="pre">*see</span> <span class="pre">:func:`foo`*</span></code> is not
 possible.</p></li>
 </ul>
 <p class="rubric">Footnotes</p>
 <aside class="footnote-list brackets">
-<aside class="footnote brackets" id="id2" role="note">
+<aside class="footnote brackets" id="id2" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
 <p>When the default domain contains a <code class="xref rst rst-dir docutils literal notranslate"><span class="pre">class</span></code> directive, this
 directive will be shadowed.  Therefore, Sphinx re-exports it as
@@ -848,7 +848,7 @@ directive will be shadowed.  Therefore, Sphinx re-exports it as
 
   <div role="contentinfo">
     <p>&#169; Copyright 2023, Lily Wang, Irfan Alibay, Ian Kenney.
-      <span class="lastupdated">Last updated on Sep 04, 2025.
+      <span class="lastupdated">Last updated on Oct 13, 2026.
       </span></p>
   </div>
 
