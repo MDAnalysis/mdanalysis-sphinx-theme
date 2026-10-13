@@ -14,11 +14,11 @@ dependencies:
   - nbconvert
   - ipykernel
   - autodoc-pydantic
-  - myst-parser~=1.0
+  - myst-parser
   - pandoc
   - wheel
   - sphinx-autobuild
-  - sphinx>=6.2.1
+  - sphinx>=7.2.0
   - sphinx_rtd_theme
 
   - mdanalysis
